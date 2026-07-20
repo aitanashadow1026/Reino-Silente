@@ -20,35 +20,61 @@
 
   <main>
     <h1>Personajes</h1>
-    <p style="color: var(--text-muted); font-style: italic; margin-bottom: 2rem;">Los que habitan estas páginas.</p>
+    <p style="color: var(--text-muted); font-style: italic; margin-bottom: 2rem;">Los que habitan estas páginas. <span style="font-size:0.85rem;">(Haz clic en cada nombre para desplegarlo)</span></p>
 
     <section class="lore-section">
-      <div class="lore-block">
-        <h3>Lira</h3>
-        <p><span class="tag">Protagonista</span><span class="tag">Veinte años</span></p>
-        <p>Hija de Saun, buscadora de cristales como su padre. Tiene un don que no comprende: cuando traza una runa, no solo la copia, la <em>entiende</em>. Las curvas y los ángulos dejan de ser formas para convertirse en significados. Algo que a su padre le costó treinta años de oficio.</p>
-        <p>Vive en Valdros con su padre Saun, su madre y su hermana pequeña. Descalza en casa, con las botas puestas cuando sale al bosque. Sus dedos se mueven trazando líneas que no existen, como si conociera un lenguaje que nunca le han enseñado.</p>
+
+      <!-- Lira -->
+      <div class="lore-block collapsible">
+        <div class="lore-header" onclick="toggleSection(this)">
+          <h3>Lira</h3>
+          <span class="toggle-icon">▼</span>
+        </div>
+        <div class="lore-content">
+          <p><span class="tag">Protagonista</span><span class="tag">Veinte años</span></p>
+          <p>Hija de Saun, buscadora de cristales como su padre. Tiene un don que no comprende: cuando traza una runa, no solo la copia, la <em>entiende</em>. Las curvas y los ángulos dejan de ser formas para convertirse en significados. Algo que a su padre le costó treinta años de oficio.</p>
+          <p>Vive en Valdros con su padre Saun, su madre y su hermana pequeña. Descalza en casa, con las botas puestas cuando sale al bosque. Sus dedos se mueven trazando líneas que no existen, como si conociera un lenguaje que nunca le han enseñado.</p>
+        </div>
       </div>
 
-      <div class="lore-block">
-        <h3>Saun</h3>
-        <p><span class="tag">Buscador</span><span class="tag">Padre de Lira</span></p>
-        <p>Treinta años buscando cristales. Treinta años sintiendo el pulso sutil de la Ceniza bajo sus dedos. Treinta años trazando la runa de llamada —un arco, un punto, una curva— mientras su mente busca el eco de la piedra.</p>
-        <p>Hombre de manos callosas y ojos del color del río. Lleva una bolsa de cristales al cinto y la calma de quien ha visto mucho. Orgulloso de su hija, pero guarda un miedo que no dice en voz alta: un cristal bueno vale más que una vida en según qué caminos. Y para él, Lira sigue siendo la niña que se escondía tras sus piernas cuando tronaba.</p>
+      <!-- Saun -->
+      <div class="lore-block collapsible">
+        <div class="lore-header" onclick="toggleSection(this)">
+          <h3>Saun</h3>
+          <span class="toggle-icon">▼</span>
+        </div>
+        <div class="lore-content">
+          <p><span class="tag">Buscador</span><span class="tag">Padre de Lira</span></p>
+          <p>Treinta años buscando cristales. Treinta años sintiendo el pulso sutil de la Ceniza bajo sus dedos. Treinta años trazando la runa de llamada —un arco, un punto, una curva— mientras su mente busca el eco de la piedra.</p>
+          <p>Hombre de manos callosas y ojos del color del río. Lleva una bolsa de cristales al cinto y la calma de quien ha visto mucho. Orgulloso de su hija, pero guarda un miedo que no dice en voz alta: un cristal bueno vale más que una vida en según qué caminos. Y para él, Lira sigue siendo la niña que se escondía tras sus piernas cuando tronaba.</p>
+        </div>
       </div>
 
-      <div class="lore-block">
-        <h3>La Madre</h3>
-        <p><span class="tag">Familia</span></p>
-        <p>Remueve el caldero con la espalda vuelta y los hombros tensos bajo el chal de lana. Habla sin subir el último peldaño de la escalera, como si esa frontera ya no le perteneciera. Dice "Hoy traerás algo bueno" como un conjuro más que como una esperanza.</p>
-        <p>Su nombre aún no se ha revelado.</p>
+      <!-- La Madre -->
+      <div class="lore-block collapsible">
+        <div class="lore-header" onclick="toggleSection(this)">
+          <h3>La Madre</h3>
+          <span class="toggle-icon">▼</span>
+        </div>
+        <div class="lore-content">
+          <p><span class="tag">Familia</span></p>
+          <p>Remueve el caldero con la espalda vuelta y los hombros tensos bajo el chal de lana. Habla sin subir el último peldaño de la escalera, como si esa frontera ya no le perteneciera. Dice "Hoy traerás algo bueno" como un conjuro más que como una esperanza.</p>
+          <p>Su nombre aún no se ha revelado.</p>
+        </div>
       </div>
 
-      <div class="lore-block">
-        <h3>La Hermana Pequeña</h3>
-        <p><span class="tag">Familia</span></p>
-        <p>Asoma por detrás del arcón con la trenza deshecha, arrastrando una muñeca de trapo. Le hace a Lira un gesto torpe al despedirla. Su nombre aún no se ha revelado.</p>
+      <!-- La Hermana Pequeña -->
+      <div class="lore-block collapsible">
+        <div class="lore-header" onclick="toggleSection(this)">
+          <h3>La Hermana Pequeña</h3>
+          <span class="toggle-icon">▼</span>
+        </div>
+        <div class="lore-content">
+          <p><span class="tag">Familia</span></p>
+          <p>Asoma por detrás del arcón con la trenza deshecha, arrastrando una muñeca de trapo. Le hace a Lira un gesto torpe al despedirla. Su nombre aún no se ha revelado.</p>
+        </div>
       </div>
+
     </section>
   </main>
 
@@ -56,5 +82,13 @@
     <p>Crónicas del Reino Silente — Personajes</p>
     <p class="sig">🦇 Escrito por Aitana Shadow</p>
   </footer>
+
+  <script>
+    function toggleSection(header) {
+      header.classList.toggle('open');
+      const content = header.nextElementSibling;
+      content.classList.toggle('open');
+    }
+  </script>
 </body>
 </html>

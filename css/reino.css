@@ -335,6 +335,65 @@ main {
   .scene-text p:first-of-type::first-letter { font-size: 2.2rem; }
 }
 
+/* ─── Acordeón (lore collapsible) ─────────────────── */
+.lore-block.collapsible {
+  padding: 0;
+  overflow: hidden;
+}
+
+.lore-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s, border-color 0.3s;
+  border-left: 3px solid var(--gold-dim);
+  border-radius: 0 6px 0 0;
+}
+
+.lore-block.collapsible .lore-header:hover {
+  background: var(--bg-hover);
+  border-left-color: var(--gold);
+}
+
+.lore-header h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--gold);
+  pointer-events: none;
+}
+
+.toggle-icon {
+  font-size: 0.7rem;
+  color: var(--gold-dim);
+  transition: transform 0.3s ease;
+  pointer-events: none;
+}
+
+.lore-header.open .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.lore-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.4s ease;
+  opacity: 0;
+  padding: 0 1.5rem;
+}
+
+.lore-content.open {
+  max-height: 5000px;
+  opacity: 1;
+  padding: 0 1.5rem 1.2rem;
+}
+
+.lore-content p {
+  margin-top: 0.8rem;
+}
+
 /* ─── Animaciones sutiles ────────────────────────── */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
