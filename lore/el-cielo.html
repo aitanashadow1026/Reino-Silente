@@ -3,178 +3,212 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Cielo — Reino Silente</title>
-  <link rel="stylesheet" href="../reino.css">
+  <title>El Cielo — Crónicas del Reino Silente</title>
+  <link rel="stylesheet" href="../css/reino.css">
   <style>
-    .lore-section { margin-bottom: 2.5em; }
-    .lore-section h2 { 
-      border-bottom: 1px solid #8B7355; 
-      padding-bottom: 0.3em;
-      margin-top: 1.5em;
+    .lore-section h2 { margin-top: 0; }
+    .lore-section.full-width h2 {
+      border-bottom: none;
     }
-    .lore-section h3 { margin-top: 1.2em; color: #C9A96E; }
-    .lore-section ul { padding-left: 1.5em; }
     .lore-section li { margin-bottom: 0.5em; }
-    .lore-block {
-      background: #1a1a1a;
-      border-left: 3px solid #C9A96E;
-      padding: 1em 1.5em;
-      margin: 1em 0;
-      font-style: italic;
-      color: #ccc;
-    }
-    .highlight { color: #C9A96E; font-weight: bold; }
     .divine { color: #E8D5A3; }
-    .warning {
+    .warning-box {
       background: #1a1410;
       border: 1px solid #8B4513;
+      border-left: 3px solid #8B4513;
       padding: 0.8em 1.2em;
       margin: 1em 0;
-      border-radius: 4px;
+      border-radius: 0 4px 4px 0;
+      font-size: 0.9rem;
     }
-    .warning::before { content: "⚠️ "; }
+    .warning-box::before { content: "⚠️ "; }
+    .lore-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+    .lore-table th, .lore-table td {
+      text-align: left;
+      padding: 0.5em 0.8em;
+      border-bottom: 1px solid #2a2420;
+    }
+    .lore-table th {
+      font-family: 'Cinzel', serif;
+      color: #c9a84c;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      border-bottom: 1px solid #8a7230;
+    }
+    .lore-table tr:last-child td { border-bottom: none; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>🌌 El Cielo</h1>
-    <p class="subtitle">Esencia divina, cristales y portadores</p>
-    <nav class="chapter-nav">
-      <a href="mundo.html">← Volver al mundo</a>
-      <a href="../index.html">Inicio</a>
-      <a href="personajes.html">Personajes →</a>
-    </nav>
+  <header class="site-header">
+    <div class="inner">
+      <a href="../index.html" class="site-title">Crónicas del Reino Silente</a>
+      <nav class="site-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="mundo.html">El Mundo</a>
+        <a href="personajes.html">Personajes</a>
+        <a href="runas.html">Runas</a>
+        <a href="lengua-tierra.html">Rituales</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="chapter-content">
-    
-    <div class="lore-section">
-      <h2>Naturaleza del Cielo</h2>
-      
-      <p>El Cielo no es poder. El Cielo es la <span class="divine">herramienta de un dios</span> para canalizar su voluntad.</p>
-      
-      <p>Funciona como un puente: el dios selecciona a una persona u objeto y deposita en él una porción de su esencia. Ese fragmento —el Cielo— es el conducto a través del cual el dios otorga poder a su portador. No es el poder en sí mismo, sino el <em>permiso</em> y el <em>conducto</em> para ejercerlo.</p>
+  <main>
+    <h1>🌌 El Cielo</h1>
+    <p style="color: var(--text-muted); font-style: italic; margin-bottom: 2rem;">Esencia divina, cristales y portadores.</p>
 
-      <div class="lore-block">
-        "El Cielo no es la llama. Es la mano que acerca la yesca."
+    <section class="lore-section">
+
+      <!-- 🌌 Naturaleza del Cielo -->
+      <div class="lore-block collapsible">
+        <div class="lore-header open" onclick="toggleSection(this)">
+          <h3>🌌 Naturaleza del Cielo</h3>
+          <span class="toggle-icon">▼</span>
+        </div>
+        <div class="lore-content open">
+          <p>El Cielo no es poder. El Cielo es la <span class="divine">herramienta de un dios</span> para canalizar su voluntad.</p>
+          <p>Funciona como un puente: el dios selecciona a una persona u objeto y deposita en él una porción de su esencia. Ese fragmento —el Cielo— es el conducto a través del cual el dios otorga poder a su portador. No es el poder en sí mismo, sino el <em>permiso</em> y el <em>conducto</em> para ejercerlo.</p>
+          <p>Esto significa que el poder real reside en el <strong>dios</strong>, no en el portador. El Cielo conecta a ambos, y es el dios quien decide —consciente o inconscientemente— qué puede hacer su avatar y hasta dónde llega su influencia.</p>
+        </div>
       </div>
 
-      <p>Esto significa que el poder real reside en el <span class="highlight">dios</span>, no en el portador. El Cielo conecta a ambos, y es el dios quien decide —consciente o inconscientemente— qué puede hacer su avatar y hasta dónde llega su influencia.</p>
-    </div>
+      <!-- 💎 Los Cristales de Cielo -->
+      <div class="lore-block collapsible">
+        <div class="lore-header" onclick="toggleSection(this)">
+          <h3>💎 Los Cristales de Cielo</h3>
+          <span class="toggle-icon">▼</span>
+        </div>
+        <div class="lore-content">
+          <p>Los cristales de Cielo son objetos fabricados o creados de origen con una capacidad única: <strong>albergar la esencia de un dios</strong>. No son simples rocas imbuidas de poder. Son <em>receptáculos diseñados</em> para contener lo divino.</p>
+          <p>Un cristal de Cielo es un artefacto poderoso por sí mismo, incluso <strong>vacío</strong>. Pero si ha contenido la esencia de un dios —si ha tenido Cielo dentro— sus capacidades se potencian. El tiempo de contacto con lo divino lo transforma, lo despierta, le confiere propiedades que ningún otro objeto posee.</p>
 
-    <div class="lore-section">
-      <h2>Los Cristales de Cielo</h2>
-
-      <h3>Artefactos divinos</h3>
-      <p>Los cristales de Cielo son objetos fabricados o creados de origen con una capacidad única: <span class="highlight">albergar la esencia de un dios</span>. No son simples rocas imbuidas de poder. Son <em>receptáculos diseñados</em> para contener lo divino.</p>
-
-      <p>Un cristal de Cielo es un artefacto poderoso por sí mismo, incluso vacío. Pero si ha contenido la esencia de un dios —si ha tenido Cielo dentro— sus capacidades se potencian. El tiempo de contacto con lo divino lo transforma, lo despierta, le confiere propiedades que ningún otro objeto posee.</p>
-
-      <h3>La roca de 7 trazos (el artefacto de Lira)</h3>
-      <p>La roca que Lira encontró en el bosque es un cristal de Cielo que ha perdido su esencia. El Cielo que contenía ahora reside en Lira. Pero el cristal no está vacío en el sentido trivial: ha sido <span class="divine">tocado por lo divino</span>, y eso lo ha cambiado para siempre.</p>
-
-      <p>Ahora funciona como una <span class="highlight">tablilla de runas viviente</span>. Cada vez que Lira descifra una nueva runa —cada vez que el Cielo dentro de ella le revela un símbolo— el cristal se marca con ella. Es un registro físico del conocimiento que Lira va adquiriendo, un repositorio que ella (o alguien más con la capacidad adecuada) puede leer y estudiar.</p>
-
-      <p>El cristal es, en esencia, el <em>libro de texto</em> de Lira. Y también su <em>archivo</em>. Todo lo que el Cielo le enseña queda grabado en la piedra.</p>
-
-      <div class="lore-block">
-        "La roca recuerda lo que Lira aprende. Como si el Cielo, al irse, le hubiera dejado una copia de su propia llave."
+          <h4>La roca de 7 trazos (el artefacto de Lira)</h4>
+          <p>La roca que Lira encontró en el bosque es un cristal de Cielo que ha perdido su esencia. El Cielo que contenía ahora reside en Lira. Pero el cristal no está vacío en el sentido trivial: ha sido tocado por lo divino, y eso lo ha cambiado para siempre.</p>
+          <p>Ahora funciona como una <strong>tablilla de runas viviente</strong>. Cada vez que Lira descifra una nueva runa —cada vez que el Cielo dentro de ella le revela un símbolo— el cristal se marca con ella. Es un registro físico del conocimiento que Lira va adquiriendo, un repositorio que ella (o alguien más con la capacidad adecuada) puede leer y estudiar.</p>
+          <p>El cristal es, en esencia, el <em>libro de texto</em> de Lira. Y también su <em>archivo</em>. Todo lo que el Cielo le enseña queda grabado en la piedra.</p>
+          <div class="warning-box">Este cristal podría tener funciones más allá del registro. En futuros capítulos podría revelarse como algo más que una simple tablilla.</div>
+        </div>
       </div>
 
-      <p class="warning">Este cristal podría tener funciones más allá del registro. En futuros capítulos podría revelarse como algo más que una simple tablilla.</p>
-    </div>
+      <!-- 👤 Los Portadores del Cielo -->
+      <div class="lore-block collapsible">
+        <div class="lore-header" onclick="toggleSection(this)">
+          <h3>👤 Los Portadores del Cielo (Avatares)</h3>
+          <span class="toggle-icon">▼</span>
+        </div>
+        <div class="lore-content">
+          <p>Un portador del Cielo es una persona (o cosa) que ha recibido la esencia de un dios. En términos prácticos, son <strong>avatares divinos</strong> en el plano terrenal. No necesitan saberlo ni aceptarlo. El Cielo simplemente <em>está</em> en ellos.</p>
 
-    <div class="lore-section">
-      <h2>Los Portadores del Cielo (Avatares)</h2>
+          <h4>Qué pueden hacer</h4>
+          <ul>
+            <li><strong>Canalizar el poder de su dios</strong> — en la medida que el dios decida.</li>
+            <li><strong>Recibir conocimiento directamente</strong> de la fuente divina (como Lira y las runas).</li>
+            <li><strong>Transmitir el Cielo voluntariamente</strong> a otro receptáculo, si saben cómo y quieren hacerlo.</li>
+          </ul>
 
-      <h3>Qué son</h3>
-      <p>Un portador del Cielo es una persona (o cosa) que ha recibido la esencia de un dios. En términos prácticos, son <span class="divine">avatares divinos</span> en el plano terrenal. No necesitan saberlo ni aceptarlo. El Cielo simplemente <em>está</em> en ellos.</p>
+          <h4>Qué NO pueden hacer</h4>
+          <ul>
+            <li><strong>Nadie puede robarles el Cielo</strong> — ni por la fuerza, ni por engaño, ni por artefacto. Mientras el portador viva y conserve su voluntad, el Cielo es suyo.</li>
+            <li><strong>Elegir su cometido</strong> — el propósito del portador lo define el dios, no él mismo. Lira tiene el don del <em>conocimiento rúnico</em> porque el dios de Cielo quiere que el saber se transmita al mundo. Pero esa misión podría cambiar.</li>
+          </ul>
 
-      <h3>Qué pueden hacer</h3>
-      <ul>
-        <li><strong>Canalizar el poder de su dios</strong> — en la medida que el dios decida.</li>
-        <li><strong>Recibir conocimiento directamente</strong> de la fuente divina (como Lira y las runas).</li>
-        <li><strong>Transmitir el Cielo voluntariamente</strong> a otro receptáculo, si saben cómo y quieren hacerlo.</li>
-      </ul>
+          <h4>Qué pasa si mueren</h4>
+          <p>Si un portador muere, el Cielo no se pierde. Permanece ligado a su alma o a su esencia, a la espera de un nuevo receptáculo. No se sabe cómo ocurre la transición — si el dios elige al siguiente, si el Cielo busca por sí mismo, o si hay algún mecanismo en juego.</p>
 
-      <h3>Qué NO pueden hacer</h3>
-      <ul>
-        <li><strong>Nadie puede robarles el Cielo</strong> — ni por la fuerza, ni por engaño, ni por artefacto. Mientras el portador viva y conserve su voluntad, el Cielo es suyo.</li>
-        <li><strong>Elegir su cometido</strong> — el propósito del portador lo define el dios, no él mismo. Lira tiene el don del <em>conocimiento rúnico</em> porque el dios de Cielo quiere que el saber se transmita al mundo. Pero esa misión podría cambiar.</li>
-      </ul>
-
-      <h3>Qué pasa si mueren</h3>
-      <p>Si un portador muere, el Cielo no se pierde. Permanece ligado a su alma o a su esencia, a la espera de un nuevo receptáculo. No se sabe cómo ocurre la transición — si el dios elige al siguiente, si el Cielo busca por sí mismo, o si hay algún mecanismo en juego.</p>
-
-      <h3>Puede haber múltiples portadores</h3>
-      <p>Sí. Un mismo dios puede depositar fragmentos de su esencia en varias personas u objetos simultáneamente. Cada portador tendría un <span class="highlight">cometido distinto</span> según la voluntad divina. Esto significa que podrían existir otros avatares de Cielo en el mundo de Lira, posiblemente con poderes muy diferentes a los suyos.</p>
-
-      <p>El poder de cada portador no es fijo. El dios maneja los hilos por detrás y podría decidir hacer a Lira más fuerte... o retirarle su favor.</p>
-    </div>
-
-    <div class="lore-section">
-      <h2>Lira como Portadora</h2>
-
-      <h3>Su don: el conocimiento rúnico</h3>
-      <p>El Cielo dentro de Lira está <span class="divine">potenciando sus capacidades innatas</span>. No se sabe bien cómo ni por qué, pero Lira tiene un talento natural para leer runas antiguas y complejas. El Cielo lo que hace es <em>acelerar</em> ese talento: le muestra runas poderosas de vez en cuando, escenas en sueños, símbolos que aparecen en su mente.</p>
-
-      <p>Lira no sabe qué significan la mayoría de esas runas. Las recibe, las practica, las memoriza. Y la roca —el cristal vacío— está ahí para guardar registro, para que ella pueda volver atrás y estudiar lo que ha aprendido.</p>
-
-      <h3>Su cometido (por ahora)</h3>
-      <p>El dios de Cielo parece tener un propósito claro: <span class="highlight">transmitir conocimiento rúnico al mundo</span>. Lira es su vehículo para ello. Pero esta es la visión actual. Si el dios cambia de parecer —o si hay fuerzas que actúan sobre él— el cometido de Lira podría transformarse.</p>
-
-      <div class="lore-block">
-        "Lira cree que está aprendiendo. Pero el Cielo la está usando para enseñar."
+          <h4>Puede haber múltiples portadores</h4>
+          <p>Sí. Un mismo dios puede depositar fragmentos de su esencia en varias personas u objetos simultáneamente. Cada portador tendría un <strong>cometido distinto</strong> según la voluntad divina. Esto significa que podrían existir otros avatares de Cielo en el mundo de Lira, posiblemente con poderes muy diferentes a los suyos.</p>
+          <p>El poder de cada portador no es fijo. El dios maneja los hilos por detrás y podría decidir hacer a Lira más fuerte... o retirarle su favor.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="lore-section">
-      <h2>Preguntas abiertas</h2>
-      <ul>
-        <li>¿Quién o qué es el dios de Cielo? ¿Tiene nombre? ¿Está vivo, dormido, ausente?</li>
-        <li>¿Hay otros portadores de Cielo en el mundo? ¿Qué dones tienen?</li>
-        <li>¿El dios puede cambiar el cometido de Lira sobre la marcha? ¿O hay reglas?</li>
-        <li>Si el cristal de Cielo vacío puede grabar runas... ¿qué más puede hacer?</li>
-        <li>¿El eco grave bajo la tierra tiene relación con el dios de Cielo?</li>
-        <li>¿Por qué este dios quiere que el conocimiento rúnico se transmita al mundo ahora?</li>
-      </ul>
-    </div>
+      <!-- 📖 Lira como Portadora -->
+      <div class="lore-block collapsible">
+        <div class="lore-header" onclick="toggleSection(this)">
+          <h3>📖 Lira como Portadora</h3>
+          <span class="toggle-icon">▼</span>
+        </div>
+        <div class="lore-content">
+          <p>El Cielo dentro de Lira está <strong>potenciando sus capacidades innatas</strong>. No se sabe bien cómo ni por qué, pero Lira tiene un talento natural para leer runas antiguas y complejas. El Cielo lo que hace es <em>acelerar</em> ese talento: le muestra runas poderosas de vez en cuando, escenas en sueños, símbolos que aparecen en su mente.</p>
+          <p>Lira no sabe qué significan la mayoría de esas runas. Las recibe, las practica, las memoriza. Y la roca —el cristal vacío— está ahí para guardar registro, para que ella pueda volver atrás y estudiar lo que ha aprendido.</p>
 
-    <div class="lore-section">
-      <h2>Resumen canónico</h2>
-      <table style="width:100%; border-collapse: collapse; margin-top:1em;">
-        <tr style="border-bottom: 1px solid #8B7355;">
-          <th style="text-align:left; padding:0.5em;">Concepto</th>
-          <th style="text-align:left; padding:0.5em;">Definición</th>
-        </tr>
-        <tr style="border-bottom: 1px solid #444;">
-          <td style="padding:0.5em;">El Cielo</td>
-          <td style="padding:0.5em;">Esencia/herramienta de un dios. No es poder en sí mismo, sino el conducto para otorgarlo.</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #444;">
-          <td style="padding:0.5em;">Cristal de Cielo</td>
-          <td style="padding:0.5em;">Receptáculo diseñado para contener la esencia divina. Poderoso incluso vacío.</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #444;">
-          <td style="padding:0.5em;">Portador/Avatar</td>
-          <td style="padding:0.5em;">Persona que contiene el Cielo. Puede canalizar el poder y la voluntad del dios.</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #444;">
-          <td style="padding:0.5em;">Cometido</td>
-          <td style="padding:0.5em;">Propósito que el dios asigna a su portador. Puede cambiar.</td>
-        </tr>
-        <tr>
-          <td style="padding:0.5em;">Roca de 7 trazos</td>
-          <td style="padding:0.5em;">Cristal de Cielo vacío, potenciado por haber contenido al dios. Tablilla rúnica viviente.</td>
-        </tr>
-      </table>
-    </div>
+          <h4>Su cometido (por ahora)</h4>
+          <p>El dios de Cielo parece tener un propósito claro: <strong>transmitir conocimiento rúnico al mundo</strong>. Lira es su vehículo para ello. Pero esta es la visión actual. Si el dios cambia de parecer —o si hay fuerzas que actúan sobre él— el cometido de Lira podría transformarse.</p>
+        </div>
+      </div>
 
-    <nav class="chapter-nav" style="margin-top: 3em;">
-      <a href="mundo.html">← Volver al mundo</a>
-      <a href="../index.html">Inicio</a>
-      <a href="personajes.html">Personajes →</a>
-    </nav>
+      <!-- ❓ Preguntas abiertas -->
+      <div class="lore-block collapsible">
+        <div class="lore-header" onclick="toggleSection(this)">
+          <h3>❓ Preguntas abiertas</h3>
+          <span class="toggle-icon">▼</span>
+        </div>
+        <div class="lore-content">
+          <ul>
+            <li>¿Quién o qué es el dios de Cielo? ¿Tiene nombre? ¿Está vivo, dormido, ausente?</li>
+            <li>¿Hay otros portadores de Cielo en el mundo? ¿Qué dones tienen?</li>
+            <li>¿El dios puede cambiar el cometido de Lira sobre la marcha? ¿O hay reglas?</li>
+            <li>Si el cristal de Cielo vacío puede grabar runas... ¿qué más puede hacer?</li>
+            <li>¿El eco grave bajo la tierra tiene relación con el dios de Cielo?</li>
+            <li>¿Por qué este dios quiere que el conocimiento rúnico se transmita al mundo ahora?</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 📋 Resumen canónico -->
+      <div class="lore-block collapsible">
+        <div class="lore-header" onclick="toggleSection(this)">
+          <h3>📋 Resumen canónico</h3>
+          <span class="toggle-icon">▼</span>
+        </div>
+        <div class="lore-content">
+          <table class="lore-table">
+            <tr>
+              <th>Concepto</th>
+              <th>Definición</th>
+            </tr>
+            <tr>
+              <td>El Cielo</td>
+              <td>Esencia/herramienta de un dios. No es poder en sí mismo, sino el conducto para otorgarlo.</td>
+            </tr>
+            <tr>
+              <td>Cristal de Cielo</td>
+              <td>Receptáculo diseñado para contener la esencia divina. Poderoso incluso vacío.</td>
+            </tr>
+            <tr>
+              <td>Portador/Avatar</td>
+              <td>Persona que contiene el Cielo. Puede canalizar el poder y la voluntad del dios.</td>
+            </tr>
+            <tr>
+              <td>Cometido</td>
+              <td>Propósito que el dios asigna a su portador. Puede cambiar.</td>
+            </tr>
+            <tr>
+              <td>Roca de 7 trazos</td>
+              <td>Cristal de Cielo vacío, potenciado por haber contenido al dios. Tablilla rúnica viviente.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <p>Crónicas del Reino Silente — El Cielo</p>
+    <p class="sig">🦇 Escrito por Aitana Shadow</p>
+  </footer>
+
+  <script>
+    function toggleSection(header) {
+      header.classList.toggle('open');
+      const content = header.nextElementSibling;
+      content.classList.toggle('open');
+    }
+  </script>
 </body>
 </html>
