@@ -6,7 +6,6 @@
   <title>El Lenguaje Rúnico — Crónicas del Reino Silente</title>
   <link rel="stylesheet" href="../css/reino.css">
   <style>
-    /* ─── Específico de runas ─────────────────────── */
     .grid-container {
       display: flex;
       flex-wrap: wrap;
@@ -59,7 +58,6 @@
       margin-top: 0.3rem;
     }
 
-    /* ─── Stacking 3D ─────────────────────────────── */
     .stack-demo {
       display: flex;
       align-items: flex-end;
@@ -95,18 +93,18 @@
       padding: 0 0.3rem 1rem;
     }
 
-    .syllable-table {
+    .word-table {
       width: 100%;
       border-collapse: collapse;
       margin: 1.5rem 0;
     }
-    .syllable-table th, .syllable-table td {
+    .word-table th, .word-table td {
       border: 1px solid var(--border);
       padding: 0.6rem 0.8rem;
       text-align: left;
       font-size: 0.9rem;
     }
-    .syllable-table th {
+    .word-table th {
       background: var(--bg-card);
       color: var(--gold);
       font-family: var(--font-display);
@@ -114,31 +112,15 @@
       text-transform: uppercase;
       letter-spacing: 0.1em;
     }
-    .syllable-table td:first-child {
-      font-family: monospace;
+    .word-table td:first-child {
+      font-family: var(--font-display);
+      letter-spacing: 0.15em;
       text-align: center;
     }
-    .syllable-table tr:hover {
+    .word-table tr:hover {
       background: var(--bg-hover);
     }
-    .syllable-table .mini-grid {
-      display: inline-grid;
-      grid-template-columns: repeat(3, 16px);
-      grid-template-rows: repeat(3, 16px);
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--gold-dim);
-      border-radius: 2px;
-      vertical-align: middle;
-    }
-    .syllable-table .mini-grid .c {
-      background: var(--bg-card);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.5rem;
-      color: var(--gold);
-    }
+
     .quadrant-diagram {
       display: flex;
       justify-content: center;
@@ -161,24 +143,28 @@
       font-size: 0.7rem;
       color: var(--text-muted);
     }
-    .example-word {
-      text-align: center;
-      font-size: 1.2rem;
-      color: var(--gold);
-      margin: 1.5rem 0;
-      font-family: var(--font-display);
-      letter-spacing: 0.3em;
+    .nota {
+      background: var(--bg-card);
+      border-left: 3px solid var(--gold-dim);
+      padding: 0.8rem 1rem;
+      margin: 1.2rem 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
     }
-    .example-word span {
+    .nota strong { color: var(--gold); }
+    .tag {
       display: inline-block;
-      border: 1px solid var(--gold-dim);
-      border-radius: 4px;
-      padding: 0.2rem 0.5rem;
-      margin: 0 0.2rem;
-      font-size: 0.8rem;
-      color: var(--text);
-      vertical-align: middle;
+      font-size: 0.65rem;
+      padding: 0.1rem 0.4rem;
+      border-radius: 3px;
+      margin: 0 0.1rem;
+      font-family: var(--font-display);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
     }
+    .tag-1c { background: #1a2a1a; color: #5a8a5a; border: 1px solid #2a4a2a; }
+    .tag-2c { background: #2a2a1a; color: #8a8a3a; border: 1px solid #4a4a2a; }
+    .tag-3c { background: #2a1a1a; color: #8a4a3a; border: 1px solid #4a2a2a; }
   </style>
 </head>
 <body>
@@ -190,6 +176,8 @@
         <a href="mundo.html">El Mundo</a>
         <a href="personajes.html">Personajes</a>
         <a href="runas.html">Runas</a>
+        <a href="alfabeto-runico.html">Alfabeto</a>
+        <a href="palabras-runicas.html">Palabras</a>
         <a href="lengua-tierra.html">Rituales</a>
       </nav>
     </div>
@@ -197,65 +185,77 @@
 
   <main>
     <h1>El Lenguaje Rúnico</h1>
-    <p style="color: var(--text-muted); font-style: italic; margin-bottom: 2rem;">
-      Lo que se sabe del alfabeto de las runas, sus cuadrantes, y lo que nadie ha descubierto aún.
+    <p style="color: var(--text-muted); font-style: italic; margin-bottom: 1rem;">
+      Lo que se sabe de las runas, cómo funcionan, y lo que nadie ha descubierto aún.
+    </p>
+    <p style="margin-bottom: 2rem;">
+      <a href="alfabeto-runico.html" style="color: var(--gold); text-decoration: none; border: 1px solid var(--gold-dim); padding: 0.3rem 0.8rem; border-radius: 4px; font-family: var(--font-display); font-size: 0.8rem;">📖 Ver referencia completa del alfabeto →</a>
+      <a href="palabras-runicas.html" style="color: var(--gold); text-decoration: none; border: 1px solid var(--gold-dim); padding: 0.3rem 0.8rem; border-radius: 4px; font-family: var(--font-display); font-size: 0.8rem; margin-left: 0.5rem;">📖 Ver vocabulario completo →</a>
     </p>
 
     <!-- ══════════════════════════════════════════════ -->
-    <!-- 0. Los 9 Cuadrantes -->
+    <!-- 1. Qué son las runas -->
     <!-- ══════════════════════════════════════════════ -->
     <section class="lore-section">
       <div class="lore-block">
-        <h3>0. La cuadrícula invisible</h3>
+        <h3>1. ¿Qué son las runas?</h3>
         <p>
-          Toda runa se traza sobre una cuadrícula invisible de <strong>3×3</strong>. 
-          Nueve posiciones. Tres filas, tres columnas. Quien traza una runa no ve la cuadrícula 
-          —la siente—, igual que quien escribe sobre un folio en blanco sabe dónde van los márgenes 
-          aunque no los haya dibujado.
+          Las runas son un <strong>lenguaje escrito</strong> que habla con la energía de la tierra. 
+          No describen: <strong>ordenan</strong>. Cada palabra rúnica es una instrucción que la 
+          Ceniza (y los demás órdenes de cristal) obedece: «ábrete», «fluye», «enciéndete», 
+          «quédate».
+        </p>
+        <p>
+          Los buscadores de Valdros aprenden estas palabras como quien aprende gestos: 
+          memorizan el movimiento, la presión, la secuencia de trazos. No saben que están 
+          escribiendo. Para ellos, una runa es un bloque indivisible que funciona o no funciona.
+        </p>
+        <p>
+          Pero las runas son un idioma de verdad. Con letras, sílabas, palabras y reglas 
+          gramaticales. Y como todo idioma, se puede <strong>leer</strong> — aunque casi 
+          nadie sepa hacerlo.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- 2. La cuadrícula invisible -->
+    <!-- ══════════════════════════════════════════════ -->
+    <section class="lore-section">
+      <div class="lore-block">
+        <h3>2. La cuadrícula invisible</h3>
+        <p>
+          Toda runa se traza sobre una cuadrícula invisible de <strong>3×3</strong>.
+          Nueve posiciones. Quien traza no ve la cuadrícula —la siente—, igual que quien
+          escribe sobre un folio en blanco sabe dónde están los márgenes.
         </p>
         <div class="quadrant-diagram">
           <table>
-            <tr>
-              <td class="num">①</td>
-              <td class="num">②</td>
-              <td class="num">③</td>
-            </tr>
-            <tr>
-              <td class="num">④</td>
-              <td class="num">⑤</td>
-              <td class="num">⑥</td>
-            </tr>
-            <tr>
-              <td class="num">⑦</td>
-              <td class="num">⑧</td>
-              <td class="num">⑨</td>
-            </tr>
+            <tr><td class="num">①</td><td class="num">②</td><td class="num">③</td></tr>
+            <tr><td class="num">④</td><td class="num">⑤</td><td class="num">⑥</td></tr>
+            <tr><td class="num">⑦</td><td class="num">⑧</td><td class="num">⑨</td></tr>
           </table>
         </div>
         <p>
-          Pero hay algo que la mayoría ignora: <strong>la cuadrícula tiene nueve posiciones</strong>, 
-          no cuatro. Los buscadores de Valdros y las ciudades del Llano creen que solo existen los 
-          cuadrantes ①, ②, ④ y ⑤ — el cuadrado superior izquierdo. Con ellos han vivido siempre. 
-          Con ellos han extraído Ceniza durante generaciones.
-        </p>
-        <p>
-          Los cuadrantes ③, ⑥, ⑦, ⑧ y ⑨ existen. Pero casi nadie los usa. Casi nadie sabe que 
-          están ahí. Y los que lo saben —los miembros del Círculo de la Veta— no lo pregonan.
+          Los <strong>cuadrantes ①, ② y ④</strong> contienen las letras. 
+          El <strong>cuadrante ⑤</strong> no es una letra — es un conector entre capas.
+          Los cuadrantes ③, ⑥, ⑦, ⑧ y ⑨ existen, pero la mayoría de los buscadores
+          ignora que están ahí.
         </p>
         <div class="grid-container">
           <div>
             <div class="rune-grid">
               <div class="cell"><span class="label">①</span></div>
               <div class="cell"><span class="label">②</span></div>
-              <div class="cell" style="opacity:0.3"><span class="label">③</span></div>
+              <div class="cell" style="opacity:0.2"><span class="label">③</span></div>
               <div class="cell"><span class="label">④</span></div>
-              <div class="cell"><span class="label">⑤</span></div>
-              <div class="cell" style="opacity:0.3"><span class="label">⑥</span></div>
-              <div class="cell" style="opacity:0.3"><span class="label">⑦</span></div>
-              <div class="cell" style="opacity:0.3"><span class="label">⑧</span></div>
-              <div class="cell" style="opacity:0.3"><span class="label">⑨</span></div>
+              <div class="cell" style="opacity:0.2"><span class="label">⑤</span></div>
+              <div class="cell" style="opacity:0.2"><span class="label">⑥</span></div>
+              <div class="cell" style="opacity:0.2"><span class="label">⑦</span></div>
+              <div class="cell" style="opacity:0.2"><span class="label">⑧</span></div>
+              <div class="cell" style="opacity:0.2"><span class="label">⑨</span></div>
             </div>
-            <div class="rune-caption">Lo que ve un buscador de Valdros</div>
+            <div class="rune-caption">Lo que intuye un aprendiz de Valdros</div>
           </div>
           <div>
             <div class="rune-grid active-area">
@@ -276,366 +276,320 @@
     </section>
 
     <!-- ══════════════════════════════════════════════ -->
-    <!-- 1. Marcas Básicas (Trazos) -->
+    <!-- 3. Las marcas -->
     <!-- ══════════════════════════════════════════════ -->
     <section class="lore-section">
       <div class="lore-block">
-        <h3>1. Las marcas — el alfabeto de trazos</h3>
+        <h3>3. Las marcas — los trazos elementales</h3>
         <p>
-          Cada cuadrante puede contener una <strong>marca</strong> elemental. 
-          Una marca es un trazo único. Hay cinco tipos básicos de marca, 
-          y cada una puede dibujarse en cualquiera de los 9 cuadrantes.
+          Hay <strong>nueve</strong> marcas básicas. Colocadas en los cuadrantes ①, ② o ④,
+          forman las 27 letras del alfabeto rúnico. Las marcas no tienen significado propio:
+          son solo trazos. El significado lo da la palabra completa.
         </p>
-
-        <table class="syllable-table">
-          <tr>
-            <th>Marca</th>
-            <th>Nombre</th>
-            <th>Significado</th>
-            <th>Cómo se traza</th>
-          </tr>
-          <tr>
-            <td>•</td>
-            <td><em>Origo</em></td>
-            <td>Origen, presencia</td>
-            <td>Un toque firme en el centro del cuadrante</td>
-          </tr>
-          <tr>
-            <td>—</td>
-            <td><em>Linea</em></td>
-            <td>Camino, dirección</td>
-            <td>Una línea recta horizontal</td>
-          </tr>
-          <tr>
-            <td>|</td>
-            <td><em>Stipes</em></td>
-            <td>Pilar, firmeza</td>
-            <td>Una línea recta vertical</td>
-          </tr>
-          <tr>
-            <td>/</td>
-            <td><em>Scissio</em></td>
-            <td>Corte, separación</td>
-            <td>Diagonal ascendente (de abajo a arriba)</td>
-          </tr>
-          <tr>
-            <td>\</td>
-            <td><em>Ruina</em></td>
-            <td>Caída, descenso</td>
-            <td>Diagonal descendente (de arriba a abajo)</td>
-          </tr>
-          <tr>
-            <td>⌒</td>
-            <td><em>Arcus</em></td>
-            <td>Puente, conexión</td>
-            <td>Un arco abierto hacia arriba</td>
-          </tr>
-          <tr>
-            <td>⌣</td>
-            <td><em>Cavus</em></td>
-            <td>Recipiente, contención</td>
-            <td>Un arco abierto hacia abajo</td>
-          </tr>
+        <table class="word-table">
+          <tr><th>#</th><th>Marca</th><th>Nombre</th><th>Trazo</th></tr>
+          <tr><td>1</td><td style="font-size:1.5rem;">•</td><td><em>Punctum</em></td><td>Punto firme</td></tr>
+          <tr><td>2</td><td style="font-size:1.5rem;">—</td><td><em>Linea</em></td><td>Horizontal</td></tr>
+          <tr><td>3</td><td style="font-size:1.5rem;">|</td><td><em>Stipes</em></td><td>Vertical</td></tr>
+          <tr><td>4</td><td style="font-size:1.5rem;">/</td><td><em>Scissio</em></td><td>Diagonal ascendente</td></tr>
+          <tr><td>5</td><td style="font-size:1.5rem;">\</td><td><em>Ruina</em></td><td>Diagonal descendente</td></tr>
+          <tr><td>6</td><td style="font-size:1.5rem;">⌒</td><td><em>Arcus</em></td><td>Arco arriba</td></tr>
+          <tr><td>7</td><td style="font-size:1.5rem;">⌣</td><td><em>Cavus</em></td><td>Arco abajo</td></tr>
+          <tr><td>8</td><td style="font-size:1.5rem;">◡</td><td><em>Dextra</em></td><td>Arco derecha</td></tr>
+          <tr><td>9</td><td style="font-size:1.5rem;">⊐</td><td><em>Sinestra</em></td><td>Arco izquierda</td></tr>
         </table>
-
         <p>
-          Una <strong>runa de 1 trazo</strong> es una de estas marcas en uno de los 9 cuadrantes. 
-          Eso da potencialmente <strong>63 letras</strong> distintas. En la práctica, los buscadores 
-          solo usan unas 12-15 combinaciones, y ninguna fuera de los cuadrantes ①-②-④-⑤.
-        </p>
-        <p>
-          Una <strong>runa de 2 trazos</strong> son dos marcas en dos cuadrantes 
-          (pueden ser el mismo o distintos), trazadas una tras otra.
+          Nueve marcas × tres cuadrantes = <strong>27 letras</strong>. 
+          El alfabeto completo está en la página del 
+          <a href="alfabeto-runico.html" style="color:var(--gold);">Alfabeto Rúnico</a>.
         </p>
       </div>
     </section>
 
     <!-- ══════════════════════════════════════════════ -->
-    <!-- 2. Stacking 3D -->
+    <!-- 4. Capas -->
     <!-- ══════════════════════════════════════════════ -->
     <section class="lore-section">
       <div class="lore-block">
-        <h3>2. La tercera dimensión — apilar runas</h3>
+        <h3>4. Capas — la verdadera dificultad</h3>
         <p>
-          Aquí está el secreto que distingue a un buscador de un maestro: 
-          las runas no se dibujan en un plano. <strong>Se apilan.</strong>
+          Las runas no se dibujan en un plano. <strong>Se apilan.</strong> 
+          Cada <strong>capa</strong> contiene una sílaba (de 1 a 3 letras en los 
+          cuadrantes ①②④). Cuantas más capas tiene una palabra, más difícil es 
+          trazarla correctamente.
         </p>
         <p>
-          Cuando un buscador traza una runa de 2 trazos (una <em>sílaba rúnica</em>), 
-          traza la primera marca, levanta los dedos (o la herramienta), y traza la 
-          segunda marca <em>sobre</em> la primera — no en el mismo plano, sino 
-          ligeramente desplazada en profundidad, como si cada capa flotara sobre la anterior.
+          Las capas se apilan <strong>de abajo arriba</strong>. Primero se traza 
+          la capa más profunda, luego la siguiente encima, y así hasta completar 
+          la palabra.
         </p>
         <p>
-          Al final, cuando todas las capas están colocadas, la runa se <strong>cierra</strong>: 
-          las capas encajan como las páginas de un libro cerrado, y la energía contenida 
-          en el cristal responde al patrón completo.
+          El <strong>cuadrante ⑤</strong> conecta las capas. Cuando una palabra 
+          tiene más de una capa, se traza un conector en ⑤ entre cada par de capas, 
+          indicando que forman parte de la misma palabra. Sin ese conector, cada 
+          capa sería independiente.
         </p>
 
-        <div class="example-word">IGNIS: 5 trazos, 3 capas</div>
+        <div class="nota">
+          <strong>🔑</strong> Una palabra de 1 capa es fácil y segura.
+          De 2 capas requiere práctica.
+          De 3 capas solo la trazan buscadores veteranos.
+          De 4 o más capas no se documentan desde tiempos del Codex Umbrum.
+        </div>
 
-        <div class="stack-demo">
+        <p>Ejemplo: la palabra <strong>IGNIS</strong> («fuego»), de 2 capas:</p>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 0.3rem; margin: 1.5rem 0; flex-wrap: wrap;">
+          <div style="background:var(--bg-card);border:1px solid var(--gold-dim);border-radius:6px;padding:0.8rem 1.2rem;text-align:center;font-family:var(--font-display);color:var(--gold);font-size:1rem;">
+            IG <span style="display:block;font-size:0.65rem;color:var(--text-muted);font-family:serif;">I(|①)+G(⌒①)</span>
+          </div>
+          <div style="color:var(--crystal-amber);font-size:0.75rem;font-family:var(--font-display);text-align:center;">
+            ⑤<br>⬆
+          </div>
+          <div style="background:var(--bg-card);border:1px solid var(--gold-dim);border-radius:6px;padding:0.8rem 1.2rem;text-align:center;font-family:var(--font-display);color:var(--gold);font-size:1rem;">
+            NIS <span style="display:block;font-size:0.65rem;color:var(--text-muted);font-family:serif;">N(—②)+I(|①)+S(—①)</span>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: center; gap: 0.3rem; margin: 1.5rem 0; flex-wrap: wrap;">
+          <div style="background:var(--bg-card);border:1px solid var(--gold-dim);border-radius:6px;padding:0.8rem 1.2rem;text-align:center;font-family:var(--font-display);color:var(--gold);font-size:1rem;">
+            SE <span style="display:block;font-size:0.65rem;color:var(--text-muted);font-family:serif;">S(—①)+E(•①)</span>
+          </div>
+          <div style="color:var(--crystal-amber);font-size:0.75rem;font-family:var(--font-display);text-align:center;">
+            ⑤<br>⬆
+          </div>
+          <div style="background:var(--bg-card);border:1px solid var(--gold-dim);border-radius:6px;padding:0.8rem 1.2rem;text-align:center;font-family:var(--font-display);color:var(--gold);font-size:1rem;">
+            CRE <span style="display:block;font-size:0.65rem;color:var(--text-muted);font-family:serif;">C(/①)+R(—④)+E(•①)</span>
+          </div>
+          <div style="color:var(--crystal-amber);font-size:0.75rem;font-family:var(--font-display);text-align:center;">
+            ⑤<br>⬆
+          </div>
+          <div style="background:var(--bg-card);border:1px solid var(--gold-dim);border-radius:6px;padding:0.8rem 1.2rem;text-align:center;font-family:var(--font-display);color:var(--gold);font-size:1rem;">
+            TUM <span style="display:block;font-size:0.65rem;color:var(--text-muted);font-family:serif;">T(/②)+U(/④)+M(\①)</span>
+          </div>
+        </div>
+        <p style="text-align:center;font-size:0.85rem;color:var(--text-muted);">
+          <strong>SECRETUM</strong> — 3 capas. La palabra que abre el Círculo de la Veta.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- 5. El idioma de las runas -->
+    <!-- ══════════════════════════════════════════════ -->
+    <section class="lore-section">
+      <div class="lore-block">
+        <h3>5. La lengua de las runas</h3>
+        <p>
+          El lenguaje rúnico tiene su raíz en el <strong>latín</strong>. No es una coincidencia:
+          alguien, en algún momento, usó esta lengua para hablar con la tierra, y la tierra
+          aprendió a escuchar.
+        </p>
+        <p>
+          Por eso las palabras rúnicas son órdenes en latín: <em>da</em> (da), <em>fac</em> (haz),
+          <em>i</em> (ve), <em>extractio</em> (extracción), <em>secretum</em> (secreto).
+          La energía no entiende peticiones: obedece mandatos.
+        </p>
+        <p>
+          Los buscadores no saben esto. Para ellos, «EXTRACTIO» es una runa que aprendieron
+          de memoria, no una palabra latina que significa «extracción». Pero Lira, cuando la ve,
+          <strong>la lee</strong>. Sabe que EXTRACTIO son tres sílabas: EXT, RAC, TIO. Y que
+          cada sílaba contiene letras que reconoce.
+        </p>
+
+        <div class="nota">
+          <strong>🜁 La raíz latina</strong> permite que el sistema sea predecible.
+          Si sabes que <em>vocatio</em> es «llamada», puedes deducir que una palabra
+          que contenga «VOC» estará relacionada con convocar o llamar. Los buscadores
+          no lo saben, pero la tierra sí.
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- 6. Palabras conocidas -->
+    <!-- ══════════════════════════════════════════════ -->
+    <section class="lore-section">
+      <div class="lore-block">
+        <h3>6. Palabras del oficio</h3>
+        <p>
+          Los buscadores de Valdros usan una docena de palabras rúnicas en su trabajo diario.
+          Cada una tiene una función específica:
+        </p>
+
+        <table class="word-table">
+          <tr>
+            <th>Palabra</th><th>Capas</th><th>Significado</th><th>Uso</th>
+          </tr>
+          <tr>
+            <td>VOCATIO <span class="tag tag-3c">3</span></td>
+            <td>VOC·ATI·O</td>
+            <td>«Llamada»</td>
+            <td>Detección de vetas. La primera runa que traza un buscador al entrar al bosque.</td>
+          </tr>
+          <tr>
+            <td>EXTRACTIO <span class="tag tag-3c">3</span></td>
+            <td>EXT·RAC·TIO</td>
+            <td>«Extracción»</td>
+            <td>Abre la veta y guía la energía al recipiente. La más usada.</td>
+          </tr>
+          <tr>
+            <td>IGNIS <span class="tag tag-2c">2</span></td>
+            <td>IG·NIS</td>
+            <td>«Fuego»</td>
+            <td>Catalizadores de calor, hornos y fraguas.</td>
+          </tr>
+          <tr>
+            <td>LUX <span class="tag tag-1c">1</span></td>
+            <td>LUX</td>
+            <td>«Luz»</td>
+            <td>Iluminación doméstica. La runa más común en Valdros.</td>
+          </tr>
+          <tr>
+            <td>SCRINIUM <span class="tag tag-3c">3</span></td>
+            <td>SCR·INI·UM</td>
+            <td>«Archivo»</td>
+            <td>Sella los cristales de memoria del Círculo.</td>
+          </tr>
+          <tr>
+            <td>DA <span class="tag tag-1c">1</span></td>
+            <td>DA</td>
+            <td>«Da»</td>
+            <td>Orden de transferencia entre cristales.</td>
+          </tr>
+          <tr>
+            <td>FAC <span class="tag tag-1c">1</span></td>
+            <td>FAC</td>
+            <td>«Haz»</td>
+            <td>Activación de un proceso o catalizador.</td>
+          </tr>
+          <tr>
+            <td>VIS <span class="tag tag-1c">1</span></td>
+            <td>VIS</td>
+            <td>«Fuerza»</td>
+            <td>Impulso brusco de energía. Peligrosa si se traza mal.</td>
+          </tr>
+          <tr>
+            <td>SECRETUM <span class="tag tag-3c">3</span></td>
+            <td>SE·CRE·TUM</td>
+            <td>«Secreto»</td>
+            <td>Apertura del Círculo de la Veta. Solo los miembros la conocen.</td>
+          </tr>
+        </table>
+        <p>
+          Para una lista detallada con las letras de cada sílaba, visita la página de
+          <a href="palabras-runicas.html" style="color:var(--gold);">Palabras Rúnicas</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- 7. Apilamiento en un cuadrante -->
+    <!-- ══════════════════════════════════════════════ -->
+    <section class="lore-section">
+      <div class="lore-block">
+        <h3>7. Escribir dentro de un cuadrante</h3>
+        <p>
+          A veces varias letras caen en el mismo cuadrante. En ese caso, los trazos
+          se apilan en <strong>profundidad</strong>. La primera marca queda en el fondo;
+          la siguiente, ligeramente por encima; y así hasta la superficie.
+        </p>
+        <p>
+          El orden de lectura es <strong>del fondo a la superficie</strong>.
+          Por ejemplo, en el cuadrante ① de la sílaba <strong>SCR</strong> 
+          (primera capa de SCRINIUM) se apilan S(—), C(/), R(—) en profundidad,
+          y se leen en ese orden: S → C → R.
+        </p>
+        <div class="stack-demo" style="justify-content:center;">
           <div class="stack-layer">
-            <div class="layer-label">1ª capa<br>IG (2t)</div>
-            <div class="rune-grid">
-              <div class="cell"><span class="mark">•</span></div>
-              <div class="cell"><span class="mark">—</span></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
+            <div class="layer-label">fondo</div>
+            <div class="rune-grid" style="width:40px;height:40px;grid-template-columns:repeat(3,13px);grid-template-rows:repeat(3,13px);gap:1px;border-width:1px;">
+              <div class="cell" style="font-size:0.6rem;">—</div>
+              <div class="cell"></div><div class="cell"></div>
+              <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+              <div class="cell"></div><div class="cell"></div><div class="cell"></div>
             </div>
           </div>
           <div class="stack-arrow">⬆</div>
           <div class="stack-layer">
-            <div class="layer-label">2ª capa<br>NI (2t)</div>
-            <div class="rune-grid">
-              <div class="cell"></div>
-              <div class="cell"><span class="mark">|</span></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"><span class="mark">•</span></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
+            <div class="layer-label">medio</div>
+            <div class="rune-grid" style="width:40px;height:40px;grid-template-columns:repeat(3,13px);grid-template-rows:repeat(3,13px);gap:1px;border-width:1px;">
+              <div class="cell" style="font-size:0.6rem;">/</div>
+              <div class="cell"></div><div class="cell"></div>
+              <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+              <div class="cell"></div><div class="cell"></div><div class="cell"></div>
             </div>
           </div>
           <div class="stack-arrow">⬆</div>
           <div class="stack-layer">
-            <div class="layer-label">3ª capa<br>S (1t)</div>
-            <div class="rune-grid">
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"><span class="mark">⌒</span></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
+            <div class="layer-label">superficie</div>
+            <div class="rune-grid" style="width:40px;height:40px;grid-template-columns:repeat(3,13px);grid-template-rows:repeat(3,13px);gap:1px;border-width:1px;">
+              <div class="cell" style="font-size:0.6rem;">—</div>
+              <div class="cell"></div><div class="cell"></div>
+              <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+              <div class="cell"></div><div class="cell"></div><div class="cell"></div>
             </div>
           </div>
         </div>
-        <p style="text-align:center;font-size:0.85rem;color:var(--text-muted)">
-          * Ejemplo ilustrativo. Las marcas y posiciones reales del alfabeto están por definir.
+        <p style="text-align:center;font-size:0.85rem;color:var(--text-muted);">
+          Tres marcas en el mismo cuadrante. Se leen: S (fondo) → C (medio) → R (superficie).
         </p>
       </div>
     </section>
 
     <!-- ══════════════════════════════════════════════ -->
-    <!-- 3. Las sílabas de Valdros -->
+    <!-- 8. Lira -->
     <!-- ══════════════════════════════════════════════ -->
     <section class="lore-section">
       <div class="lore-block">
-        <h3>3. Las sílabas de Valdros — lo que sabe un buscador</h3>
+        <h3>8. Lira — la hablante nativa</h3>
         <p>
-          Un buscador de oficio conoce entre 20 y 40 sílabas (runas de 2 trazos). 
-          Son suficientes para extraer Ceniza de cualquier densidad y para encender 
-          la mayoría de catalizadores domésticos e industriales. Cada sílaba se aprende 
-          como un bloque: no se "leen" sus trazos individuales, se reconocen como un 
-          gesto completo.
-        </p>
-        <p>
-          Todas las sílabas conocidas en Valdros usan exclusivamente los 
-          <strong>cuadrantes ①, ②, ④ y ⑤</strong>.
-        </p>
-
-        <table class="syllable-table">
-          <tr>
-            <th>Traducción</th>
-            <th>Trazos</th>
-            <th>Función</th>
-            <th>Ejemplo de uso</th>
-          </tr>
-          <tr>
-            <td><strong>KA</strong></td>
-            <td>① | + ② ⌒</td>
-            <td>Llamada (detección de veta)</td>
-            <td>Runa inicial de todo buscador al entrar al bosque</td>
-          </tr>
-          <tr>
-            <td><strong>EL</strong></td>
-            <td>② \ + ④ —</td>
-            <td>Extracción (abrir la veta)</td>
-            <td>La que Saun usó ante Lira en la Escena 2</td>
-          </tr>
-          <tr>
-            <td><strong>UR</strong></td>
-            <td>① • + ⑤ |</td>
-            <td>Contención (guiar energía al recipiente)</td>
-            <td>Se traza sobre el tamiz de plomo durante la extracción</td>
-          </tr>
-          <tr>
-            <td><strong>VAR</strong></td>
-            <td>① — + ② | + ④ \</td>
-            <td>Fuego (encender cristal de Ceniza)</td>
-            <td>Runa de 3 trazos para catalizadores de calor</td>
-          </tr>
-          <tr>
-            <td><strong>LUX</strong></td>
-            <td>① ⌒ + ② • + ⑤ —</td>
-            <td>Luz (iluminación doméstica)</td>
-            <td>La más común en los hogares de Valdros</td>
-          </tr>
-          <tr>
-            <td><strong>MOL</strong></td>
-            <td>② | + ④ — + ⑤ \</td>
-            <td>Molienda (movimiento continuo)</td>
-            <td>La que usa Grem en el molino de la calle del Puente</td>
-          </tr>
-        </table>
-
-        <p>
-          Un buscador novato tarda meses en memorizar estas sílabas y ejecutarlas 
-          sin dudar. Un oficial como Saun las tiene tan interiorizadas que puede 
-          trazarlas mientras conversa.
-        </p>
-        <p>
-          Lira, en cambio, no necesita memorizarlas. Cuando las ve, las entiende. 
-          Como si alguien le hubiera enseñado el idioma entero en sueños y solo 
-        le faltara practicar la pronunciación.
-        </p>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════════════ -->
-    <!-- 4. Jerarquía por número de trazos -->
-    <!-- ══════════════════════════════════════════════ -->
-    <section class="lore-section">
-      <div class="lore-block">
-        <h3>4. La jerarquía de las runas</h3>
-
-        <table class="syllable-table">
-          <tr>
-            <th>Trazos</th>
-            <th>Equivale a</th>
-            <th>Vinculado a</th>
-            <th>Quién las usa</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Letra</td>
-            <td>—</td>
-            <td>Nadie. Una letra sola no tiene función práctica.</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Sílaba</td>
-            <td>Ceniza</td>
-            <td>Buscadores de oficio, artesanos</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Palabra simple</td>
-            <td>Ceniza densidad alta</td>
-            <td>Buscadores veteranos (como Saun)</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Palabra compleja</td>
-            <td>Llama</td>
-            <td>Solo documentado en textos antiguos</td>
-          </tr>
-          <tr>
-            <td>5-6</td>
-            <td>Frase</td>
-            <td>Llama alta</td>
-            <td>Desconocido. Nadie vivo lo ha logrado.</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>Oración</td>
-            <td>Cielo</td>
-            <td>Lira, sin saber lo que hacía</td>
-          </tr>
-          <tr>
-            <td>8-9</td>
-            <td>Párrafo</td>
-            <td>Cielo (¿?)</td>
-            <td>Nadie. Teórico.</td>
-          </tr>
-          <tr>
-            <td>10+</td>
-            <td>¿Un libro entero?</td>
-            <td>¿?</td>
-            <td>Inimaginable.</td>
-          </tr>
-        </table>
-
-        <p>
-          Los cuadrantes ⑥, ⑦, ⑧ y ⑨ nunca han sido necesarios para la Ceniza. 
-          Todo lo que se necesita para trabajar el primer orden cabe en los cuatro 
-          cuadrantes superiores izquierdos. Esa es una de las razones por las que 
-          nadie sospecha que existan más: <strong>la necesidad no los ha revelado</strong>.
-        </p>
-        <p>
-          Pero Lira, al trazar su runa de 7 trazos, usó cuadrantes que ningún 
-          buscador de Valdros había pisado. La distribución de sus marcas cruzó 
-          el ③, el ⑥, el ⑧ y el ⑨. Saun lo notó sin entender lo que veía.
-        </p>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════════════ -->
-    <!-- 5. El don de Lira -->
-    <!-- ══════════════════════════════════════════════ -->
-    <section class="lore-section">
-      <div class="lore-block">
-        <h3>5. Lira — la hablante nativa</h3>
-        <p>
-          Los buscadores aprenden el lenguaje rúnico como quien aprende un idioma 
-          extranjero de adulto: conjugationes dudosas, vocabulario limitado, 
-          frases hechas. Saben lo que necesitan para trabajar y poco más.
+          Los buscadores aprenden el lenguaje rúnico como quien aprende un idioma
+          extranjero de adulto: vocabulario limitado, frases hechas, mucho ensayo y error.
         </p>
         <p>
           Lira es diferente. Lira no aprendió el lenguaje rúnico. <strong>Lo sueña.</strong>
         </p>
         <p>
-          Cuando traza una runa, no recuerda un gesto aprendido: reconoce una palabra 
-          que ya conocía. Sabe si está bien formada o no, igual que un hablante nativo 
-          sabe si una frase suena natural. No puede explicar por qué —simplemente lo sabe.
+          Cuando traza una runa, no recuerda un gesto aprendido: reconoce una palabra
+          que ya conocía. Sabe si está bien formada o no, igual que un hablante nativo
+          sabe si una frase suena natural.
         </p>
         <p>
-          Esto es lo que Saun ha visto en ella desde niña: dedos trazando formas en el 
-          alféizar, gestos que él no le había enseñado, runas que ella no debería conocer. 
-          Lira no tiene "más" don que los demás buscadores. Tiene un don <em>distinto</em>: 
-          el lenguaje rúnico es su lengua materna, y ella acaba de descubrir que sabe hablarlo.
+          Esto es lo que Saun ha visto en ella desde niña: dedos trazando formas en el
+          alféizar, gestos que él no le había enseñado, runas que ella no debería conocer.
+          Lira no tiene <em>más</em> don que los demás buscadores. Tiene un don
+          <em>distinto</em>: ve letras donde otros ven trazos.
         </p>
         <p>
-          Lo que no sabe aún —lo que el Círculo de la Veta tampoco sabe— es de dónde 
-          viene ese don. Si se hereda, si se elige, o si llegó con el cristal de Cielo 
-          que cayó del cielo y la esperó durante años.</p>
+          Lo que nadie sabe —ni Lira, ni Saun, ni el Círculo de la Veta— es de dónde
+          viene ese don. Si se hereda, si se elige, o si llegó con el cristal de Cielo
+          que cayó del cielo y la esperó durante años.
+        </p>
       </div>
     </section>
 
     <!-- ══════════════════════════════════════════════ -->
-    <!-- 6. Codex Umbrum -->
+    <!-- 9. Codex Umbrum -->
     <!-- ══════════════════════════════════════════════ -->
     <section class="lore-section">
       <div class="lore-block">
-        <h3>6. El Codex Umbrum — el libro perdido</h3>
+        <h3>9. El Codex Umbrum — el libro perdido</h3>
         <p>
           El epígrafe de la portada lo menciona: <em>Codex Umbrum, página inaugural.</em>
         </p>
         <p>
           Existen rumores sobre un libro antiguo que contenía el alfabeto rúnico completo.
-          No las sílabas sueltas que usan los buscadores de Valdros, sino el sistema entero:
-          los 9 cuadrantes, todas las marcas, las reglas de apilamiento, y las palabras 
-          de poder para cada orden de cristal.
+          No las palabras sueltas que usan los buscadores, sino el sistema entero:
+          los 9 cuadrantes, las 27 letras, las reglas de apilamiento y los conectores.
         </p>
         <p>
-          Se dice que el Codex Umbrum fue destruido hace siglos. Que lo quemaron. 
-          Que lo escondieron. Que nunca existió. El Círculo de la Veta conserva 
+          Se dice que el Codex Umbrum fue destruido hace siglos. Que lo quemaron.
+          Que lo escondieron. Que nunca existió. El Círculo de la Veta conserva
           fragmentos —páginas sueltas, copias de copias— pero nada completo.
         </p>
         <p>
-          La runa de 7 trazos que Lira trazó en el bosque no está en ningún fragmento 
-          conocido del Codex. Y sin embargo, ella la sabía. La pregunta que nadie se 
-          atreve a formular en voz alta es: ¿cómo?
+          SECRETUM no está en ningún fragmento conocido del Codex. Y sin embargo,
+          Lira la sabía. La pregunta que nadie se atreve a formular es: ¿cómo?
         </p>
       </div>
     </section>

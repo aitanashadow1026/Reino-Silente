@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alfabeto Rúnico — Crónicas del Reino Silente</title>
+  <link rel="stylesheet" href="../css/reino.css">
+  <style>
+    .rune-chart {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+    }
+    .rune-chart th, .rune-chart td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.6rem;
+      text-align: center;
+    }
+    .rune-chart th {
+      background: var(--bg-card);
+      color: var(--gold);
+      font-family: var(--font-display);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .rune-chart .letra { font-family: var(--font-display); font-size: 1.2rem; color: var(--gold); }
+    .rune-chart .marca { font-size: 1.3rem; }
+    .rune-chart tr:hover { background: var(--bg-hover); }
+
+    .word-list {
+      margin: 1.5rem 0;
+    }
+    .word-entry {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .word-entry h4 {
+      color: var(--gold);
+      margin: 0 0 0.3rem 0;
+      font-size: 1rem;
+    }
+    .word-entry .latin {
+      font-style: italic;
+      color: var(--crystal-amber);
+      font-family: var(--font-display);
+      letter-spacing: 0.1em;
+    }
+    .word-entry .meaning {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin: 0.2rem 0 0.5rem 0;
+    }
+    .word-entry .layers {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .word-entry .layers span {
+      display: inline-block;
+      background: #1a1a15;
+      border: 1px solid var(--gold-dim);
+      border-radius: 3px;
+      padding: 0.1rem 0.4rem;
+      margin: 0.1rem 0.2rem;
+      font-family: monospace;
+      font-size: 0.75rem;
+      color: var(--gold);
+    }
+    .conector-demo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.3rem;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+    }
+    .conector-demo .capa {
+      background: var(--bg-card);
+      border: 1px solid var(--gold-dim);
+      border-radius: 6px;
+      padding: 0.8rem 1.2rem;
+      text-align: center;
+      font-family: var(--font-display);
+      color: var(--gold);
+      font-size: 1rem;
+    }
+    .conector-demo .flecha {
+      color: var(--gold-dim);
+      font-size: 1.3rem;
+    }
+    .conector-demo .conector {
+      color: var(--crystal-amber);
+      font-size: 0.75rem;
+      font-family: var(--font-display);
+      text-align: center;
+    }
+    .nota {
+      background: var(--bg-card);
+      border-left: 3px solid var(--gold-dim);
+      padding: 0.8rem 1rem;
+      margin: 1.2rem 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .nota strong { color: var(--gold); }
+    .vocab-cat {
+      color: var(--gold);
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin: 1.5rem 0 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.3rem;
+    }
+    .word-entry .tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      padding: 0.1rem 0.4rem;
+      border-radius: 3px;
+      margin-right: 0.3rem;
+      font-family: var(--font-display);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .tag-1c { background: #1a2a1a; color: #5a8a5a; border: 1px solid #2a4a2a; }
+    .tag-2c { background: #2a2a1a; color: #8a8a3a; border: 1px solid #4a4a2a; }
+    .tag-3c { background: #2a1a1a; color: #8a4a3a; border: 1px solid #4a2a2a; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a href="../index.html" class="site-title">Crónicas del Reino Silente</a>
+      <nav class="site-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="mundo.html">El Mundo</a>
+        <a href="personajes.html">Personajes</a>
+        <a href="runas.html">Runas</a>
+        <a href="alfabeto-runico.html">Alfabeto</a>
+        <a href="palabras-runicas.html">Palabras</a>
+        <a href="lengua-tierra.html">Rituales</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>El Alfabeto Rúnico</h1>
+    <p style="color: var(--text-muted); font-style: italic; margin-bottom: 2rem;">
+      Sistema completo del lenguaje de las runas — su alfabeto, sus reglas, y las palabras que
+      los buscadores de Valdros han aprendido a pronunciar.
+    </p>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- 1. LA CUADRÍCULA                              -->
+    <!-- ══════════════════════════════════════════════ -->
+    <section class="lore-section">
+      <div class="lore-block">
+        <h3>1. La cuadrícula</h3>
+        <p>
+          Toda runa se traza sobre una cuadrícula invisible de <strong>3×3</strong> posiciones.
+          Nueve cuadrantes, numerados así:
+        </p>
+        <div class="quadrant-diagram">
+          <table>
+            <tr><td class="num">①</td><td class="num">②</td><td class="num">③</td></tr>
+            <tr><td class="num">④</td><td class="num">⑤</td><td class="num">⑥</td></tr>
+            <tr><td class="num">⑦</td><td class="num">⑧</td><td class="num">⑨</td></tr>
+          </table>
+        </div>
+        <p>
+          Los <strong>cuadrantes ①, ② y ④</strong> albergan las letras del alfabeto.
+          El <strong>cuadrante ⑤</strong> no contiene letras: funciona como conector entre capas.
+          Los cuadrantes ③, ⑥, ⑦, ⑧ y ⑨ existen, pero están fuera del conocimiento de los
+          buscadores de Valdros. Nadie sabe qué ocurre cuando se usan.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- 2. LAS 9 MARCAS                               -->
+    <!-- ══════════════════════════════════════════════ -->
+    <section class="lore-section">
+      <div class="lore-block">
+        <h3>2. Las marcas — el alfabeto de trazos</h3>
+        <p>
+          Hay nueve marcas elementales. Cada marca, colocada en un cuadrante, forma una letra.
+          <strong>Nueve marcas × tres cuadrantes = 27 letras.</strong>
+        </p>
+
+        <table class="syllable-table">
+          <tr><th>#</th><th>Marca</th><th>Nombre</th><th>Trazo</th></tr>
+          <tr><td>1</td><td style="font-size:1.5rem;">•</td><td><em>Punctum</em></td><td>Punto firme en el centro del cuadrante</td></tr>
+          <tr><td>2</td><td style="font-size:1.5rem;">—</td><td><em>Linea</em></td><td>Línea recta horizontal</td></tr>
+          <tr><td>3</td><td style="font-size:1.5rem;">|</td><td><em>Stipes</em></td><td>Línea recta vertical</td></tr>
+          <tr><td>4</td><td style="font-size:1.5rem;">/</td><td><em>Scissio</em></td><td>Diagonal ascendente</td></tr>
+          <tr><td>5</td><td style="font-size:1.5rem;">\</td><td><em>Ruina</em></td><td>Diagonal descendente</td></tr>
+          <tr><td>6</td><td style="font-size:1.5rem;">⌒</td><td><em>Arcus</em></td><td>Arco abierto hacia arriba</td></tr>
+          <tr><td>7</td><td style="font-size:1.5rem;">⌣</td><td><em>Cavus</em></td><td>Arco abierto hacia abajo</td></tr>
+          <tr><td>8</td><td style="font-size:1.5rem;">◡</td><td><em>Dextra</em></td><td>Arco abierto hacia la derecha</td></tr>
+          <tr><td>9</td><td style="font-size:1.5rem;">⊐</td><td><em>Sinestra</em></td><td>Arco abierto hacia la izquierda</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- 3. TABLA DE 27 LETRAS                         -->
+    <!-- ══════════════════════════════════════════════ -->
+    <section class="lore-section">
+      <div class="lore-block">
+        <h3>3. Las 27 letras</h3>
+        <p>
+          Cada letra se define por su <strong>marca</strong> y su <strong>cuadrante</strong>.
+          El cuadrante determina la fila; la marca, la columna.
+        </p>
+
+        <table class="rune-chart">
+          <tr>
+            <th></th>
+            <th>•</th><th>—</th><th>|</th>
+            <th>/</th><th>\</th><th>⌒</th>
+            <th>⌣</th><th>◡</th><th>⊐</th>
+          </tr>
+          <tr>
+            <td><strong>①</strong></td>
+            <td><span class="letra">E</span></td>
+            <td><span class="letra">S</span></td>
+            <td><span class="letra">I</span></td>
+            <td><span class="letra">C</span></td>
+            <td><span class="letra">M</span></td>
+            <td><span class="letra">G</span></td>
+            <td><span class="letra">Q</span></td>
+            <td><span class="letra">Z</span></td>
+            <td><span class="letra">X</span></td>
+          </tr>
+          <tr>
+            <td><strong>②</strong></td>
+            <td><span class="letra">A</span></td>
+            <td><span class="letra">N</span></td>
+            <td><span class="letra">L</span></td>
+            <td><span class="letra">T</span></td>
+            <td><span class="letra">P</span></td>
+            <td><span class="letra">V</span></td>
+            <td><span class="letra">H</span></td>
+            <td><span class="letra">J</span></td>
+            <td><span class="letra">K</span></td>
+          </tr>
+          <tr>
+            <td><strong>④</strong></td>
+            <td><span class="letra">O</span></td>
+            <td><span class="letra">R</span></td>
+            <td><span class="letra">D</span></td>
+            <td><span class="letra">U</span></td>
+            <td><span class="letra">B</span></td>
+            <td><span class="letra">Y</span></td>
+            <td><span class="letra">F</span></td>
+            <td><span class="letra">Ñ</span></td>
+            <td><span class="letra">W</span></td>
+          </tr>
+        </table>
+
+        <div class="nota">
+          <strong>✎ Representación:</strong> Una letra se escribe como <strong>marca + cuadrante</strong>.
+          Ej: <strong>E</strong> = <span style="font-family:monospace;">•①</span>,
+          <strong>A</strong> = <span style="font-family:monospace;">•②</span>,
+          <strong>S</strong> = <span style="font-family:monospace;">—①</span>,
+          <strong>R</strong> = <span style="font-family:monospace;">—④</span>.
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- 4. APILAMIENTO DENTRO DE UN CUADRANTE        -->
+    <!-- ══════════════════════════════════════════════ -->
+    <section class="lore-section">
+      <div class="lore-block">
+        <h3>4. Apilamiento — varias letras en un mismo cuadrante</h3>
+        <p>
+          Dentro de un mismo cuadrante pueden trazarse <strong>varias marcas</strong>,
+          apiladas en profundidad. La primera marca trazada queda en el fondo;
+          la siguiente, ligeramente por encima; y así sucesivamente.
+        </p>
+        <p>
+          El orden de lectura dentro del cuadrante sigue la profundidad:
+          de la capa más profunda a la más superficial.
+        </p>
+        <p>
+          Ejemplo: para escribir <strong>SCI</strong> en el cuadrante ① se apilan
+          tres marcas (S / C / I en ese orden de profundidad). Al leerlas,
+          la mirada recorre <strong>S → C → I</strong> de dentro a fuera.
+        </p>
+        <div class="stack-demo" style="justify-content:center;">
+          <div class="stack-layer">
+            <div class="layer-label">fondo</div>
+            <div class="rune-grid" style="width:40px;height:40px;grid-template-columns:repeat(3,13px);grid-template-rows:repeat(3,13px);gap:1px;border-width:1px;">
+              <div class="cell" style="font-size:0.6rem;">—</div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+            </div>
+          </div>
+          <div class="stack-arrow">⬆</div>
+          <div class="stack-layer">
+            <div class="layer-label">medio</div>
+            <div class="rune-grid" style="width:40px;height:40px;grid-template-columns:repeat(3,13px);grid-template-rows:repeat(3,13px);gap:1px;border-width:1px;">
+              <div class="cell" style="font-size:0.6rem;">/</div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+            </div>
+          </div>
+          <div class="stack-arrow">⬆</div>
+          <div class="stack-layer">
+            <div class="layer-label">superficie</div>
+            <div class="rune-grid" style="width:40px;height:40px;grid-template-columns:repeat(3,13px);grid-template-rows:repeat(3,13px);gap:1px;border-width:1px;">
+              <div class="cell" style="font-size:0.6rem;">|</div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+            </div>
+          </div>
+        </div>
+        <p style="text-align:center;font-size:0.8rem;color:var(--text-muted);">
+          <strong>S</strong> (—) fondo → <strong>C</strong> (/) medio → <strong>I</strong> (|) superficie.
+          Al leer: primero se ve I, después C, después S. El orden de lectura es el inverso del de trazado.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- 5. CAPAS Y CONECTOR                           -->
+    <!-- ══════════════════════════════════════════════ -->
+    <section class="lore-section">
+      <div class="lore-block">
+        <h3>5. Capas — la verdadera dificultad</h3>
+        <p>
+          La dificultad de una runa no está en sus trazos individuales, sino en
+          <strong>cuántas capas</strong> tiene.
+        </p>
+        <p>
+          <strong>Cada capa</strong> contiene una sílaba (de 1 a 3 letras, repartidas
+          entre los cuadrantes ①②④). Se traza como un bloque completo antes de pasar
+          a la siguiente.
+        </p>
+        <p>
+          <strong>Las capas se apilan de abajo arriba.</strong> La primera capa
+          (la más profunda) se traza primero; la última (la más superficial) se traza
+          encima.
+        </p>
+        <p>
+          <strong>El cuadrante ⑤</strong> actúa como conector entre capas. Cuando una
+          palabra tiene más de una capa, se traza una marca en ⑤ entre cada par de
+          capas, indicando que forman parte de la misma palabra. Sin ⑤, cada capa
+          sería una palabra independiente.
+        </p>
+
+        <div class="nota">
+          <strong>🔑 Clave del sistema:</strong> Las <strong>monosílabas</strong> (1 capa, sin ⑤)
+          son las runas más básicas y seguras. Las <strong>bisílabas</strong> (2 capas con ⑤ entre
+          ellas) requieren más concentración. Las <strong>trisílabas</strong> (3 capas) solo las
+          trazan buscadores veteranos. Cada capa extra multiplica el riesgo de error.
+        </div>
+
+        <p>Ejemplo visual de <strong>SECRETUM</strong> (3 capas):</p>
+        <div class="conector-demo">
+          <div class="capa" style="font-size:0.9rem;padding:0.5rem 1rem;">SE<br><span style="font-size:0.65rem;color:var(--text-muted);">S(—①)+E(•①)</span></div>
+          <div class="conector">⑤</div>
+          <div class="capa" style="font-size:0.9rem;padding:0.5rem 1rem;">CRE<br><span style="font-size:0.65rem;color:var(--text-muted);">C(/①)+R(—④)+E(•①)</span></div>
+          <div class="conector">⑤</div>
+          <div class="capa" style="font-size:0.9rem;padding:0.5rem 1rem;">TUM<br><span style="font-size:0.65rem;color:var(--text-muted);">T(/②)+U(/④)+M(\①)</span></div>
+        </div>
+        <p style="text-align:center;font-size:0.85rem;color:var(--text-muted);">
+          <strong>Lectura:</strong> Capa 1 (SE) → ⑤ → Capa 2 (CRE) → ⑤ → Capa 3 (TUM) = SECRETUM
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- 6. EL IDIOMA                                  -->
+    <!-- ══════════════════════════════════════════════ -->
+    <section class="lore-section">
+      <div class="lore-block">
+        <h3>6. La lengua de las runas</h3>
+        <p>
+          El lenguaje rúnico tiene su raíz en el <strong>latín</strong>. Las palabras que
+          los buscadores trazan son órdenes, nombres, conceptos — todas ellas extraídas
+          de una lengua antigua que alguien, en algún momento, usó para hablar con la tierra.
+        </p>
+        <p>
+          Una runa no describe: <strong>ordena</strong>. Cada palabra rúnica es una
+          instrucción que la energía obedece. «Abre», «cierra», «fluye», «quédate» —
+          no son metáforas. Son órdenes literales que la Ceniza escucha y ejecuta.
+        </p>
+        <p>
+          Los buscadores de oficio aprenden estas palabras como bloques: memorizan el
+          gesto sin saber que están escribiendo latín. Lira, en cambio, <strong>lee</strong>
+          las letras. Sabe que cada marca en cada cuadrante tiene un sonido, y que esos
+          sonidos forman palabras que entiende sin haberlas estudiado.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- 7. VOCABULARIO                                -->
+    <!-- ══════════════════════════════════════════════ -->
+    <section class="lore-section">
+      <div class="lore-block">
+        <h3>7. Vocabulario rúnico</h3>
+        <p>
+          Palabras documentadas del lenguaje rúnico, organizadas por número de capas.
+          Cuantas más capas, mayor dificultad y más peligro si se trazan incorrectamente.
+        </p>
+
+        <div class="vocab-cat">Monosílabas — 1 capa · sin ⑤ · dificultad baja</div>
+
+        <div class="word-list">
+          <!-- DA -->
+          <div class="word-entry">
+            <h4>DA <span class="tag tag-1c">1 capa</span></h4>
+            <div class="latin">lat. <em>da</em> — imperativo de <em>dare</em></div>
+            <div class="meaning">«Da», «Entrega» — orden de transferencia</div>
+            <div class="layers">
+              <span>①: D(|④)</span>
+              <span>②: A(•②)</span>
+            </div>
+          </div>
+          <!-- FAC -->
+          <div class="word-entry">
+            <h4>FAC <span class="tag tag-1c">1 capa</span></h4>
+            <div class="latin">lat. <em>fac</em> — imperativo de <em>facere</em></div>
+            <div class="meaning">«Haz» — orden de creación o activación</div>
+            <div class="layers">
+              <span>①: F(⌣④) + A(•②) + C(/①)</span>
+            </div>
+          </div>
+          <!-- I -->
+          <div class="word-entry">
+            <h4>I <span class="tag tag-1c">1 capa</span></h4>
+            <div class="latin">lat. <em>i</em> — imperativo de <em>ire</em></div>
+            <div class="meaning">«Ve» — orden de movimiento inmediato</div>
+            <div class="layers">
+              <span>①: I(|①)</span>
+            </div>
+          </div>
+          <!-- LUX -->
+          <div class="word-entry">
+            <h4>LUX <span class="tag tag-1c">1 capa</span></h4>
+            <div class="latin">lat. <em>lux</em> — sustantivo</div>
+            <div class="meaning">«Luz» — iluminación doméstica, claridad</div>
+            <div class="layers">
+              <span>①: L(|②)</span>
+              <span>②: U(/④)</span>
+              <span>④: X(⊐①)</span>
+            </div>
+          </div>
+          <!-- VIS -->
+          <div class="word-entry">
+            <h4>VIS <span class="tag tag-1c">1 capa</span></h4>
+            <div class="latin">lat. <em>vis</em> — sustantivo</div>
+            <div class="meaning">«Fuerza», «Violencia» — impulso brusco de energía</div>
+            <div class="layers">
+              <span>①: V(⌒②) + I(|①) + S(—①)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="vocab-cat">Bisílabas — 2 capas · con ⑤ · dificultad media</div>
+
+        <div class="word-list">
+          <!-- IGNIS -->
+          <div class="word-entry">
+            <h4>IGNIS <span class="tag tag-2c">2 capas</span></h4>
+            <div class="latin">lat. <em>ignis</em> — sustantivo</div>
+            <div class="meaning">«Fuego» — catalizador de calor, combustión</div>
+            <div class="layers">
+              <span>Capa 1: IG — I(|①) + G(⌒①)</span>
+              <span>⑤</span>
+              <span>Capa 2: NIS — N(—②) + I(|①) + S(—①)</span>
+            </div>
+          </div>
+          <!-- MOLITURA -->
+        </div>
+
+        <div class="vocab-cat">Trisílabas — 3 capas · con ⑤ · dificultad alta</div>
+
+        <div class="word-list">
+          <!-- SECRETUM -->
+          <div class="word-entry">
+            <h4>SECRETUM <span class="tag tag-3c">3 capas</span></h4>
+            <div class="latin">lat. <em>secretum</em> — sustantivo</div>
+            <div class="meaning">«Secreto» — palabra de apertura del Círculo de la Veta</div>
+            <div class="layers">
+              <span>Capa 1: SE — S(—①) + E(•①)</span>
+              <span>⑤</span>
+              <span>Capa 2: CRE — C(/①) + R(—④) + E(•①)</span>
+              <span>⑤</span>
+              <span>Capa 3: TUM — T(/②) + U(/④) + M(\①)</span>
+            </div>
+          </div>
+          <!-- VOCATIO -->
+          <div class="word-entry">
+            <h4>VOCATIO <span class="tag tag-3c">3 capas</span></h4>
+            <div class="latin">lat. <em>vocatio</em> — sustantivo de acción</div>
+            <div class="meaning">«Llamada» — detección de veta, el acto de convocar a la energía</div>
+            <div class="layers">
+              <span>Capa 1: VOC — V(⌒②) + O(•④) + C(/①)</span>
+              <span>⑤</span>
+              <span>Capa 2: ATI — A(•②) + T(/②) + I(|①)</span>
+              <span>⑤</span>
+              <span>Capa 3: O — O(•④)</span>
+            </div>
+          </div>
+          <!-- EXTRACTIO -->
+          <div class="word-entry">
+            <h4>EXTRACTIO <span class="tag tag-3c">3 capas</span></h4>
+            <div class="latin">lat. <em>extractio</em> — sustantivo de acción</div>
+            <div class="meaning">«Extracción» — apertura de la veta, flujo de energía al recipiente</div>
+            <div class="layers">
+              <span>Capa 1: EXT — E(•①) + X(⊐①) + T(/②)</span>
+              <span>⑤</span>
+              <span>Capa 2: RAC — R(—④) + A(•②) + C(/①)</span>
+              <span>⑤</span>
+              <span>Capa 3: TIO — T(/②) + I(|①) + O(•④)</span>
+            </div>
+          </div>
+          <!-- SCRINIUM -->
+          <div class="word-entry">
+            <h4>SCRINIUM <span class="tag tag-3c">3 capas</span></h4>
+            <div class="latin">lat. <em>scrinium</em> — sustantivo</div>
+            <div class="meaning">«Archivo», «Códice» — sella los cristales de memoria del Círculo</div>
+            <div class="layers">
+              <span>Capa 1: SCR — S(—①) + C(/①) + R(—④) [S y C apilados en ①]</span>
+              <span>⑤</span>
+              <span>Capa 2: INI — I(|①) + N(—②) + I(|①)</span>
+              <span>⑤</span>
+              <span>Capa 3: UM — U(/④) + M(\①)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- 8. LO QUE SABE UN BUSCADOR                    -->
+    <!-- ══════════════════════════════════════════════ -->
+    <section class="lore-section">
+      <div class="lore-block">
+        <h3>8. Lo que sabe un buscador de Valdros</h3>
+        <p>
+          Un buscador no conoce este alfabeto. No sabe que las marcas se corresponden
+          con letras. Él aprende <strong>palabras completas</strong> — gestos que ha
+          memorizado, combinaciones de trazos que funcionan.
+        </p>
+        <p>
+          Sabe que ciertos trazos hacen que la veta se abra, pero no sabe que está
+          escribiendo «EXTRACTIO». Para él, es la runa de extracción, un bloque
+          indivisible que aprendió cuando era aprendiz y que ha repetido miles de veces.
+        </p>
+        <p>
+          Lira, en cambio, sí lee las letras. Cuando ve un trazo, no ve un gesto:
+          ve una letra. Y cuando junta varias letras, lee una palabra. Por eso puede
+          ajustar runas sobre la marcha, combinarlas, crear otras nuevas. Es la
+          única hablante nativa del lenguaje rúnico que Valdros ha conocido.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- 9. LOG DEL SISTEMA                            -->
+    <!-- ══════════════════════════════════════════════ -->
+    <section class="lore-section">
+      <div class="lore-block">
+        <h3>9. Nota de diseño — estructura del sistema</h3>
+        <ul>
+          <li><strong>Idioma raíz:</strong> Latín. Las palabras rúnicas son términos latinos que la energía entiende como órdenes.</li>
+          <li><strong>Dificultad progresiva:</strong> 1 capa = fácil, 2 capas = media, 3 capas = difícil, 4+ = reservado a maestros.</li>
+          <li><strong>Cuadrante ⑤:</strong> Conector entre capas. Sin él, cada capa es independiente.</li>
+          <li><strong>Marcas sin significado propio:</strong> Las marcas son solo trazos. El significado lo da la palabra completa.</li>
+          <li><strong>Apilamiento en un cuadrante:</strong> Varias letras pueden compartir cuadrante apilándose en profundidad. Se leen del fondo a la superficie.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Crónicas del Reino Silente — El Alfabeto Rúnico</p>
+    <p class="sig">🦇 Escrito por Aitana Shadow</p>
+  </footer>
+</body>
+</html>

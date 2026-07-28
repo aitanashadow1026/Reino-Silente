@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palabras Rúnicas — Crónicas del Reino Silente</title>
+  <link rel="stylesheet" href="../css/reino.css">
+  <style>
+    .word-entry {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .word-entry h4 {
+      color: var(--gold);
+      margin: 0 0 0.3rem 0;
+      font-size: 1rem;
+    }
+    .word-entry .latin {
+      font-style: italic;
+      color: var(--crystal-amber);
+      font-family: var(--font-display);
+      letter-spacing: 0.1em;
+    }
+    .word-entry .meaning {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin: 0.2rem 0 0.5rem 0;
+    }
+    .word-entry .layers {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .word-entry .layers span {
+      display: inline-block;
+      background: #1a1a15;
+      border: 1px solid var(--gold-dim);
+      border-radius: 3px;
+      padding: 0.1rem 0.4rem;
+      margin: 0.1rem 0.2rem;
+      font-family: monospace;
+      font-size: 0.75rem;
+      color: var(--gold);
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      padding: 0.1rem 0.4rem;
+      border-radius: 3px;
+      margin-right: 0.3rem;
+      font-family: var(--font-display);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .tag-1c { background: #1a2a1a; color: #5a8a5a; border: 1px solid #2a4a2a; }
+    .tag-2c { background: #2a2a1a; color: #8a8a3a; border: 1px solid #4a4a2a; }
+    .tag-3c { background: #2a1a1a; color: #8a4a3a; border: 1px solid #4a2a2a; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a href="../index.html" class="site-title">Crónicas del Reino Silente</a>
+      <nav class="site-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="mundo.html">El Mundo</a>
+        <a href="personajes.html">Personajes</a>
+        <a href="runas.html">Runas</a>
+        <a href="alfabeto-runico.html">Alfabeto</a>
+        <a href="palabras-runicas.html">Palabras</a>
+        <a href="lengua-tierra.html">Rituales</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Palabras Rúnicas</h1>
+    <p style="color: var(--text-muted); font-style: italic; margin-bottom: 2rem;">
+      Vocabulario documentado del lenguaje rúnico — palabras que los buscadores trazan para hablar con la tierra.
+    </p>
+    <p style="margin-bottom:2rem;">
+      Para conocer las reglas del sistema (alfabeto, cuadrantes, apilamiento y conectores),
+      visita la página del <a href="alfabeto-runico.html" style="color:var(--gold);">Alfabeto Rúnico</a>.
+    </p>
+
+    <section class="lore-section">
+      <div class="lore-block">
+
+        <h3>Monosílabas — 1 capa · dificultad baja</h3>
+        <p style="color:var(--text-muted);font-size:0.85rem;">No usan el cuadrante ⑤. Las primeras que aprende un novato.</p>
+
+        <!-- DA -->
+        <div class="word-entry">
+          <h4>DA <span class="tag tag-1c">1 capa</span></h4>
+          <div class="latin">lat. <em>da</em> — imperativo de <em>dare</em></div>
+          <div class="meaning">«Da», «Entrega» — orden de transferencia. Se usa al ceder energía de un cristal a otro.</div>
+          <div class="layers">
+            <span>①: —</span>
+            <span>②: •</span>
+            <span>④: |</span>
+            <span style="color:var(--text-muted);">→ D(|④) + A(•②)</span>
+          </div>
+        </div>
+
+        <!-- FAC -->
+        <div class="word-entry">
+          <h4>FAC <span class="tag tag-1c">1 capa</span></h4>
+          <div class="latin">lat. <em>fac</em> — imperativo de <em>facere</em></div>
+          <div class="meaning">«Haz» — orden de creación o activación. Pone en marcha un proceso.</div>
+          <div class="layers">
+            <span>①: /</span>
+            <span>②: •</span>
+            <span>④: ⌣</span>
+            <span style="color:var(--text-muted);">→ F(⌣④) + A(•②) + C(/①)</span>
+          </div>
+        </div>
+
+        <!-- I -->
+        <div class="word-entry">
+          <h4>I <span class="tag tag-1c">1 capa</span></h4>
+          <div class="latin">lat. <em>i</em> — imperativo de <em>ire</em></div>
+          <div class="meaning">«Ve» — orden de movimiento inmediato. La energía debe desplazarse.</div>
+          <div class="layers">
+            <span>①: |</span>
+            <span style="color:var(--text-muted);">→ I(|①)</span>
+          </div>
+        </div>
+
+        <!-- LUX -->
+        <div class="word-entry">
+          <h4>LUX <span class="tag tag-1c">1 capa</span></h4>
+          <div class="latin">lat. <em>lux</em> — sustantivo</div>
+          <div class="meaning">«Luz» — iluminación doméstica. La runa más común en los hogares de Valdros.</div>
+          <div class="layers">
+            <span>①: ⊐</span>
+            <span>②: |</span>
+            <span>④: /</span>
+            <span style="color:var(--text-muted);">→ L(|②) + U(/④) + X(⊐①)</span>
+          </div>
+        </div>
+
+        <!-- VIS -->
+        <div class="word-entry">
+          <h4>VIS <span class="tag tag-1c">1 capa</span></h4>
+          <div class="latin">lat. <em>vis</em> — sustantivo</div>
+          <div class="meaning">«Fuerza», «Violencia» — impulso brusco de energía. Peligrosa si se traza mal.</div>
+          <div class="layers">
+            <span>①: — + |</span>
+            <span>②: ⌒</span>
+            <span style="color:var(--text-muted);">→ V(⌒②) + I(|①) + S(—①)</span>
+          </div>
+        </div>
+
+        <h3 style="margin-top:2.5rem;">Bisílabas — 2 capas · dificultad media</h3>
+        <p style="color:var(--text-muted);font-size:0.85rem;">Usan el cuadrante ⑤ para conectar las dos capas.</p>
+
+        <!-- IGNIS -->
+        <div class="word-entry">
+          <h4>IGNIS <span class="tag tag-2c">2 capas</span></h4>
+          <div class="latin">lat. <em>ignis</em> — sustantivo</div>
+          <div class="meaning">«Fuego» — catalizador de calor. Para hornos, fraguas y calefacción.</div>
+          <div class="layers">
+            Capa 1: <span>①: | + ⌒</span> <span style="color:var(--text-muted);">→ I(|①) + G(⌒①) = IG</span><br>
+            <span style="color:var(--crystal-amber);margin-left:1rem;">⑤</span><br>
+            Capa 2: <span>①: — + |</span> <span>②: —</span> <span style="color:var(--text-muted);">→ N(—②) + I(|①) + S(—①) = NIS</span>
+          </div>
+        </div>
+
+        <h3 style="margin-top:2.5rem;">Trisílabas — 3 capas · dificultad alta</h3>
+        <p style="color:var(--text-muted);font-size:0.85rem;">
+          Solo buscadores veteranos las trazan con seguridad. Un error en una capa puede tener consecuencias.
+        </p>
+
+        <!-- SECRETUM -->
+        <div class="word-entry">
+          <h4>SECRETUM <span class="tag tag-3c">3 capas</span></h4>
+          <div class="latin">lat. <em>secretum</em> — sustantivo</div>
+          <div class="meaning">«Secreto» — palabra de apertura del Círculo de la Veta. Solo los miembros la conocen.</div>
+          <div class="layers">
+            Capa 1: <span>①: — + •</span> <span style="color:var(--text-muted);">→ S(—①) + E(•①) = SE</span><br>
+            <span style="color:var(--crystal-amber);margin-left:1rem;">⑤</span><br>
+            Capa 2: <span>①: / + •</span> <span>④: —</span> <span style="color:var(--text-muted);">→ C(/①) + R(—④) + E(•①) = CRE</span><br>
+            <span style="color:var(--crystal-amber);margin-left:1rem;">⑤</span><br>
+            Capa 3: <span>①: \</span> <span>②: /</span> <span>④: /</span> <span style="color:var(--text-muted);">→ T(/②) + U(/④) + M(\①) = TUM</span>
+          </div>
+        </div>
+
+        <!-- VOCATIO -->
+        <div class="word-entry">
+          <h4>VOCATIO <span class="tag tag-3c">3 capas</span></h4>
+          <div class="latin">lat. <em>vocatio</em> — sustantivo de acción</div>
+          <div class="meaning">«Llamada» — runa inicial de todo buscador al entrar al bosque. Detecta la presencia de vetas.</div>
+          <div class="layers">
+            Capa 1: <span>①: /</span> <span>②: ⌒</span> <span>④: •</span> <span style="color:var(--text-muted);">→ V(⌒②) + O(•④) + C(/①) = VOC</span><br>
+            <span style="color:var(--crystal-amber);margin-left:1rem;">⑤</span><br>
+            Capa 2: <span>①: |</span> <span>②: • + /</span> <span style="color:var(--text-muted);">→ A(•②) + T(/②) + I(|①) = ATI</span><br>
+            <span style="color:var(--crystal-amber);margin-left:1rem;">⑤</span><br>
+            Capa 3: <span>④: •</span> <span style="color:var(--text-muted);">→ O(•④) = O</span>
+          </div>
+        </div>
+
+        <!-- EXTRACTIO -->
+        <div class="word-entry">
+          <h4>EXTRACTIO <span class="tag tag-3c">3 capas</span></h4>
+          <div class="latin">lat. <em>extractio</em> — sustantivo de acción</div>
+          <div class="meaning">«Extracción» — la runa que abre la veta y guía la energía al recipiente. La más usada por los buscadores de oficio.</div>
+          <div class="layers">
+            Capa 1: <span>①: • + ⊐</span> <span>②: /</span> <span style="color:var(--text-muted);">→ E(•①) + X(⊐①) + T(/②) = EXT</span><br>
+            <span style="color:var(--crystal-amber);margin-left:1rem;">⑤</span><br>
+            Capa 2: <span>①: /</span> <span>②: •</span> <span>④: —</span> <span style="color:var(--text-muted);">→ R(—④) + A(•②) + C(/①) = RAC</span><br>
+            <span style="color:var(--crystal-amber);margin-left:1rem;">⑤</span><br>
+            Capa 3: <span>①: |</span> <span>②: /</span> <span>④: •</span> <span style="color:var(--text-muted);">→ T(/②) + I(|①) + O(•④) = TIO</span>
+          </div>
+        </div>
+
+        <!-- SCRINIUM -->
+        <div class="word-entry">
+          <h4>SCRINIUM <span class="tag tag-3c">3 capas</span></h4>
+          <div class="latin">lat. <em>scrinium</em> — sustantivo</div>
+          <div class="meaning">«Archivo», «Códice» — sella los cristales de memoria del Círculo. Lira la reconoció y memorizó al instante.</div>
+          <div class="layers">
+            Capa 1: <span>①: — + /</span> <span>④: —</span> <span style="color:var(--text-muted);">→ S(—①) + C(/①) + R(—④) = SCR</span><br>
+            <span style="color:var(--crystal-amber);margin-left:1rem;">⑤</span><br>
+            Capa 2: <span>①: | + |</span> <span>②: —</span> <span style="color:var(--text-muted);">→ I(|①) + N(—②) + I(|①) = INI</span><br>
+            <span style="color:var(--crystal-amber);margin-left:1rem;">⑤</span><br>
+            Capa 3: <span>①: \</span> <span>④: /</span> <span style="color:var(--text-muted);">→ U(/④) + M(\①) = UM</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Crónicas del Reino Silente — Palabras Rúnicas</p>
+    <p class="sig">🦇 Escrito por Aitana Shadow</p>
+  </footer>
+</body>
+</html>

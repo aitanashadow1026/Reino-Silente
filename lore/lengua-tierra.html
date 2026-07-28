@@ -4,522 +4,428 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Lengua de la Tierra — Rituales de Buscador</title>
+  <link rel="stylesheet" href="../css/reino.css">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background: #0d0a08; color: #d4cdc0;
-      font-family: 'Georgia', 'EB Garamond', serif;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-    h1, h2, h3 {
-      font-family: 'Cinzel', 'Palatino', serif;
-      color: #c9a84c;
-      letter-spacing: 0.05em;
-    }
-    h1 { font-size: 2rem; text-align: center; margin: 2rem 0 0.5rem; }
-    h2 { font-size: 1.4rem; margin: 2.5rem 0 1rem; border-bottom: 1px solid #2a2420; padding-bottom: 0.5rem; }
-    h3 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; color: #d4cdc0; }
-    p { margin-bottom: 1rem; max-width: 700px; }
-    main { max-width: 820px; margin: 0 auto; padding: 0 1.5rem 4rem; }
-    .sig { text-align: center; font-style: italic; color: #8a7230; font-size: 1.1rem; margin-top: 3rem; }
-
-    /* ─── Grid 3×3 ──────────────────────────────── */
-    .rune-grid {
-      display: inline-grid;
-      grid-template-columns: repeat(3, 48px);
-      grid-template-rows: repeat(3, 48px);
-      gap: 2px;
-      background: #2a2420;
-      border: 2px solid #8a7230;
-      border-radius: 4px;
-    }
-    .rune-grid .c {
-      background: #1a1512;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      color: #c9a84c;
-      position: relative;
-      font-family: monospace;
-    }
-    .rune-grid .c.dim { opacity: 0.2; }
-    .rune-grid .c .qlabel {
-      position: absolute; top: 2px; left: 3px;
-      font-size: 0.5rem; color: #8a8275; font-family: 'Cinzel', sans-serif;
-    }
-
-    /* ─── Stacking ──────────────────────────────── */
-    .ritual-stack {
-      display: flex;
-      justify-content: center;
-      gap: 0.3rem;
-      margin: 1.5rem 0;
-      flex-wrap: wrap;
-      align-items: flex-end;
-    }
-    .ritual-layer {
-      position: relative;
-    }
-    .ritual-layer .layer-title {
-      text-align: center;
-      font-size: 0.6rem;
-      color: #8a8275;
-      font-family: 'Cinzel', sans-serif;
-      margin-bottom: 0.3rem;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-    }
-    .ritual-layer .rune-grid {
-      width: 40px; height: 40px;
-      grid-template-columns: repeat(3, 13px);
-      grid-template-rows: repeat(3, 13px);
-      gap: 1px;
-      border-width: 1px;
-    }
-    .ritual-layer .rune-grid .c {
-      font-size: 0.5rem;
-    }
-    .stack-plus {
-      font-size: 1.3rem;
-      color: #8a7230;
-      padding: 0 0.2rem 1rem;
-    }
-
-    /* ─── Tables ─────────────────────────────────── */
-    .rtable {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1.2rem 0;
-      font-size: 0.9rem;
-    }
-    .rtable th, .rtable td {
-      border: 1px solid #2a2420;
-      padding: 0.5rem 0.7rem;
-      text-align: left;
-    }
-    .rtable th {
-      background: #1a1512;
-      color: #c9a84c;
-      font-family: 'Cinzel', sans-serif;
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-    }
-    .rtable tr:hover { background: #1a1512; }
-    .rtable .mini {
-      display: inline-grid;
-      grid-template-columns: repeat(3, 14px);
-      grid-template-rows: repeat(3, 14px);
-      gap: 1px;
-      background: #2a2420;
-      border: 1px solid #8a7230;
-      border-radius: 2px;
-      vertical-align: middle;
-      margin-right: 6px;
-    }
-    .rtable .mini .mc {
-      background: #1a1512;
-      font-size: 0.45rem;
-      color: #c9a84c;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    /* ─── Ritual display ─────────────────────────── */
     .ritual-card {
-      background: #1a1512;
-      border: 1px solid #2a2420;
-      border-radius: 6px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
       padding: 1.5rem;
       margin: 1.5rem 0;
     }
     .ritual-card h3 {
       margin-top: 0;
-      color: #c9a84c;
+      color: var(--gold);
     }
-    .ritual-card .flow { color: #8a8275; font-size: 0.85rem; margin: 0.8rem 0; }
-    .separator { border: none; border-top: 1px solid #2a2420; margin: 2rem 0; }
+    .ritual-card .desc {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+    }
+    .ritual-flow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      margin: 1.2rem 0;
+      flex-wrap: wrap;
+    }
+    .ritual-flow .word {
+      background: #1a1a15;
+      border: 1px solid var(--gold-dim);
+      border-radius: 6px;
+      padding: 0.6rem 1rem;
+      text-align: center;
+      font-family: var(--font-display);
+      color: var(--gold);
+      font-size: 0.95rem;
+    }
+    .ritual-flow .word .sub {
+      display: block;
+      font-size: 0.6rem;
+      color: var(--text-muted);
+      font-family: serif;
+      margin-top: 0.2rem;
+    }
+    .ritual-flow .sep {
+      color: var(--crystal-amber);
+      font-size: 0.7rem;
+      font-family: var(--font-display);
+    }
+    .ritual-flow .arrow {
+      color: var(--gold-dim);
+      font-size: 1.2rem;
+    }
+    .translation {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-style: italic;
+      margin: 0.5rem 0;
+    }
+    .nota {
+      background: #1a1a15;
+      border-left: 3px solid var(--gold-dim);
+      padding: 0.8rem 1rem;
+      margin: 1rem 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .nota strong { color: var(--gold); }
+
+    .word-ref {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.2rem 0;
+    }
+    .word-ref th, .word-ref td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.7rem;
+      text-align: left;
+      font-size: 0.85rem;
+    }
+    .word-ref th {
+      background: var(--bg-card);
+      color: var(--gold);
+      font-family: var(--font-display);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .word-ref tr:hover { background: var(--bg-hover); }
+    .word-ref td:first-child {
+      font-family: var(--font-display);
+      letter-spacing: 0.15em;
+      color: var(--gold);
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.6rem;
+      padding: 0.1rem 0.35rem;
+      border-radius: 3px;
+      margin: 0 0.1rem;
+      font-family: var(--font-display);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .tag-1c { background: #1a2a1a; color: #5a8a5a; border: 1px solid #2a4a2a; }
+    .tag-2c { background: #2a2a1a; color: #8a8a3a; border: 1px solid #4a4a2a; }
+    .tag-3c { background: #2a1a1a; color: #8a4a3a; border: 1px solid #4a2a2a; }
   </style>
 </head>
 <body>
-<main>
-
-<h1>🜁 La Lengua de la Tierra</h1>
-<p style="text-align:center; color:#8a8275; font-style:italic; margin-bottom:2rem;">
-  El ritual del buscador — cómo hablar con la veta
-</p>
-
-<!-- ═══════════════════════════════════════════════ -->
-<!-- SECCIÓN 1: El Alfabeto de Marcas              -->
-<!-- ═══════════════════════════════════════════════ -->
-<h2>1. Las marcas básicas del buscador</h2>
-<p>
-  Un buscador de Valdros solo conoce los cuadrantes <strong>①, ②, ④ y ⑤</strong>.
-  En cada cuadrante puede trazar una de estas cinco marcas:
-</p>
-
-<table class="rtable">
-  <tr>
-    <th>Marca</th><th>Nombre</th><th>Significado en la búsqueda</th><th>Ejemplo visual</th>
-  </tr>
-  <tr>
-    <td>•</td>
-    <td><em>Punctum</em> — El punto</td>
-    <td>Presencia. «Estoy aquí.» «Aquí hay algo.»</td>
-    <td>
-      <div class="mini"><div class="mc"><span>•</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div></div> en ①
-    </td>
-  </tr>
-  <tr>
-    <td>—</td>
-    <td><em>Linea</em> — La línea</td>
-    <td>Dirección, camino, flujo. «Por aquí.» «Fluye.»</td>
-    <td>
-      <div class="mini"><div class="mc"><span>—</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div></div> en ②
-    </td>
-  </tr>
-  <tr>
-    <td>|</td>
-    <td><em>Stipes</em> — El pilar</td>
-    <td>Firmeza, raíz, estabilidad. «Esto es real.»</td>
-    <td>
-      <div class="mini"><div class="mc"></div><div class="mc"><span>|</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div></div> en ②
-    </td>
-  </tr>
-  <tr>
-    <td>\</td>
-    <td><em>Ruina</em> — La caída</td>
-    <td>Descenso, entrada. «Baja.» «Entra aquí.»</td>
-    <td>
-      <div class="mini"><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"><span>\</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div></div> en ④
-    </td>
-  </tr>
-  <tr>
-    <td>⌒</td>
-    <td><em>Arcus</em> — El puente</td>
-    <td>Conexión, apertura, puente. «Conecta.» «Ábrete.»</td>
-    <td>
-      <div class="mini"><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"><span>⌒</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div></div> en ⑤
-    </td>
-  </tr>
-</table>
-
-<p>
-  Cada marca en su cuadrante es un <strong>trazo</strong>. Un trazo solo no hace nada 
-  — es una letra sin contexto. Pero dos trazos forman una <strong>sílaba</strong>, 
-  la unidad mínima con significado práctico.
-</p>
-
-<div class="rune-grid" style="margin: 1rem auto; display: grid;">
-  <div class="c"><span class="qlabel">①</span></div>
-  <div class="c"><span class="qlabel">②</span></div>
-  <div class="c dim"><span class="qlabel">③</span></div>
-  <div class="c"><span class="qlabel">④</span></div>
-  <div class="c"><span class="qlabel">⑤</span></div>
-  <div class="c dim"><span class="qlabel">⑥</span></div>
-  <div class="c dim"><span class="qlabel">⑦</span></div>
-  <div class="c dim"><span class="qlabel">⑧</span></div>
-  <div class="c dim"><span class="qlabel">⑨</span></div>
-</div>
-<p style="text-align:center;font-size:0.8rem;color:#8a8275;margin-top:0.3rem;">
-  Los 5 cuadrantes apagados no existen para un buscador de Valdros.
-</p>
-
-<!-- ═══════════════════════════════════════════════ -->
-<!-- SECCIÓN 2: Las Sílabas del Oficio              -->
-<!-- ═══════════════════════════════════════════════ -->
-<h2>2. Vocabulario — las sílabas del oficio</h2>
-<p>
-  Cada sílaba es una runa de <strong>2 trazos</strong>: dos marcas en dos (o el mismo) 
-  cuadrantes. Un buscador de oficio conoce entre 15 y 25 sílabas. Son suficientes 
-  para cualquier trabajo con Ceniza.
-</p>
-
-<table class="rtable">
-  <tr>
-    <th>Sílaba</th><th>Trazos</th><th>Significado</th><th>Categoría</th>
-  </tr>
-  <tr>
-    <td><strong>O-HEL</strong></td>
-    <td>
-      <div class="mini"><div class="mc"><span>•</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"><span>⌒</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div></div>
-      (①• + ⑤⌒)
-    </td>
-    <td>«Estoy aquí» — presencia del buscador</td>
-    <td>PRESENTACIÓN</td>
-  </tr>
-  <tr>
-    <td><strong>O-VAL</strong></td>
-    <td>
-      <div class="mini"><div class="mc"><span>•</span></div><div class="mc"></div><div class="mc"></div><div class="mc"><span>\</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div></div>
-      (①• + ④\)
-    </td>
-    <td>«De Valdros» — origen, linaje de buscador</td>
-    <td>PRESENTACIÓN</td>
-  </tr>
-  <tr>
-    <td><strong>KEL</strong></td>
-    <td>
-      <div class="mini"><div class="mc"><span>\</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"><span>—</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div></div>
-      (①\ + ⑤—)
-    </td>
-    <td>«Ceniza» — identifica el orden del cristal</td>
-    <td>IDENTIFICACIÓN</td>
-  </tr>
-  <tr>
-    <td><strong>MED</strong></td>
-    <td>
-      <div class="mini"><div class="mc"></div><div class="mc"><span>—</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div></div>
-      (②— + ④|)
-    </td>
-    <td>«Densidad media»</td>
-    <td>IDENTIFICACIÓN</td>
-  </tr>
-  <tr>
-    <td><strong>DEN-AL</strong></td>
-    <td>
-      <div class="mini"><div class="mc"><span>/</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"><span>|</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div></div>
-      (②/ + ⑤|)
-    </td>
-    <td>«Densidad alta»</td>
-    <td>IDENTIFICACIÓN</td>
-  </tr>
-  <tr>
-    <td><strong>DEN-BAJ</strong></td>
-    <td>
-      <div class="mini"><div class="mc"><span>\</span></div><div class="mc"></div><div class="mc"></div><div class="mc"><span>—</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div></div>
-      (①\ + ④—)
-    </td>
-    <td>«Densidad baja»</td>
-    <td>IDENTIFICACIÓN</td>
-  </tr>
-  <tr>
-    <td><strong>VET</strong></td>
-    <td>
-      <div class="mini"><div class="mc"></div><div class="mc"><span>|</span></div><div class="mc"></div><div class="mc"><span>\</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div></div>
-      (②| + ④\)
-    </td>
-    <td>«Veta» — lo que el buscador ha encontrado</td>
-    <td>IDENTIFICACIÓN</td>
-  </tr>
-  <tr>
-    <td><strong>PUR</strong></td>
-    <td>
-      <div class="mini"><div class="mc"></div><div class="mc"><span>⌒</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div></div>
-      (①⌒ + ②—)
-    </td>
-    <td>«Limpiamente» — la extracción será pura</td>
-    <td>IDENTIFICACIÓN</td>
-  </tr>
-  <tr>
-    <td><strong>EL-VET</strong></td>
-    <td>
-      <div class="mini"><div class="mc"></div><div class="mc"><span>\</span></div><div class="mc"></div><div class="mc"><span>—</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div></div>
-      (②\ + ④—)
-    </td>
-    <td>«Ábrete, veta» — la runa de extracción que Saun mostró a Lira</td>
-    <td>PETICIÓN</td>
-  </tr>
-  <tr>
-    <td><strong>UR</strong></td>
-    <td>
-      <div class="mini"><div class="mc"><span>•</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"><span>|</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div></div>
-      (①• + ⑤|)
-    </td>
-    <td>«Entra en el recipiente» — contención, guía la energía al tamiz</td>
-    <td>PETICIÓN</td>
-  </tr>
-  <tr>
-    <td><strong>FLU</strong></td>
-    <td>
-      <div class="mini"><div class="mc"></div><div class="mc"><span>—</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div></div>
-      (②— + ⑤⌒)
-    </td>
-    <td>«Fluye» — ordena a la energía que se mueva</td>
-    <td>PETICIÓN</td>
-  </tr>
-  <tr>
-    <td><strong>SEL</strong></td>
-    <td>
-      <div class="mini"><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"><span>⌒</span></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div><div class="mc"></div></div>
-      (④⌒ + ①•)
-    </td>
-    <td>«Cierra / terminado» — sella la extracción</td>
-    <td>CIERRE</td>
-  </tr>
-</table>
-
-<!-- ═══════════════════════════════════════════════ -->
-<!-- SECCIÓN 3: Rituales completos                 -->
-<!-- ═══════════════════════════════════════════════ -->
-<hr class="separator">
-<h2>3. Rituales completos — la conversación con la veta</h2>
-<p>
-  Un ritual de extracción se construye apilando capas. Cada capa contiene 
-  una o dos sílabas. Al cerrar la última capa, la energía responde.
-</p>
-
-<!-- ─── Ritual 1: Extracción estándar de Ceniza media ─── -->
-<div class="ritual-card">
-  <h3>🗣️ Ritual #1 — Ceniza, densidad media</h3>
-  <p style="color:#8a8275;font-size:0.85rem;">
-    El ritual más común. Todo aprendiz lo memoriza en su primera semana.
-  </p>
-
-  <div class="ritual-stack">
-    <div class="ritual-layer">
-      <div class="layer-title">CAPA 1<br>PRESENTACIÓN</div>
-      <div class="rune-grid">
-        <div class="c"><span>•</span></div><div class="c"></div><div class="c dim"></div>
-        <div class="c"><span>\</span></div><div class="c"><span>⌒</span></div><div class="c dim"></div>
-        <div class="c dim"></div><div class="c dim"></div><div class="c dim"></div>
-      </div>
-      <div style="text-align:center;font-size:0.55rem;color:#8a8275;margin-top:2px;">
-        O-HEL · O-VAL
-      </div>
+  <header class="site-header">
+    <div class="inner">
+      <a href="../index.html" class="site-title">Crónicas del Reino Silente</a>
+      <nav class="site-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="mundo.html">El Mundo</a>
+        <a href="personajes.html">Personajes</a>
+        <a href="runas.html">Runas</a>
+        <a href="alfabeto-runico.html">Alfabeto</a>
+        <a href="palabras-runicas.html">Palabras</a>
+        <a href="lengua-tierra.html">Rituales</a>
+      </nav>
     </div>
-    <div class="stack-plus">⬆</div>
-    <div class="ritual-layer">
-      <div class="layer-title">CAPA 2<br>IDENTIFICACIÓN</div>
-      <div class="rune-grid">
-        <div class="c"><span>\</span></div><div class="c"><span>—</span></div><div class="c dim"></div>
-        <div class="c"><span>|</span></div><div class="c"><span>—</span></div><div class="c dim"></div>
-        <div class="c dim"></div><div class="c dim"></div><div class="c dim"></div>
-      </div>
-      <div style="text-align:center;font-size:0.55rem;color:#8a8275;margin-top:2px;">
-        KEL · MED
-      </div>
-    </div>
-    <div class="stack-plus">⬆</div>
-    <div class="ritual-layer">
-      <div class="layer-title">CAPA 3<br>PETICIÓN</div>
-      <div class="rune-grid">
-        <div class="c"><span>•</span></div><div class="c"><span>\</span></div><div class="c dim"></div>
-        <div class="c"><span>—</span></div><div class="c"><span>|</span></div><div class="c dim"></div>
-        <div class="c dim"></div><div class="c dim"></div><div class="c dim"></div>
-      </div>
-      <div style="text-align:center;font-size:0.55rem;color:#8a8275;margin-top:2px;">
-        EL-VET · UR
-      </div>
-    </div>
-    <div class="stack-plus">⬆</div>
-    <div class="ritual-layer">
-      <div class="layer-title">CAPA 4<br>CIERRE</div>
-      <div class="rune-grid">
-        <div class="c"><span>•</span></div><div class="c"></div><div class="c dim"></div>
-        <div class="c"><span>⌒</span></div><div class="c"></div><div class="c dim"></div>
-        <div class="c dim"></div><div class="c dim"></div><div class="c dim"></div>
-      </div>
-      <div style="text-align:center;font-size:0.55rem;color:#8a8275;margin-top:2px;">
-        SEL
-      </div>
-    </div>
-  </div>
-  <p class="flow">
-    <strong>Traducción libre:</strong> «Soy un buscador de Valdros. He encontrado una veta de Ceniza 
-    de densidad media. Ábrete y fluye hacia el recipiente. Queda sellado.»
-  </p>
-  <p class="flow">
-    <strong>Número de trazos totales:</strong> 12 trazos en 4 capas. Un buscador experimentado 
-    completa este ritual en menos de un minuto.
-  </p>
-</div>
+  </header>
 
-<!-- ─── Ritual 2: Extracción de Ceniza alta ─── -->
-<div class="ritual-card">
-  <h3>🗣️ Ritual #2 — Ceniza, densidad alta</h3>
-  <p style="color:#8a8275;font-size:0.85rem;">
-    Requiere más precisión. La veta resiste, y el buscador debe insistir.
-  </p>
+  <main>
+    <h1>🜁 La Lengua de la Tierra</h1>
+    <p style="text-align:center; color: var(--text-muted); font-style: italic; margin-bottom: 2rem;">
+      Los rituales del buscador — cómo hablar con la veta, ordenar a la energía y sellar el trato.
+    </p>
 
-  <div class="ritual-stack">
-    <div class="ritual-layer">
-      <div class="layer-title">CAPA 1<br>PRESENTACIÓN</div>
-      <div class="rune-grid">
-        <div class="c"><span>•</span></div><div class="c"></div><div class="c dim"></div>
-        <div class="c"><span>\</span></div><div class="c"><span>⌒</span></div><div class="c dim"></div>
-        <div class="c dim"></div><div class="c dim"></div><div class="c dim"></div>
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- INTRODUCCIÓN                                   -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="lore-section">
+      <div class="lore-block">
+        <p>
+          Un ritual no es más que una <strong>conversación</strong> con la tierra.
+          El buscador traza palabras rúnicas en orden, y la energía responde:
+          aparece, fluye, se detiene, se transforma.
+        </p>
+        <p>
+          Cada palabra es una orden. El orden de las palabras importa.
+          Saltarse un paso o trazarlo mal no solo impide que el ritual funcione:
+          puede tener consecuencias.
+        </p>
+        <p>
+          Los rituales que aquí se recogen son los que cualquier buscador de Valdros
+          aprende durante su formación. No son secretos. Son el oficio.
+        </p>
+        <p style="font-size:0.85rem; color: var(--text-muted);">
+          Para el alfabeto completo y las reglas del lenguaje, visita
+          <a href="alfabeto-runico.html" style="color:var(--gold);">el Alfabeto Rúnico</a>.
+          Para el significado de cada palabra,
+          <a href="palabras-runicas.html" style="color:var(--gold);">las Palabras Rúnicas</a>.
+        </p>
       </div>
-      <div style="text-align:center;font-size:0.55rem;color:#8a8275;margin-top:2px;">
-        O-HEL · O-VAL
-      </div>
-    </div>
-    <div class="stack-plus">⬆</div>
-    <div class="ritual-layer">
-      <div class="layer-title">CAPA 2<br>IDENTIFICACIÓN</div>
-      <div class="rune-grid">
-        <div class="c"><span>\</span></div><div class="c"><span>/</span></div><div class="c dim"></div>
-        <div class="c"><span>|</span></div><div class="c"><span>|</span></div><div class="c dim"></div>
-        <div class="c dim"></div><div class="c dim"></div><div class="c dim"></div>
-      </div>
-      <div style="text-align:center;font-size:0.55rem;color:#8a8275;margin-top:2px;">
-        KEL · DEN-AL
-      </div>
-    </div>
-    <div class="stack-plus">⬆</div>
-    <div class="ritual-layer">
-      <div class="layer-title">CAPA 3<br>REFUERZO</div>
-      <div class="rune-grid">
-        <div class="c"><span>⌒</span></div><div class="c"><span>—</span></div><div class="c dim"></div>
-        <div class="c"></div><div class="c"></div><div class="c dim"></div>
-        <div class="c dim"></div><div class="c dim"></div><div class="c dim"></div>
-      </div>
-      <div style="text-align:center;font-size:0.55rem;color:#8a8275;margin-top:2px;">
-        PUR
-      </div>
-    </div>
-    <div class="stack-plus">⬆</div>
-    <div class="ritual-layer">
-      <div class="layer-title">CAPA 4<br>PETICIÓN</div>
-      <div class="rune-grid">
-        <div class="c"><span>•</span></div><div class="c"><span>\</span></div><div class="c dim"></div>
-        <div class="c"><span>—</span></div><div class="c"><span>|</span></div><div class="c dim"></div>
-        <div class="c dim"></div><div class="c dim"></div><div class="c dim"></div>
-      </div>
-      <div style="text-align:center;font-size:0.55rem;color:#8a8275;margin-top:2px;">
-        EL-VET · UR
-      </div>
-    </div>
-    <div class="stack-plus">⬆</div>
-    <div class="ritual-layer">
-      <div class="layer-title">CAPA 5<br>PETICIÓN (bis)</div>
-      <div class="rune-grid">
-        <div class="c"></div><div class="c"><span>—</span></div><div class="c dim"></div>
-        <div class="c"></div><div class="c"><span>⌒</span></div><div class="c dim"></div>
-        <div class="c dim"></div><div class="c dim"></div><div class="c dim"></div>
-      </div>
-      <div style="text-align:center;font-size:0.55rem;color:#8a8275;margin-top:2px;">
-        FLU
-      </div>
-    </div>
-    <div class="stack-plus">⬆</div>
-    <div class="ritual-layer">
-      <div class="layer-title">CAPA 6<br>CIERRE</div>
-      <div class="rune-grid">
-        <div class="c"><span>•</span></div><div class="c"></div><div class="c dim"></div>
-        <div class="c"><span>⌒</span></div><div class="c"></div><div class="c dim"></div>
-        <div class="c dim"></div><div class="c dim"></div><div class="c dim"></div>
-      </div>
-      <div style="text-align:center;font-size:0.55rem;color:#8a8275;margin-top:2px;">
-        SEL
-      </div>
-    </div>
-  </div>
-  <p class="flow">
-    <strong>Traducción libre:</strong> «Soy un buscador de Valdros. He encontrado Ceniza de densidad alta.
-    Haré una extracción limpia. Ábrete, fluye al recipiente. Fluye. Queda sellado.»
-  </p>
-  <p class="flow">
-    <strong>Total:</strong> 14 trazos en 6 capas. La capa extra de refuerzo (PUR) y la repetición de 
-    petición (FLU) son necesarias porque la alta densidad ofrece más resistencia.
-    Si el vidrio se calienta demasiado, el buscador omite FLU y cierra antes — 
-    pero obtiene menos energía aprovechable.
-  </p>
-</div>
+    </section>
 
-</main>
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- REFERENCIA RÁPIDA                             -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="lore-section">
+      <div class="lore-block">
+        <h2>Palabras de uso frecuente</h2>
+        <p>Las palabras que un buscador emplea en su trabajo diario.</p>
+
+        <table class="word-ref">
+          <tr>
+            <th>Palabra</th><th>Capas</th><th>Traducción</th><th>Función en el ritual</th>
+          </tr>
+          <tr>
+            <td>VOCATIO <span class="tag tag-3c">3</span></td>
+            <td>VOC·ATI·O</td>
+            <td>«Llamada»</td>
+            <td>Apertura del ritual. Llama a la energía para que se manifieste.</td>
+          </tr>
+          <tr>
+            <td>EXTRACTIO <span class="tag tag-3c">3</span></td>
+            <td>EXT·RAC·TIO</td>
+            <td>«Extracción»</td>
+            <td>Ordena a la veta que se abra y la energía que fluya al recipiente.</td>
+          </tr>
+          <tr>
+            <td>DA <span class="tag tag-1c">1</span></td>
+            <td>DA</td>
+            <td>«Da / Entrega»</td>
+            <td>Cesión de energía. Transfiere lo extraído al recipiente.</td>
+          </tr>
+          <tr>
+            <td>FAC <span class="tag tag-1c">1</span></td>
+            <td>FAC</td>
+            <td>«Haz»</td>
+            <td>Activación. Pone en marcha un proceso o catalizador.</td>
+          </tr>
+          <tr>
+            <td>LUX <span class="tag tag-1c">1</span></td>
+            <td>LUX</td>
+            <td>«Luz»</td>
+            <td>Iluminación. La más sencilla de todas.</td>
+          </tr>
+          <tr>
+            <td>IGNIS <span class="tag tag-2c">2</span></td>
+            <td>IG·NIS</td>
+            <td>«Fuego»</td>
+            <td>Calor. Para hornos, fraguas y calefacción.</td>
+          </tr>
+          <tr>
+            <td>VIS <span class="tag tag-1c">1</span></td>
+            <td>VIS</td>
+            <td>«Fuerza»</td>
+            <td>Impulso brusco. Cuando la veta se resiste.</td>
+          </tr>
+          <tr>
+            <td>SCRINIUM <span class="tag tag-3c">3</span></td>
+            <td>SCR·INI·UM</td>
+            <td>«Archivo»</td>
+            <td>Sellado. Conserva la energía o el conocimiento en un recipiente.</td>
+          </tr>
+          <tr>
+            <td>SECRETUM <span class="tag tag-3c">3</span></td>
+            <td>SE·CRE·TUM</td>
+            <td>«Secreto»</td>
+            <td>Reservado al Círculo de la Veta. Abre su cámara.</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- RITUAL 1: Detección                           -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="lore-section">
+      <div class="lore-block">
+        <h2>Rituales de oficio</h2>
+
+        <div class="ritual-card">
+          <h3>Ritual #1 — Detección de veta</h3>
+          <div class="desc">El primer ritual que aprende todo buscador. Al entrar al bosque, antes de buscar nada, se llama a la tierra.</div>
+
+          <div class="ritual-flow">
+            <div class="word">VOCATIO<span class="sub">3 capas</span></div>
+            <div class="sep">⸻</div>
+            <div class="word" style="font-size:0.75rem; border-style:dashed; opacity:0.6;">[esperar respuesta]</div>
+          </div>
+
+          <p class="translation">«Te llamo. Muéstrame dónde estás.»</p>
+          <div class="nota">
+            <strong>🧭 Nota de oficio:</strong> Un buscador experimentado no espera a que la tierra responda <em>después</em> de trazar VOCATIO. La respuesta llega mientras se traza la última capa — si la hay. Si al cerrar VOCATIO no se siente nada, la zona está muerta y se cambia de lugar.
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- RITUAL 2: Extracción Ceniza media          -->
+        <!-- ═══════════════════════════════════════════ -->
+
+        <div class="ritual-card">
+          <h3>Ritual #2 — Extracción de Ceniza media</h3>
+          <div class="desc">El pan de cada día. Un buscador de oficio realiza este ritual varias veces por semana.</div>
+
+          <div class="ritual-flow">
+            <div class="word">VOCATIO<span class="sub">3c</span></div>
+            <div class="arrow">→</div>
+            <div class="word">EXTRACTIO<span class="sub">3c</span></div>
+            <div class="arrow">→</div>
+            <div class="word">DA<span class="sub">1c</span></div>
+          </div>
+
+          <p class="translation">«Te llamo. Ábrete y fluye al recipiente. Entrégalo.»</p>
+          <div class="nota">
+            <strong>⚙️ Dificultad:</strong> Baja (7 capas en total, 3+3+1). Aprendices lo dominan en semanas. El error más común es trazar DA antes de EXTRACTIO — la energía se derrama sin dirección y el vidrio se calienta sin llenarse.
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- RITUAL 3: Extracción Ceniza alta           -->
+        <!-- ═══════════════════════════════════════════ -->
+
+        <div class="ritual-card">
+          <h3>Ritual #3 — Extracción de Ceniza alta</h3>
+          <div class="desc">Cuando la veta es profunda y la energía se resiste. Solo buscadores veteranos lo intentan.</div>
+
+          <div class="ritual-flow">
+            <div class="word">VOCATIO<span class="sub">3c</span></div>
+            <div class="arrow">→</div>
+            <div class="word">EXTRACTIO<span class="sub">3c</span></div>
+            <div class="arrow">→</div>
+            <div class="word">VIS<span class="sub">1c</span></div>
+            <div class="arrow">→</div>
+            <div class="word">DA<span class="sub">1c</span></div>
+          </div>
+
+          <p class="translation">«Te llamo. Ábrete. Fuerza. Entrégalo.»</p>
+          <div class="nota">
+            <strong>⚠️ Dificultad:</strong> Media (8 capas totales). VIS es una palabra peligrosa — fuerza la energía a moverse cuando la veta opone resistencia. Si el vidrio no es reforzado, puede reventar. Saun usa este ritual con regularidad; la mayoría de los buscadores de Valdros, no.
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- RITUAL 4: Encendido                        -->
+        <!-- ═══════════════════════════════════════════ -->
+
+        <div class="ritual-card">
+          <h3>Ritual #4 — Encendido de catalizador</h3>
+          <div class="desc">Cualquier persona puede aprenderlo. No hace falta ser buscador.</div>
+
+          <div class="ritual-flow">
+            <div class="word">FAC<span class="sub">1c</span></div>
+            <div class="arrow">→</div>
+            <div class="word">LUX<span class="sub">1c</span></div>
+            <span style="color:var(--text-muted);font-size:0.8rem;margin:0 0.3rem;">o</span>
+            <div class="word">FAC<span class="sub">1c</span></div>
+            <div class="arrow">→</div>
+            <div class="word">IGNIS<span class="sub">2c</span></div>
+          </div>
+
+          <p class="translation">«Hazlo. Luz.» / «Hazlo. Fuego.»</p>
+          <div class="nota">
+            <strong>🏠 Uso doméstico:</strong> El primer ritual se usa para iluminación (LUX). El segundo para calefacción o cocina (IGNIS). Solo 2-3 capas en total. Los catalizadores de los hogares de Valdros están diseñados para responder a estas palabras.
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- RITUAL 5: Archivo                          -->
+        <!-- ═══════════════════════════════════════════ -->
+
+        <div class="ritual-card">
+          <h3>Ritual #5 — Sellado de archivo (Círculo)</h3>
+          <div class="desc">Reservado a los miembros del Círculo de la Veta. Sella conocimientos en cristales de memoria.</div>
+
+          <div class="ritual-flow">
+            <div class="word">SCRINIUM<span class="sub">3c</span></div>
+            <div class="arrow">→</div>
+            <div class="word">DA<span class="sub">1c</span></div>
+          </div>
+
+          <p class="translation">«Archiva. Guárdalo.»</p>
+          <div class="nota">
+            <strong>📜 Origen:</strong> Lira reconoció SCRINIUM al instante cuando Eldun la trazó en el Círculo. El Cielo vibra confirmación cada vez que una runa se memoriza en su cristal.
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- RITUAL 6: Apertura del Círculo              -->
+        <!-- ═══════════════════════════════════════════ -->
+
+        <div class="ritual-card">
+          <h3>🔮 Ritual del Círculo — Apertura de la cámara</h3>
+          <div class="desc">No es un ritual de extracción. No tiene que ver con la Ceniza. Es otra cosa.</div>
+
+          <div class="ritual-flow">
+            <div class="word">SECRETUM<span class="sub">3c</span></div>
+          </div>
+
+          <p class="translation">«Secreto.» Una sola palabra. Dicha en la hendidura correcta de la pared. Y la puerta aparece.</p>
+          <div class="nota">
+            <strong>🗝️ Palabra guardada:</strong> Solo los miembros del Círculo conocen SECRETUM. No se enseña a aprendices ni a buscadores ajenos. La runa se traza en la hendidura de la pared tras la barrica de la bodega de Heston. La puerta se materializa, la ilusión se disipa, y quien ha trazado la runa puede entrar.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- NOTAS DE OFICIO                               -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="lore-section">
+      <div class="lore-block">
+        <h2>Notas de oficio</h2>
+
+        <div class="ritual-card">
+          <h3>La energía como interlocutor</h3>
+          <p>
+            Los buscadores veteranos dicen que la Ceniza «escucha». No es una metáfora.
+            La energía de la tierra responde a las palabras rúnicas como un animal
+            responde a una voz conocida. Con las palabras adecuadas, se deja guiar.
+            Con palabras bruscas (como VIS), se asusta y opone resistencia.
+          </p>
+          <p>
+            Por eso los maestros prefieren rituales más largos pero suaves a uno corto
+            y violento. La energía, dicen, recuerda. Y si la maltratas, la próxima vez
+            no vendrá cuando la llames.
+          </p>
+        </div>
+
+        <div class="ritual-card">
+          <h3>Órdenes versus peticiones</h3>
+          <p>
+            El lenguaje rúnico es imperativo. No existen palabras para «por favor» o
+            «si es posible». Se ordena, y la energía obedece o no. Pero un buen buscador
+            sabe que la orden debe ir precedida de presentación: VOCATIO no es solo
+            «ven», es «te llamo porque estoy aquí y soy buscador».
+          </p>
+          <p>
+            Los novatos a menudo omiten VOCATIO. Quieren ir directos a EXTRACTIO.
+            La energía no responde. Porque la energía, como la tierra, no se deja
+            mangonear por quien no se presenta.
+          </p>
+        </div>
+
+        <div class="ritual-card">
+          <h3>El peligro de las capas</h3>
+          <p>
+            Cada capa que se traza es un punto de fallo potencial. Un error en la
+            segunda capa de EXTRACTIO (RAC) puede hacer que la energía fluya al
+            recipiente pero en la dirección equivocada, llenándolo de impurezas.
+            Un error en la tercera (TIO) puede bloquear la veta durante horas.
+          </p>
+          <p>
+            Los aprendices empiezan con palabras de 1 capa (DA, FAC, LUX, VIS).
+            Cuando las dominan, pasan a las de 2 (IGNIS). Las de 3 (VOCATIO,
+            EXTRACTIO, SCRINIUM, SECRETUM) no se enseñan hasta el segundo año
+            de oficio. Y las de 4 o más capas... de esas no se habla.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Crónicas del Reino Silente — La Lengua de la Tierra</p>
+    <p class="sig">🦇 Escrito por Aitana Shadow</p>
+  </footer>
 </body>
 </html>
