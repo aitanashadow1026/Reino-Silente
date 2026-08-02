@@ -1,6 +1,16 @@
 # Plan — Cierre del Capítulo II (Escenas 4, 5 y 6)
 
-> Estado: 31 jul 2026 — Shadow aprueba la dirección general pero **la Escena 4 le parece que tiene poca chicha**. Repasarla mañana antes de escribir. Decisiones pendientes marcadas con ⏳.
+> Estado: 2 ago 2026 — **Escena 4 en borrador v2** (`borradores/cap2-escena4-v2.html`), con el feedback completo de Shadow aplicado (45 ediciones). Pendiente de aprobación final → pasar a `capitulos/`.
+
+## 🆕 Lore nuevo definido (1 ago, feedback Shadow)
+
+- **La Llama NO es de la tierra: es del reino vivo.** No se extrae de la veta como la Ceniza; se obtiene de animales.
+- **Portadores:** una sola especie — jabalíes de pelaje rojizo de las zonas altas de la sierra. Fieros, apartados. Cuanto más viejo el animal, más Llama lleva.
+- **Extracción por trampas rúnicas:** no se caza al animal; se le acorrala trazando runas en círculo; la Llama responde a las runas como el agua a la pendiente, se condensa y cristaliza. El animal queda débil un tiempo (como quien dona sangre) y se recupera.
+- **Densidad baja** = lo que compra la guardia (armas, escudos). Densidad alta = portadores tan adentro de la sierra que nadie ha vuelto a contarlo.
+- **El brillo:** el pelaje del portador cargado resplandece — solo lo ven los Buscadores. Para los demás es "un jabalí grande con el pelo raro".
+- **Las armas de Llama** (cuchillos de Yara): como un perro que nunca ladra — no hablan con palabras, avisan, huelen, gritan en alerta. Las armas callan cuando su portadora cae (momento de horror en esc. 4).
+- **La anomalía:** un portador viejo y cargado a un día de Valdros no es normal → semilla para esc. 5 (¿qué lo expulsa de la sierra profunda?).
 
 ## Hilos abiertos que hay que pagar o sembrar
 1. **La pista del viajero** (hace 20 años, sierra este) → el Círculo cree que lleva al Codex Umbrum
@@ -12,15 +22,19 @@
 
 ## Propuesta de escaleta (pendiente de ajustar)
 
-### 🟦 Escena 4 — *Donde los mapas mienten* ⚠️ POCO CONTENIDO SEGÚN SHADOW
-- Goal: salir de Valdros al alba y llegar al punto azul sin problemas
-- Conflicto: control de patrulla (se estrena el permiso de la Esc 3), terreno hostil, Saun demasiado familiar con el terreno (grietas de su secreto)
-- Disaster: llegan al punto azul y encuentran la primera marca — grabado de lengua desconocida; la runa reacciona; Saun la mira como si la hubiera visto antes
-- **Problema:** a Shadow le falta chicha → ideas para darle más miga:
-  - Algo inesperado en el camino (¿otro buscador? ¿una patrulla con problemas? ¿huellas frescas de alguien que no debería estar allí?)
-  - El sonido profundo de la tierra ya en la escena 4 (no esperar a la 5)
-  - Un primer uso de habilidad de Lira (interpretar algo en el camino)
-  - El punto azul NO es lo que esperaban (¿está marcado como azul pero algo lo ha cambiado? ¿la marca está *más adentro* de lo previsto?)
+### 🟦 Escena 4 — *Donde los mapas mienten* ✅ BORRADOR v2 (2 ago, feedback aplicado)
+- **v1 (1 ago):** escrita con el nuevo lore de la Llama.
+- **v2 (2 ago, feedback de Shadow, 45 ediciones):**
+  - Lira pregunta por «vetas» (aún piensa como la Ceniza) → mejor giro del "se cría".
+  - Nuevo: **VENITE MECUM** («venid conmigo», 5 capas) — Lira la intuye en el camino; la runa de 8 capas del combate es su forma completa (reconoce las últimas 5 capas). Registrada en `lore/palabras-runicas.html`.
+  - **Los cuchillos susurran a Lira** («Aquí, Yara», «Gracias») — paga el hilo de las armas vivas percibidas por Lira.
+  - Yara quiere aprender el oficio ("te doy mi parte si me enseñas") — Saun la cede a Lira como maestra (carcajada).
+  - Informe de la guardia: «animal rojo de gran tamaño» + Yara duda del paso → tensión antes del combate.
+  - Yara con protocolo ("¡Saun, voy delante! ¡Prepara las trampas!") — competente, no suicida.
+  - Cierre luminoso (carcajada, campamento) **con rastro mínimo del secreto de Saun**: "su sonrisa no llega del todo a sus ojos".
+  - Yara ve la roca por primera vez (Saun nunca la ha mencionado) — cierre de agujero de lore.
+  - Resuelto: Lira descubre por la noche que lo perdido era un sueño (antes no sabía qué era).
+  - La roca: los surcos de la runa de 7 trazos brillan y junto a ellos aparece la nueva runa de 8 capas (registrada).
 
 ### 🔴 Escena 5 — *Lo que encontró el viajero*
 - Goal: seguir la marca hasta su origen
