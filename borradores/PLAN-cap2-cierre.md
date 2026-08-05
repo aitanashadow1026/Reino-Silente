@@ -1,6 +1,6 @@
 # Plan — Cierre del Capítulo II (Escenas 4, 5 y 6)
 
-> Estado: 2 ago 2026 — **Escena 4 en borrador v2** (`borradores/cap2-escena4-v2.html`), con el feedback completo de Shadow aplicado (45 ediciones). Pendiente de aprobación final → pasar a `capitulos/`.
+> Estado: 4 ago 2026 — **Escenas 4 y 5 publicadas** ✅ (commit `726f5f8`, push a GitHub Pages). Escena 6 pendiente — próxima sesión con Shadow (5 ago).
 
 ## 🆕 Lore nuevo definido (1 ago, feedback Shadow)
 
@@ -36,29 +36,28 @@
   - Resuelto: Lira descubre por la noche que lo perdido era un sueño (antes no sabía qué era).
   - La roca: los surcos de la runa de 7 trazos brillan y junto a ellos aparece la nueva runa de 8 capas (registrada).
 
-### 🔴 Escena 5 — *Lo que encontró el viajero*
-- Goal: seguir la marca hasta su origen
-- Conflicto: zona roja (derrumbes), peligro real, Yara en riesgo → Lira usa una runa de Cielo no aprendida → el sueño se vuelve borroso (se paga el límite)
-- Disaster: campamento del viajero — huesos, cuaderno carbonizado, inscripción que solo Lira lee. La pista: el Codex NO está en la sierra. Y una página que Saun reconoce: él ya estuvo allí hace 12 años y nunca lo contó.
+### 🟢 Escena 5 — *Lo que encontró el viajero* ✅ PUBLICADA (4 ago, feedback 101 ediciones)
+- **Estructura final:** alba 2º día → paso bloqueado (zona roja) → acertijo de la runa de 8 capas en la pared (mapa con metáforas domésticas, ~1h entre los tres) → Lira traza CONTINE (contención, 3 capas) para calmar la montaña → balcón natural con cristales de Ceniza de densidad alta (señalización, hilo sembrado) → campamento del viajero (huesos, cuaderno carbonizado, cristal-diario con salvaguardia) → confesión de Saun (marca en la piel, 12 años) → Lira lee el sello (no fuerza: convence/lee) → diario: buscador de Cielo anterior, nombre del destino: **Codex Umbrum** en la **Montaña Apagada** (antiguo volcán, costa este — Cap III) → vuelta a Valdros con el cristal-diario, cierre con la runa de 9 capas.
+- **Pago del límite:** la runa de contención (no aprendida) le cuesta el sueño del prado amarillo — mecanismo «el Cielo hace hueco» confirmado y explicado a Shadow.
+- **Decisiones de Shadow aplicadas:** Yara humanizada (fragua como experiencia, cuchillo como animal de presa, «ánimo Lira confío en ti»), Saun sin omnisciencia (toca la roca para ver, no traduce, no identifica los cristales), narrador sin rectificaciones, Scrinium = sello/palabra (no «una cosa»), P210 eliminado.
+- **Semilla pospuesta:** origen de las runas («antes de que fueran palabras») → plantarla en Cap III / lore page, no en esta escena.
 
-**🆕 Retoque del paso peligroso (feedback Shadow, 3 ago):**
-- En el paso peligroso hay una **runa grabada en la montaña** — algo de Cielo que Lira sabe que puede descifrar. Pide a su padre y a Yara un tiempo para leerla (~1 hora, la descifran entre todos).
-- No era una runa de poder: eran **runas sencillas encadenadas formando un texto** — frases en 8 capas distintas; entre todas formaban un **acertijo de cosas mundanas/sencillas**. Lo importante era descifrar las frases, no la dificultad.
-- Al resolverlo, se abre un **paso secreto** por arriba: un **balcón natural** que evita el paso peligroso (el desastre de la zona roja se evita, pero a cambio llegan el suspense del acertijo + el descubrimiento).
-- En el balcón natural hay **cristales de Ceniza de densidad alta a modo de señalización** — no se paran a revisarlos (prisa), queda pendiente para el futuro (hilo sembrado).
-- La runa de Cielo de Lira de esta escena: para **contener algo del entorno** (no para combatir) y permitirles pasar.
-
-**🎯 Decisiones de Shadow (3 ago):**
-1. **Secreto de Saun = lleva una marca en su piel** (runa fallida). Trasfondo: estuvo allí hace 12 años, intentó leer y trazar las runas con su bajo conocimiento, el error de la runa lo marcó a él (como cuando una runa marca la zona donde se lanza, pero el fallo recayó en su piel). → La runa de la montaña probablemente es la misma que intentó trazar: pensó que era Ceniza; era Cielo. La energía lo rechazó y lo marcó.
-2. **El "alguien" de Yara:** no conoce al buscador — conoce a la *persona* (¿guardia? ¿fragua?) que sí conoce al buscador. No se lo dijo a Lira → tensión mantenida. Decidir quién es: fragua (conecta hilo Llama + marcas) o guardia (compañero veterano).
-3. **La pista del viajero:** un **cristal de Ceniza usado como diario** con una pequeña salvaguardia. Lira la descifra con un uso ingenioso de su poder de Cielo (especie de **hackeo de runas**: traza runas de Cielo que rompen la salvaguardia). El diario explica qué fue a buscar y qué hacía justo antes de morir — suspense, pero les da una nueva pista.
-
-### 🟢 Escena 6 — *Las piedras recuerdan* (cierre de capítulo)
-- Goal: volver a Valdros dentro del plazo con la pista
-- Conflicto: confesión de Saun + Círculo esperando (Eldun, mellizos)
-- Disaster: la pista señala un destino nuevo para el Cap III (candidato: Montaña Apagada / costa, donde nace el sílice — Codex de fuego y vidrio, Llama + Cielo). La runa gana una capa más: el Cielo muestra *adónde* quiere llevarla.
+### 🟡 Escena 6 — cierre de capítulo (TÍTULO PROVISIONAL: *Lo que el Cielo cobra* / *El peso de saber* — decidir con Shadow)
+- **Contexto nuevo tras la 5:** vuelta a Valdros al día siguiente; hay que informar al Círculo (Eldun, mellizos Varik/Vara) y a Lailte (informe de guardia); Yara es ahora parte del grupo («vamos los tres»); Lira sabe adónde va (Montaña Apagada) pero NO cuándo ni si están preparados; la runa de 9 capas sigue latiendo en su mente; el Cielo ha oído el nombre y quiere ir.
+- **Candidatos de conflicto (a ajustar con Shadow):**
+  1. **La confesión ante el Círculo:** ¿qué cuenta Saun (marca incluida) y qué calla? Eldun y los mellizos reaccionan — el Círculo tiene su propio interés en el Codex.
+  2. **Lailte y el informe:** el permiso vence; la guardia quiere saber del derrumbe/balcón; tensión burocrática vs. secreto del Círculo.
+  3. **Yara y Lira:** el «vamos los tres» se formaliza; Yara empieza a aprender el oficio de buscadora (hilo de la esc. 4); intimidad que crece.
+  4. **El precio pagado:** Lira nota el hueco del sueño perdido; ¿se lo cuenta a alguien? (Mira — su madre — como ancla, patrón de esc. 6 cap I).
+  5. **Decisión final:** cuándo partir a la Montaña Apagada (cierre en alto para el Cap III, con la runa de 9 capas como brújula).
+- **Hilos a pagar/sembrar:** «el alguien de Yara» (fragua vs guardia — SIGUE SIN DECIDIR), cristales del balcón (señalización), el brillo pálido en los ojos de Lira (el Cielo en marcha, visto por Yara/Saun), qué sabe Mira.
 
 ## ⏳ Decisiones (RESUELTAS 3 ago, feedback Shadow)
 1. **El secreto de Saun:** ✅ (c) — la marca lo marcó a él (runa fallida en su piel)
 2. **El "alguien" de Yara:** ✅ refina — no conoce al buscador, conoce a la persona que conoce al buscador; no se lo dijo (tensión). Pendiente: elegir guardia o fragua
 3. **La pista del viajero:** ✅ (b) + diario — cristal de Ceniza-diario con salvaguardia; Lira la rompe con hackeo de runas de Cielo
+
+## Pendiente 5 ago (sesión con Shadow)
+- Planificar escaleta de la escena 6 (título, goal, conflicto, disaster, cierre)
+- Decidir el «alguien» de Yara (fragua o guardia)
+- Elaboración del texto SIEMPRE con el razonador (deepseek-v4-pro)
