@@ -42,15 +42,42 @@
 - **Decisiones de Shadow aplicadas:** Yara humanizada (fragua como experiencia, cuchillo como animal de presa, «ánimo Lira confío en ti»), Saun sin omnisciencia (toca la roca para ver, no traduce, no identifica los cristales), narrador sin rectificaciones, Scrinium = sello/palabra (no «una cosa»), P210 eliminado.
 - **Semilla pospuesta:** origen de las runas («antes de que fueran palabras») → plantarla en Cap III / lore page, no en esta escena.
 
-### 🟡 Escena 6 — cierre de capítulo (TÍTULO PROVISIONAL: *Lo que el Cielo cobra* / *El peso de saber* — decidir con Shadow)
+### 🟡 Escenas 6 Y 7 — cierre de capítulo
+- **🆕 TÍTULO Y APELLIDO (14 ago 09:04):** Escena 6 = **«Lo que el Cielo cobra»**. Médico = **Sr. Veyra** (apellido fijado; género oculto, tratado como hombre).
+- **🆕 FEEDBACK v2 (14 ago 10:11, Shadow):** (1) Cierre NUEVO: salir del Círculo con el apellido Veyra en la cabeza; NO se van todavía — la decisión de ir a la ciudad es de la esc. 7 (intimidad Lira-Yara). Eliminar el cierre-puente de las forjas. (2) Susurros del arma: voz RONCA, como dragón milenario (intensidad estilo Smaug, SIN referencias en el texto); espada extremadamente inteligente, sin dudas sobre lo que huele; el «algo nuevo» NO es nuevo para ella: es el Cielo, lo conoce y lo RESPETA (sin miedo, es prácticamente irrompible); al comunicárselo a Lailte, éste NO entiende nada y la toma por excéntrica. «Culpa vieja» de Saun: OK tal cual. (3) Herrera sin nombre (de momento).
+- **🆕 DIVISIÓN EN DOS ESCENAS (14 ago, decisión de Shadow):** el cierre del Cap II son DOS escenas:
+  - **Escena 6** = Mov. 1 + 2 → El Círculo: la confesión + Lailte: el informe (el «informe público» del grupo).
+  - **Escena 7** = Mov. 3 + 4 → La Forja de Yara + la decisión (el «adiós íntimo»). ⚠️ NO OLVIDAR: al terminar la 6, la 7 queda pendiente de escribir.
 - **Contexto nuevo tras la 5:** vuelta a Valdros al día siguiente; hay que informar al Círculo (Eldun, mellizos Varik/Vara) y a Lailte (informe de guardia); Yara es ahora parte del grupo («vamos los tres»); Lira sabe adónde va (Montaña Apagada) pero NO cuándo ni si están preparados; la runa de 9 capas sigue latiendo en su mente; el Cielo ha oído el nombre y quiere ir.
-- **Candidatos de conflicto (a ajustar con Shadow):**
-  1. **La confesión ante el Círculo:** ¿qué cuenta Saun (marca incluida) y qué calla? Eldun y los mellizos reaccionan — el Círculo tiene su propio interés en el Codex.
-  2. **Lailte y el informe:** el permiso vence; la guardia quiere saber del derrumbe/balcón; tensión burocrática vs. secreto del Círculo.
-  3. **Yara y Lira:** el «vamos los tres» se formaliza; Yara empieza a aprender el oficio de buscadora (hilo de la esc. 4); intimidad que crece.
-  4. **El precio pagado:** Lira nota el hueco del sueño perdido; ¿se lo cuenta a alguien? (Mira — su madre — como ancla, patrón de esc. 6 cap I).
-  5. **Decisión final:** cuándo partir a la Montaña Apagada (cierre en alto para el Cap III, con la runa de 9 capas como brújula).
+- **Estructura (definida 14 ago, feedback Shadow):** los 4 movimientos repartidos en las 2 escenas. ⚠️ ORDEN DE LA ESCENA 6 (ajustado 14 ago 09:01): se empieza con LAILTE y se termina con EL CÍRCULO:
+  1. **La confesión ante el Círculo** (ver detalle arriba): Saun lo cuenta TODO enlazando pasado (12 años) y presente (3 días); Lira cuenta cómo lo hizo y qué sintió y confiesa la pérdida de recuerdos (dolencia); reacción del Círculo; conversación sutil mellizos/tío; mellizos proponen a la médica; Yara comenta el cristal → Eldun menciona a la herrera.
+  2. **Lailte y el informe (DEFINIDO, VA PRIMERO EN LA ESC. 6):** encuentran a Lailte ENTRENANDO con su arma a dos manos — ESPADA (canon de la esc. 3, NO maza) con INSCRIPCIONES RÚNICAS impresionantes en la hoja y detalles de herrería soberbios; parece no pesar en sus manos pero en la práctica es demoledora. Pincelada: Lira vuelve a escuchar susurros del arma hablándole a Lailte (como en la esc. 3): el arma puede OLER las emociones de las personas que «mira» (miedo, ira, etc. — los susurros concretos los inventa el razonador, Shadow los edita después). Le entregan el mapa y el cristal de Llama — SIN decirle que hay 2 cristales ni que el cristal le dará problemas al trabajarlo (eso solo lo sabe Yara, no lo cuenta). No pasa mucho más que lo de Lira con el arma.
+  3. **Yara y Lira en la Forja de Yara (DEFINIDO):** hablan de ellas y de dónde irán ahora; terminan acordando ir a la ciudad. Mostrar el DESEO mutuo que no se materializa: respiraciones agitadas, muestras de cariño, miradas, agarrarse. Lira intenta ayudar a Yara en la forja del cristal de Llama que no termina de funcionar — la excusa perfecta para acercarse. (Hilo de la esc. 4: Yara aprendiendo el oficio, ahora con Lira como maestra.)
+  4. **La decisión final (DEFINIDO):** SAUN SE DESMARCA DEL GRUPO — excusa: ya está mayor, la marca de la runa le duele más que antes, cree que esta búsqueda le traerá más problemas. Las chicas (Yara y Lira) van SOLAS a la ciudad. Cierre en alto para el Cap III (runa de 9 capas como brújula).
+- **El precio pagado (punto 4, DEFINIDO):** se muestra en DOS momentos — (a) en la confesión del Círculo, cuando Lira cuenta la pérdida de recuerdos; (b) más adelante (futuro capítulo), cuando la médica de la ciudad les desvela la «dolencia» de Lira.
 - **Hilos a pagar/sembrar:** «el alguien de Yara» (fragua vs guardia — SIGUE SIN DECIDIR), cristales del balcón (señalización), el brillo pálido en los ojos de Lira (el Cielo en marcha, visto por Yara/Saun), qué sabe Mira.
+- **🆕 Vínculo nuevo (14 ago, feedback Shadow): el tío de los mellizos.** El buscador/viajero de la sierra este es el TÍO de Varik y Vara (hermano pequeño de su padre). NO se dice abiertamente en el texto — solo una conversación sutil entre los mellizos justo cuando Saun, Lira y Yara llegan al Círculo: recuerdan las enseñanzas de su tío cuando empezaron como buscadores (él los inspiró) y que simplemente desapareció hace más de 20 años. Datos de coherencia:
+  - Edades: tío ~35 cuando murió en la sierra; mellizos ~15 entonces → hoy ~35 (casa con el canon «treinta años, tal vez treinta y pocos» de cap1-escena5).
+  - La desaparición casa con la pista de hace 20 años: el tío es el viajero que dejó la pista y cuyo campamento/diario encontraron en la esc. 5 (buscador de Cielo anterior, Codex Umbrum).
+  - Efecto dramático sutil: el lector puede unir cabos (y los mellizos quizá lo sospechan al oír el informe del campamento), pero nadie lo verbaliza. Carga emocional para los mellizos cuando se habla del viajero.
+
+## 🆕 Personajes que se unirán al grupo (14 ago, feedback Shadow)
+
+**⚠️ Género oculto (14 ago):** en la escena 6 NADIE revela el género de la médica ni de la herrera. Se habla de «personas» o en masculino genérico, o solo por apellido/profesión. Tú y yo sabemos que son mujeres — la revelación es material de capítulos futuros (giro). El razonador debe cuidar pronombres en la esc. 6.
+**— Tratamiento concreto (14 ago 09:01):** la médica se menciona como «el médico, el señor [APELLIDO]» (apellido a definir, p.ej. propuestas: Veyra / Callen / Odren — decidir con Shadow o que el razonador proponga). NO revelar que pueda ser mujer. Mismo criterio para la herrera (solo apellido/profesión).
+
+**P1 — La médica de la dolencia (se une en capítulos futuros):**
+- Mujer, ~50 años, soltera. Biografía pendiente (la haremos luego).
+- Es una especie de médico que sabe leer «este tipo de dolencias» (las de los cristales). Los mellizos, como buenos intelectuales de los cristales, saben de su existencia y los mandan a buscarla a la ciudad de las forjas grandes (ciudades del Llano).
+- Escena futura: se da cuenta de la dolencia de Lira (la dolencia SIN nombre aún — se revelará en capítulos posteriores, decisión 14 ago) y les HABLA del Codex sin que el grupo le haya dicho nada de su intención de ir a buscarlo. Lira entonces se lo cuenta todo → la médica se une al grupo automáticamente.
+
+**P2 — La herrera del cristal de Llama (se une más adelante, solo mencionada en esta escena):**
+- Otra mujer, en la MISMA ciudad del Llano que la médica. Eldun la menciona cuando Yara comenta que no puede forjar el cristal de Llama por medios normales.
+- Sabe cómo tratar ese cristal. Detalles en capítulos futuros.
+
+**La ciudad de las forjas grandes:** es una de las cinco ciudades del Llano (al sur, hornos de vidrio, academias de grabado — lore/mundo.html). SIN NOMBRE PROPIO (decisión 14 ago): se la llama simplemente «la ciudad del Llano», como hasta ahora.
+
+**El arma de Lailte (RESUELTO 14 ago):** se mantiene la ESPADA LARGA del canon (cap2-escena3.html), empuñada a dos manos, con INSCRIPCIONES RÚNICAS impresionantes en la hoja (el «rollo de la maza» aplicado a la espada). No hay retcon de la esc. 3.
 
 ## ⏳ Decisiones (RESUELTAS 3 ago, feedback Shadow)
 1. **El secreto de Saun:** ✅ (c) — la marca lo marcó a él (runa fallida en su piel)
