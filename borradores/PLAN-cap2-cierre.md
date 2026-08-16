@@ -1,6 +1,6 @@
 # Plan — Cierre del Capítulo II (Escenas 4, 5 y 6)
 
-> Estado: 4 ago 2026 — **Escenas 4 y 5 publicadas** ✅ (commit `726f5f8`, push a GitHub Pages). Escena 6 pendiente — próxima sesión con Shadow (5 ago).
+> Estado: 16 ago 2026 — **Escenas 4, 5 y 6 publicadas** ✅ (esc. 6: commit pendiente, push a GitHub Pages). Pendiente: **Escena 7** (Forja de Yara + decisión de partir; Saun se desmarca; chicas van solas a la ciudad del Llano).
 
 ## 🆕 Lore nuevo definido (1 ago, feedback Shadow)
 
@@ -88,3 +88,18 @@
 - Planificar escaleta de la escena 6 (título, goal, conflicto, disaster, cierre)
 - Decidir el «alguien» de Yara (fragua o guardia)
 - Elaboración del texto SIEMPRE con el razonador (deepseek-v4-pro)
+
+---
+
+## ✅ Escena 6 — *Lo que el Cielo cobra* PUBLICADA (16 ago 2026)
+
+- **v1/v2 (14 ago):** aprobada por Shadow tras feedback (152 párrafos en el editor).
+- **v3 (16 ago, feedback de Shadow, 101 ediciones integradas y pulidas):**
+  - Bloque Lailte: espada que huele emociones (miedo/culpa/ganas), «Salvaje» al cristal de Yara, «Portador de Cielo» — el Cielo se recoloca en posición de mando y Lailte da un traspié. Lira NO revela su don.
+  - Nuevo diálogo Yara-Lira: las armas de Llama ganan "el alma" — cada forja es distinta.
+  - Confesión de Saun (marca en el esternón, 12 años), dolencia de Lira (el Cielo "se hace hueco"), Sr. Veyra (ciudad del Llano) y la herrera.
+  - Eldun sin rol de jefe; Círculo que no juzga. Mellizos: tío desaparecido hace ~20 años (sutil, no explícito).
+  - **Ajustes de coherencia aplicados por Aitana:** salida del Círculo de día (la tarde, no la noche); «médico de la ciudad del Llano» (no "del Cielo"); typos (exhala, Lailte, por qué…).
+- **Lore futuro anotado en `NOTAS-lore-futuro.md`** (10 notas + lecciones de proceso anti-redundancia).
+- Cierre de la escena: **«Veyra.»** (una palabra).
+- ⏭️ **SIGUIENTE: Escena 7 — Forja de Yara + decisión de partir.** Saun se desmarca; las chicas van solas a la ciudad del Llano. Texto SIEMPRE con el razonador (deepseek-v4-pro) + reglas anti-redundancia.
