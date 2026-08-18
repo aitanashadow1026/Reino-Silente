@@ -103,3 +103,31 @@
 - **Lore futuro anotado en `NOTAS-lore-futuro.md`** (10 notas + lecciones de proceso anti-redundancia).
 - Cierre de la escena: **«Veyra.»** (una palabra).
 - ⏭️ **SIGUIENTE: Escena 7 — Forja de Yara + decisión de partir.** Saun se desmarca; las chicas van solas a la ciudad del Llano. Texto SIEMPRE con el razonador (deepseek-v4-pro) + reglas anti-redundancia.
+
+---
+
+## 🟡 Escena 7 — «La forja de Yara» (16 ago 2026, escaleta APROBADA)
+
+**Título:** La forja de Yara. **Timing:** al día siguiente de la esc. 6 (descanso en casa). Mañana = forja · tarde = Saun · amanecer día siguiente = partida desde casa de Lira.
+
+**Mov. 1 — Mañana, la forja (corazón de la escena):**
+- Yara intenta por primera vez el cristal salvaje → no cede ("no quiere ser un cuchillo").
+- Cierra la forja para quedarse a solas. ESCENA ÍNTIMA: calor, Yara en ropa interior ajustada, provoca a Lira y le saca los colores; tensión sin cruzar la línea.
+- Confesión vulnerable de Yara (provocación → vulnerabilidad): miedo a la ciudad + **OPCIÓN A: la persona que ha visto marcas rúnicas (hilo esc. 2) es un herrero viejo, su maestro de fragua, en la ciudad del Llano** → motivo propio para ir. (Persona distinta de la herrera de Eldun; sin nombre aún.)
+- DISASTER: el cristal reacciona al Cielo de Lira → estantería de herramientas cae cerca de Yara (ILESA, el hierro cae a un palmo). Lira ve el golpe en cámara lenta: «podría haber muerto».
+- EL BESO: lo inicia LIRA (la tímida; el miedo le da el valor). Yara se queda sin palabras y responde.
+- CORTE ELEGANTE: fin del movimiento («La forja guardó el resto») — el lector decide qué pasó después. NO más explícito.
+
+**Mov. 2 — Tarde, Saun se desmarca:**
+- La marca le duele más desde la confesión; «el Cielo elige, y a mí no me eligió» (eco esc. 6). Adiós contenido.
+- Entrega el CINTURÓN DEL VIAJERO (esc. 5) + LOTE DE ARTEFACTOS de buscador del campamento (fragmentos del cuaderno, herramientas, sello, piedras de ruta — lore lengua-tierra). Confiesa: no saben para qué sirven, pero ella encontrará cómo usarlos. Bendición: «el Cielo te eligió a ti».
+
+**Mov. 3 — Amanecer, casa de Lira:**
+- MIRA despide: «no hagáis ninguna locura y volved sanas y salvas» + pan/hatillo (eco del Cap I sin repetir la cocina).
+- Carga: cristal salvaje (para la herrera), roca, cristal-diario, carta del Círculo para el Sr. Veyra, lote de Saun.
+- La runa tira al ESTE, ellas van al SUR: un instante de protesta, sin explicar.
+- CIERRE DEL CAPÍTULO II en alto.
+
+**Límites:** no llegan a la ciudad (Cap III); no aparece nadie de la ciudad; el beso no se cruza más allá (corte); dolencia/don/géneros/nombre antiguo del Cielo NO se revelan; ciudad sin nombre propio; herrero maestro sin nombre.
+
+**Estado:** razonador (deepseek-v4-pro) escribiendo v1 → borradores/cap2-escena7-v1.html (16 ago). Tras aprobación: cargar al editor como SCENE8 (solo SCENE_NAMES + SCENES, lección del fix) → feedback → v2 → publicar cap2-escena7.html + nav 6→7 + índice + commit/push.
