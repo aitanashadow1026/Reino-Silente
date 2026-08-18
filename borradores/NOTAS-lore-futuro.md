@@ -1,7 +1,7 @@
 # NOTAS — Lore futuro y tareas pendientes
 
 > Caja de pendientes del universo Reino Silente. Todo lo que aquí se anota NO se desarrolla todavía en la novela — se guarda para capítulos futuros.
-> Última actualización: 16 ago 2026 (feedback escena 6 Cap II de Shadow, ~101 párrafos editados en el editor).
+> Última actualización: 18 ago 2026 (pautas de Shadow para la escena 1 del Capítulo III — la tutoría de Yara).
 
 ---
 
@@ -58,6 +58,47 @@ Lira **no tiene vinculación con la guardia** — su único vínculo es **Yara**
 - El don de Lira: **sin nombre** por ahora (ver nota 7).
 - Sr. Veyra (médica, ~50, soltera) y la herrera de la ciudad del Llano: **género oculto** en la novela por ahora («el señor Veyra», «un herrero»).
 
+### 12. El conocimiento regalado del Cielo (pautas Shadow, 18 ago — escena 1 Cap III)
+- El Cielo, al hacerse hueco en la mente de su portador, **no solo borra recuerdos: también deposita conocimiento** (búsqueda, manejo, manipulación de cristales, leer la tierra, tipos y densidad de vetas).
+- En la escena 1 del Cap III, Lira **conecta por primera vez** el mecanismo: sabe cosas que no aprendió → el Cielo se las está dando → **¿qué le está quitando a cambio?** (eco de la dolencia de la escena 6 Cap II: «¿y si dejo de ser yo?»).
+- **NO se sabe cuánto le robará a Lira, ni si se sabrá en esta novela.** Mantener el misterio; no explicar el mecanismo completo nunca de golpe.
+- Matiz de escritura: el contraste «aprendido vs regalado» debe separar lo que Lira aprendió (EXTRACTIO/REDI, rituales del Círculo, enseñanzas de Saun) de lo que sabe sin haberlo aprendido (leer la tierra a distancia, calidad/profundidad de vetas, trucos que ni los buscadores de Valdros usan).
+
+### 13. La brújula de cristal del viajero (primer artefacto del cinturón que se desvela)
+- **Objeto**: brújula que reacciona según el tipo de cristal, su tipo y su densidad. Es del cinturón del viajero (escena 7 Cap II: «más cosas en otros compartimentos que no le suenan de nada»).
+- En la escena 1 del Cap III, «algo le dice» a Lira que está en el cinturón (el Cielo la guía). Yara la usa para «ver» la veta sin don → consigue su primera extracción de Ceniza.
+- **Lira se la regala** («con el don no me hace falta»). Yara la conserva → objeto recurrente del personaje.
+- Funciona de noche (visual: reacciona/brilla en la oscuridad). Pendiente de definir si distingue también Llama/Cielo o solo Ceniza (el viajero era buscador de Ceniza).
+
+### 14. Ceniza fuera de Valdros (pautas Shadow, 18 ago)
+- **Hay vetas de Ceniza fuera de Valdros, pero menos y de menor calidad**; se encuentran si se sabe buscar. Valdros tiene más confluencia (vetas + buscadores).
+- Canon ya publicado (lore/mundo.html): **Valdros = 10 buscadores activos**; **ciudades del Llano = 5** (de ellos solo 1 capaz de Llama de alta densidad, origen noble, nombre en susurros).
+- Lira «sabe» esto (dónde, cuánto, a qué profundidad) por el conocimiento regalado del Cielo — no por haberlo aprendido.
+
+### 15. El tamiz de Lira (hilo para el Llano)
+- Lira lleva **~3 años como buscadora** y tiene su propio tamiz (utensilio de buscador; duraderos). Lo lleva en el equipaje al partir.
+- **Yara necesitará un tamiz propio.** Hilo futuro: en la ciudad del Llano, **el maestro herrero de Yara le provee uno especial** (¿hecho a medida para ella? ¿con algún detalle de su oficio?). Desarrollar en escena futura del Cap III.
+
+### 16. Yara, buscadora sin don — camino de las herramientas
+- Yara aprende runas básicas de Ceniza con la tutoría de Lira, rápido, pero **no ve la energía**: va a ciegas. Su límite no es técnica, es percepción.
+- Frustración + autocrítica («no puedo ser buscadora», pide perdón a Lira por «meterla en un lío»). La brújula es la que le da su propio camino: **el don no se enseña, las herramientas sí**.
+- Definir su identidad: buscadora de herramientas vs buscadora de don. La brújula pasa a ser parte de su personaje.
+
+### 17. Dinámica de pareja — Cap III (pautas Shadow, 18 ago)
+- Escena 1: tras la primera extracción de Yara, abrazo de satisfacción y **Yara besa a Lira, precipitada; Lira se aparta sorprendida y luego la vuelve a besar, a propósito** — espejo invertido de la escena 7 (allí Lira inició; aquí Yara).
+- Cierre de escena: las dos bajo la misma manta, Lira apoyada en el pecho de Yara, felices y cómplices.
+- Escena ambientada en complicidad, cariño y sentimiento mutuo (sin necesidad de más tensión romántica: ya se tienen, ahora se enseñan).
+
+---
+
+## 🗂️ Tareas pendientes
+
+- **Cap III esc 1** (apertura del capítulo): tutoría de Ceniza + brújula + regalo + noche bajo la manta. Escaleta de Shadow aprobada (7 puntos, 18 ago). Pendiente: más pautas de Shadow sobre el resto del Cap III para encajar el arco (médica, herrera, maestro de Yara) antes de escribir el brief formal.
+- **Hilo tamiz de Yara**: desarrollar en el Llano (el maestro de Yara le provee un tamiz especial).
+- **Artefactos restantes del cinturón** (sin desvelar): punzón con runas en el cuerpo, vidrio de extracción raro, sello desgastado, piedras de colores, fragmentos del cuaderno carbonizado, compartimentos sin abrir. Desvelar uno por lugar/escena.
+- **Cap III, ciudad del Llano**: médica (P1, ~50, lee dolencias de cristal, detecta la dolencia de Lira), herrera (P2, tratará el cristal salvaje), maestro herrero de Yara (marcas rúnicas que ningún martillo escribió; relación pendiente de años). Géneros ocultos.
+- **Cap III**: dar uso a la ropa que Yara regaló a Lira (esc 7 Cap II) como detalle de continuidad.
+
 ---
 
 ## 📏 Lecciones de proceso (para el razonador en futuras escenas)
@@ -73,5 +114,6 @@ Estas reglas se añaden al prompt de escritura de las próximas escenas:
 ---
 
 ## ✅ Recordatorios activos
-- **Escena 7 Cap II pendiente** (forja de Yara + decisión de partir; Saun se desmarca; chicas van solas a la ciudad). NO OLVIDAR al terminar la escena 6.
-- Tras integrar el feedback de la escena 6 → publicar `capitulos/cap2-escena6.html` + nav + commit/push.
+- **Escena 7 Cap II PUBLICADA (18 ago)** — La forja de Yara, v2 con feedback (61 ediciones). Push a GitHub Pages OK. **Capítulos I y II completos.**
+- **Escena 6 Cap II PUBLICADA (16 ago)** — v3, feedback 101 ediciones.
+- **Próximo: Capítulo III — la ciudad del Llano.** Primera escena planificada (tutoría de Ceniza + brújula, 18 ago). Esperando más pautas de Shadow.
