@@ -1,7 +1,7 @@
 # NOTAS — Lore futuro y tareas pendientes
 
 > Caja de pendientes del universo Reino Silente. Todo lo que aquí se anota NO se desarrolla todavía en la novela — se guarda para capítulos futuros.
-> Última actualización: 18 ago 2026 (pautas de Shadow para la escena 1 del Capítulo III — la tutoría de Yara).
+> Última actualización: 19 ago 2026 (Cap III esc 1 PUBLICADA — «Lección de Cielo»; Ojo de Ceniza nombrado; FER aprendida vs REDI regalada).
 
 ---
 
@@ -115,6 +115,6 @@ Estas reglas se añaden al prompt de escritura de las próximas escenas:
 ---
 
 ## ✅ Recordatorios activos
-- **Escena 7 Cap II PUBLICADA (18 ago)** — La forja de Yara, v2 con feedback (61 ediciones). Push a GitHub Pages OK. **Capítulos I y II completos.**
-- **Escena 6 Cap II PUBLICADA (16 ago)** — v3, feedback 101 ediciones.
-- **Próximo: Capítulo III — la ciudad del Llano.** Primera escena planificada (tutoría de Ceniza + brújula, 18 ago). Esperando más pautas de Shadow.
+- **Escena 1 Cap III PUBLICADA (19 ago)** — «Lección de Cielo», v2 con feedback (77 ediciones). Push a GitHub Pages OK. Abre el Capítulo III.
+- **Escena 7 Cap II PUBLICADA (18 ago)** — La forja de Yara. **Capítulos I y II completos.**
+- **Próximo: Cap III esc 2** — la llegada a la ciudad del Llano (sin decidir aún: maestro de Yara, médica, herrera — géneros ocultos).
