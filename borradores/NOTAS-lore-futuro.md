@@ -62,13 +62,14 @@ Lira **no tiene vinculación con la guardia** — su único vínculo es **Yara**
 - El Cielo, al hacerse hueco en la mente de su portador, **no solo borra recuerdos: también deposita conocimiento** (búsqueda, manejo, manipulación de cristales, leer la tierra, tipos y densidad de vetas).
 - En la escena 1 del Cap III, Lira **conecta por primera vez** el mecanismo: sabe cosas que no aprendió → el Cielo se las está dando → **¿qué le está quitando a cambio?** (eco de la dolencia de la escena 6 Cap II: «¿y si dejo de ser yo?»).
 - **NO se sabe cuánto le robará a Lira, ni si se sabrá en esta novela.** Mantener el misterio; no explicar el mecanismo completo nunca de golpe.
-- Matiz de escritura: el contraste «aprendido vs regalado» debe separar lo que Lira aprendió (EXTRACTIO/REDI, rituales del Círculo, enseñanzas de Saun) de lo que sabe sin haberlo aprendido (leer la tierra a distancia, calidad/profundidad de vetas, trucos que ni los buscadores de Valdros usan).
+- Matiz de escritura: el contraste «aprendido vs regalado» debe separar lo que Lira aprendió (FER, rituales del Círculo, enseñanzas de Saun) de lo que sabe sin haberlo aprendido (REDI, leer la tierra a distancia, calidad/profundidad de vetas, trucos que ni los buscadores de Valdros usan).
 
-### 13. La brújula de cristal del viajero (primer artefacto del cinturón que se desvela)
-- **Objeto**: brújula que reacciona según el tipo de cristal, su tipo y su densidad. Es del cinturón del viajero (escena 7 Cap II: «más cosas en otros compartimentos que no le suenan de nada»).
+### 13. El Ojo de Ceniza (la brújula de cristal del viajero — nombrada en esc 1 Cap III)
+- **Objeto**: brújula de latón bruñido con cristal grueso; el interior es **arena** y la aguja parece rota/incrustada. Al orientarla hacia una veta, **una flecha emerge de la arena** y marca la energía; la arena emite una tenue luz al usarse. Reacciona al tipo y densidad del cristal. Es del cinturón del viajero (escena 7 Cap II: «más cosas en otros compartimentos que no le suenan de nada»).
+- **Nombre**: «Ojo de Ceniza» — Lira lo siente como saber regalado (el Cielo se lo dice). Descrito por Shadow como «visor de la energía de Ceniza».
 - En la escena 1 del Cap III, «algo le dice» a Lira que está en el cinturón (el Cielo la guía). Yara la usa para «ver» la veta sin don → consigue su primera extracción de Ceniza.
-- **Lira se la regala** («con el don no me hace falta»). Yara la conserva → objeto recurrente del personaje.
-- Funciona de noche (visual: reacciona/brilla en la oscuridad). Pendiente de definir si distingue también Llama/Cielo o solo Ceniza (el viajero era buscador de Ceniza).
+- **Lira se lo regala** («con el don no me hace falta»). Yara lo conserva → objeto recurrente del personaje.
+- Pendiente: descripción detallada en lore + posible imagen (dijo Shadow 19 ago). ¿Distingue también Llama/Cielo o solo Ceniza? (el viajero era buscador de Ceniza).
 
 ### 14. Ceniza fuera de Valdros (pautas Shadow, 18 ago)
 - **Hay vetas de Ceniza fuera de Valdros, pero menos y de menor calidad**; se encuentran si se sabe buscar. Valdros tiene más confluencia (vetas + buscadores).
@@ -81,7 +82,7 @@ Lira **no tiene vinculación con la guardia** — su único vínculo es **Yara**
 
 ### 16. Yara, buscadora sin don — camino de las herramientas
 - Yara aprende runas básicas de Ceniza con la tutoría de Lira, rápido, pero **no ve la energía**: va a ciegas. Su límite no es técnica, es percepción.
-- Frustración + autocrítica («no puedo ser buscadora», pide perdón a Lira por «meterla en un lío»). La brújula es la que le da su propio camino: **el don no se enseña, las herramientas sí**.
+- Frustración + autocrítica («no puedo ser buscadora», pide perdón a Lira por «meterla en un lío»). **Verbaliza el límite (esc 1 Cap III): «sin el don de buscadora sería muy difícil, pero no pensaba que sería imposible»** — primera vez que el tema se dice en voz alta en la novela. La brújula (Ojo de Ceniza) es la que le da su propio camino: **el don no se enseña, las herramientas sí**.
 - Definir su identidad: buscadora de herramientas vs buscadora de don. La brújula pasa a ser parte de su personaje.
 
 ### 17. Dinámica de pareja — Cap III (pautas Shadow, 18 ago)
