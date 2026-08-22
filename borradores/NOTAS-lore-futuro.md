@@ -1,7 +1,7 @@
 # NOTAS — Lore futuro y tareas pendientes
 
 > Caja de pendientes del universo Reino Silente. Todo lo que aquí se anota NO se desarrolla todavía en la novela — se guarda para capítulos futuros.
-> Última actualización: 19 ago 2026 (Cap III esc 1 PUBLICADA — «Lección de Cielo»; Ojo de Ceniza nombrado; FER aprendida vs REDI regalada).
+> Última actualización: 22 ago 2026 (Cap III esc 2 — plan actualizado: background de Yara, Veyra=dolencia, maestro buscador de Ceniza, tamiz especial; lanzada al razonador).
 
 ---
 
@@ -79,13 +79,31 @@ Lira **no tiene vinculación con la guardia** — su único vínculo es **Yara**
 ### 15. El tamiz de Lira (hilo para el Llano)
 - Lira lleva **~3 años como buscadora** y tiene su propio tamiz (utensilio de buscador; duraderos). Lo lleva en el equipaje al partir.
 - **Yara necesitará un tamiz propio.** Hilo futuro: en la ciudad del Llano, **el maestro herrero de Yara le provee uno especial** (¿hecho a medida para ella? ¿con algún detalle de su oficio?). Desarrollar en escena futura del Cap III.
+- **✅ TAMIZ ESPECIAL (22 ago, esc 2 Cap III):** el maestro se lo regala a Yara en el reencuentro. Ornamentación **más recargada** que la del tamiz de Lira («de momento» distinta — puede evolucionar). El maestro: «Por nada del mundo te deshagas de él. Es una pieza única — sabrás porqué en el futuro.» **Misterio/siembra sin resolver.**
 
 ### 16. Yara, buscadora sin don — camino de las herramientas
 - Yara aprende runas básicas de Ceniza con la tutoría de Lira, rápido, pero **no ve la energía**: va a ciegas. Su límite no es técnica, es percepción.
 - Frustración + autocrítica («no puedo ser buscadora», pide perdón a Lira por «meterla en un lío»). **Verbaliza el límite (esc 1 Cap III): «sin el don de buscadora sería muy difícil, pero no pensaba que sería imposible»** — primera vez que el tema se dice en voz alta en la novela. La brújula (Ojo de Ceniza) es la que le da su propio camino: **el don no se enseña, las herramientas sí**.
 - Definir su identidad: buscadora de herramientas vs buscadora de don. La brújula pasa a ser parte de su personaje.
 
-### 17. Dinámica de pareja — Cap III (pautas Shadow, 18 ago)
+### 17. Background de Yara (canon fijado 22 ago, se cuenta en esc 2 Cap III)
+- **26 años.** Nació en el Llano. Con 20 la familia se marchó a Valdros (hace 6 años) para que su padre llevara la fragua del tío, que se puso enfermo.
+- **Oficio: guardia** (no forjadora de Llama). La forja de Valdros la lleva su padre.
+- Aprendió el oficio de niña/joven con el maestro herrero del Llano (el mismo que enseñó a su padre y a su tío el arte de forjar la Llama). Su formación de Llama quedó truncada al irse → por eso no puede forjar la Llama «rebelde» (motivo de la herrera, esc 3).
+- No ha vuelto al Llano en 6 años, pero mantuvo contacto: cartas con amigos; cuando alguno venía a Valdros por Ceniza la visitaban o la veían de patrulla con la guardia.
+- Quiso ser buscadora; el maestro le dijo que se quitara esa idea, que no tenía el don (él sabía: es buscador de Ceniza — Yara no lo supo hasta esc 2 Cap III).
+
+### 18. Padre de Yara — la otra Llama rebelde (canon futuro, NO tocar en esc 2)
+- El padre de Yara **sí terminó su formación en el Llano** y podría forjar la Llama rebelde.
+- Futuro (cuando vuelvan a Valdros): **será el padre quien haya forjado la otra Llama rebelde que se entregó a Lailte** (la espada). No se trata en la escena 2; guardado para capítulo futuro.
+
+### 19. Maestro herrero de Yara = buscador de Ceniza (revelado en esc 2 Cap III)
+- Herrero viejo del Llano, enseñó a forjar Llama al padre, al tío y a Yara. **Es buscador de Ceniza** — por eso le dijo a Yara que no tenía el don (no por necedad: para no hacerle perder el tiempo).
+- Las **marcas rúnicas que ningún martillo escribió** (hilo esc 2 Cap II, «conozco a quien sí») son **suyas**: las traza él. Se cierra el hilo en esta escena.
+- **El brillo entre buscadores (extensión del don):** un buscador ve un brillo en otro buscador. El de Lira es de **un color que el maestro no conoce** — NO es Ceniza ni Llama (es Cielo, pero él NO lo identifica ni lo nombra; el Cielo es desconocido incluso para el Círculo). Inquietud, respeto, recelo.
+- Desvelo en escena: se refiere a Lira como «tu amiga la buscadora» → Yara pregunta cómo lo sabe → revela que es buscador de Ceniza y se disculpa. Al ver el **Ojo de Ceniza** de Yara, cambia de opinión y le regala el tamiz.
+
+### 20. Dinámica de pareja — Cap III (pautas Shadow, 18 ago)
 - Escena 1: tras la primera extracción de Yara, abrazo de satisfacción y **Yara besa a Lira, precipitada; Lira se aparta sorprendida y luego la vuelve a besar, a propósito** — espejo invertido de la escena 7 (allí Lira inició; aquí Yara).
 - Cierre de escena: las dos bajo la misma manta, Lira apoyada en el pecho de Yara, felices y cómplices.
 - Escena ambientada en complicidad, cariño y sentimiento mutuo (sin necesidad de más tensión romántica: ya se tienen, ahora se enseñan).
@@ -94,8 +112,9 @@ Lira **no tiene vinculación con la guardia** — su único vínculo es **Yara**
 
 ## 🗂️ Tareas pendientes
 
-- **Cap III esc 1** (apertura del capítulo): tutoría de Ceniza + brújula + regalo + noche bajo la manta. Escaleta de Shadow aprobada (7 puntos, 18 ago). Pendiente: más pautas de Shadow sobre el resto del Cap III para encajar el arco (médica, herrera, maestro de Yara) antes de escribir el brief formal.
-- **Hilo tamiz de Yara**: desarrollar en el Llano (el maestro de Yara le provee un tamiz especial).
+- **Cap III esc 2 (EN CURSO, 22 ago)**: llegada a la ciudad del Llano. Background de Yara + Veyra (no está, cita 2 días, carta de los mellizos mostrada no entregada) + reencuentro con el maestro (desvelo buscador + Ojo de Ceniza + tamiz especial). Lanzada al razonador (v1).
+- **Cap III esc 3**: cita con Sr. Veyra (dos días después; detectará la dolencia de Lira) + **la herrera** (cristal salvaje de Llama que Yara no puede forjar — su formación quedó truncada al irse del Llano).
+- **Hilo tamiz de Yara**: ✅ resuelto en esc 2 (el maestro se lo regala — pieza única, misterio futuro).
 - **Artefactos restantes del cinturón** (sin desvelar): punzón con runas en el cuerpo, vidrio de extracción raro, sello desgastado, piedras de colores, fragmentos del cuaderno carbonizado, compartimentos sin abrir. Desvelar uno por lugar/escena.
 - **Cap III, ciudad del Llano**: médica (P1, ~50, lee dolencias de cristal, detecta la dolencia de Lira), herrera (P2, tratará el cristal salvaje), maestro herrero de Yara (marcas rúnicas que ningún martillo escribió; relación pendiente de años). Géneros ocultos.
 - **Cap III**: dar uso a la ropa que Yara regaló a Lira (esc 7 Cap II) como detalle de continuidad.
@@ -117,4 +136,4 @@ Estas reglas se añaden al prompt de escritura de las próximas escenas:
 ## ✅ Recordatorios activos
 - **Escena 1 Cap III PUBLICADA (19 ago)** — «Lección de Cielo», v2 con feedback (77 ediciones). Push a GitHub Pages OK. Abre el Capítulo III.
 - **Escena 7 Cap II PUBLICADA (18 ago)** — La forja de Yara. **Capítulos I y II completos.**
-- **Próximo: Cap III esc 2** — la llegada a la ciudad del Llano (sin decidir aún: maestro de Yara, médica, herrera — géneros ocultos).
+- **Cap III esc 2 EN CURSO (22 ago)** — llegada a la ciudad del Llano; lanzada al razonador. Esc 3: Veyra + herrera.
