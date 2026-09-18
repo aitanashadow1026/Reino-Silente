@@ -10,6 +10,7 @@
 ### 1. Nombre antiguo del Cielo (feedback P36)
 Las armas antiguas de Llama —como la espada de Lailte— **no llaman «Cielo»** a la esencia divina. «Cielo» es el nombre que usan los habitantes actuales del planeta. La espada tiene siglos: cuando olió el Cielo en Lira, lo **reconoció con reverencia** («Hace siglos que no olía a Cielo. No lo he olvidado»).
 → Futuro: revelar el **nombre más antiguo** con el que la espada (y otras cosas viejas) conocen al Cielo. La espada podría decírselo a Lira, o lo descubre el Círculo.
+- **🆕 EL INFINITO (18 sep):** el nombre antiguo del Cielo es **«el Infinito»**. Alem (el talismán, esc 3 Cap III) NO llama «Cielo» a Lira: la llama **«lasca del Infinito»** («Llevaba mucho tiempo esperando a una lasca del Infinito»). Mantener críptico: Lira oye el término, no sabe aún que = Cielo.
 
 ### 2. El Cielo ante la espada — jerarquía de poderes (feedback P38 y P59)
 - El Cielo dentro de Lira percibe la espada como un poder que «debería controlar»: **se recoloca, asumiendo una posición de mando**.
@@ -141,10 +142,32 @@ Estas reglas se añaden al prompt de escritura de las próximas escenas:
 
 ---
 
-### 21. 🆕 Damart y la profecía del tamiz de Yara (siembra, 18 sep 2026)
-- **Damart** = nombre del **maestro del maestro herrero de Yara** (el viejo herrero del Llano). A Damart le fue entregado el tamiz (o lo forjó/poseyó) y se lo pasó al maestro de Yara con una frase críptica.
+### 21. 🆕 Damart y la profecía del tamiz de Yara (siembra, 18 sep 2026)- **Damart** = nombre del **maestro del maestro herrero de Yara** (el viejo herrero del Llano). A Damart le fue entregado el tamiz (o lo forjó/poseyó) y se lo pasó al maestro de Yara con una frase críptica.
 - **Frase semilla (intención de Shadow):** algo como *«Este tamiz no es para ti ni para mí, es para una buscadora ciega que protegerá al Cielo»*.
 - **En la esc 2 NO se desvela nada.** El maestro solo insinúa que heredó el tamiz de su propio maestro y que aquel le dijo algo que nunca entendió hasta hoy (siembra, sin explicar).
 - **Desenlace futuro:** el tamiz de Yara tiene una historia/profecía que se resuelve al final de la novela. Conecta con «buscadora sin don» (ciega) y con el Cielo (protección).
 - ⚠️ **Cuidado con el POV/canon:** el Cielo es desconocido incluso para el Círculo; un buscador de Ceniza no debería saber/nombrar «el Cielo» con soltura. La frase profética es un saber heredado y críptico, no una explicación teológica.
 - **Actualizar:** ⚠️ el lore fijado en el punto 15 («ornamentación más recargada… puede evolucionar») se mantiene; añadir esta capa de misterio/linaje al tamiz.
+
+---
+
+### 22. 🆕 Tocados por el Cielo, las runas de Edulin y el talismán Alem (Cap III esc 3, pautas Shadow 18 sep)
+
+**Tocados por el Cielo**
+- Categoría nueva (≠ portador). **No tienen el Cielo dentro**: llevan un **pequeño residuo de Cielo en el cuerpo** (no se sabe por qué) que les concede **alguna** facultad de Cielo — no todas. Se irán desvelando a lo largo de la novela.
+- **Edulin** es una tocada por el Cielo: domina la **Llama** (no tiene Cielo dentro, pero sí esa facultad).
+
+**Runas de Edulin (7 capas) — decisión Shadow 18 sep**
+- **ANIMA** (7 capas) — «Alma»: oye/entiende la voluntad del **ser caído** dentro de la Llama (la Llama le «habla»).
+- **FINGERE** (7 capas) — «Moldear»: **somete y fija** la energía, le da forma.
+- ⚠️ Shadow quiere **repasarlas para que suenen más épicas** (nombres provisionales). No hace falta nombrarlas en voz alta en la escena (Lira las «lee» con el Cielo): describir cómo operan.
+- No entran en el alfabeto público (como las runas de Lira de 7/8/9-10 capas).
+
+**Oración de Cielo de 8 capas (Lira)**
+- En el momento crítico de la forja, Lira despliega una oración/runa de **8 capas de Cielo**. **El Cielo, como siempre, se cobra algo** (un recuerdo). Coste sutil; mantener misterio.
+
+**El talismán — «Alem»**
+- Sale de **uno de los compartimentos sin nombre** del cinturón del viajero. Al inicio del forjado: un **cristal engarzado simple**; al final: una **reliquia atemporal**.
+- **Alem = el alma del ser caído** que la Llama había recogido (enlaza con nota 3). **Voz de hombre.** Dice que llevaba mucho tiempo esperando **a una lasca del Infinito** para ayudarla.
+- Habla a las tres (Lira, Yara, Edulin). **Yara comprende que es para Lira**; Lira lo acoge.
+- Nombre «Alem» = nombre del ser caído (darle trasfondo futuro).
