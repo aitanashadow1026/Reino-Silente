@@ -137,3 +137,14 @@ Estas reglas se añaden al prompt de escritura de las próximas escenas:
 - **Escena 1 Cap III PUBLICADA (19 ago)** — «Lección de Cielo», v2 con feedback (77 ediciones). Push a GitHub Pages OK. Abre el Capítulo III.
 - **Escena 7 Cap II PUBLICADA (18 ago)** — La forja de Yara. **Capítulos I y II completos.**
 - **Cap III esc 2 EN CURSO (22 ago)** — llegada a la ciudad del Llano; lanzada al razonador. Esc 3: Veyra + herrera.
+- **Cap III esc 2 — feedback de Shadow aplicado (18 sep)** — 85 ediciones. v2 por el razonador.
+
+---
+
+### 21. 🆕 Damart y la profecía del tamiz de Yara (siembra, 18 sep 2026)
+- **Damart** = nombre del **maestro del maestro herrero de Yara** (el viejo herrero del Llano). A Damart le fue entregado el tamiz (o lo forjó/poseyó) y se lo pasó al maestro de Yara con una frase críptica.
+- **Frase semilla (intención de Shadow):** algo como *«Este tamiz no es para ti ni para mí, es para una buscadora ciega que protegerá al Cielo»*.
+- **En la esc 2 NO se desvela nada.** El maestro solo insinúa que heredó el tamiz de su propio maestro y que aquel le dijo algo que nunca entendió hasta hoy (siembra, sin explicar).
+- **Desenlace futuro:** el tamiz de Yara tiene una historia/profecía que se resuelve al final de la novela. Conecta con «buscadora sin don» (ciega) y con el Cielo (protección).
+- ⚠️ **Cuidado con el POV/canon:** el Cielo es desconocido incluso para el Círculo; un buscador de Ceniza no debería saber/nombrar «el Cielo» con soltura. La frase profética es un saber heredado y críptico, no una explicación teológica.
+- **Actualizar:** ⚠️ el lore fijado en el punto 15 («ornamentación más recargada… puede evolucionar») se mantiene; añadir esta capa de misterio/linaje al tamiz.
