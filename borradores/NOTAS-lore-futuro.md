@@ -171,3 +171,34 @@ Estas reglas se añaden al prompt de escritura de las próximas escenas:
 - **Alem = el alma del ser caído** que la Llama había recogido (enlaza con nota 3). **Voz de hombre.** Dice que llevaba mucho tiempo esperando **a una lasca del Infinito** para ayudarla.
 - Habla a las tres (Lira, Yara, Edulin). **Yara comprende que es para Lira**; Lira lo acoge.
 - Nombre «Alem» = nombre del ser caído (darle trasfondo futuro).
+
+---
+
+### 23. 🆕 Cap III esc 5 — decisiones de Shadow (22 sep 2026)
+
+**Alem NO es brújula.** Corrige la hipótesis de la esc 4 («esa lasca… nos servirá de brújula» era intuición de Veyra, no verdad). **Alem no empuja a Lira al sur**: será **su protección** para algo que ocurrirá con **el Cielo al final de la novela** (Shadow aún lo está pensando). En esc 5 solo hay un **primer contacto deliberado**: Lira aprende a hablarle y Alem responde **muy flojo** («la escucha, pero flojo»). El tirón del sur lo ejerce **el Cielo** (el tambor de nueve capas), no Alem.
+
+**Hablar con talismanes (cómo se hace).** No es con la voz: es **con el pensamiento**. Se practica; cuesta. Pauta: sostener el talismán, cerrar los ojos, dirigirle una idea clara, esperar sin forzar. **Edulin es quien se lo enseña** → ¿cómo lo sabe? Porque **Edulin tiene su propio talismán** (el **anillo**). En esc 5 **solo se insinúa** (Lira puede intuirlo); el anillo sigue oculto.
+
+**Veyra ↔ Edulin (actualiza nota previa).** No era solo amistad: **fueron como Lira y Yara** (intimidad de pareja). Hoy, viejas amigas. Se insinúa con humor en esc 5 (broma a las chicas + historia del **novio celoso**), sin explicitar. Su historia se desarrolla durante el viaje.
+
+**Maestro herrero de Yara ↔ Edulin.** Son **viejos amigos íntimos** que por algún motivo **ya no se tratan tanto**. Las chicas se sorprenden (creían que se llevarían mal: el maestro siempre habló de Edulin a regañadientes, con envidia). Se topan con él **en la salida del Llano** (esc 5); aprovecha para preguntar a Yara por el **tamiz** (ella: no se separará de él). *[Desarrollar por qué se distanciaron.]*
+
+**Dolencia — primer síntoma visible (esc 5).** Ahora que Lira **sabe** lo que le pasa (esc 4), en la primera noche busca un recuerdo pequeño (canción, dicho de Mira, detalle de casa) y encuentra un **hueco limpio**. Pasa de idea a falta sentida. Sin nombre ni mecanismo.
+
+**Esc 6 (avance).** Camino hasta **una casa en el bosque** donde **Veyra** guarda un pequeño **arsenal de pociones y artilugios** para el viaje. Ahí, por fin, **la Montaña Apagada** en el horizonte.
+
+---
+
+### 24. 🆕 «Protector contra el Cielo» — siembra en la esc 5 Cap III (23 sep 2026)
+
+- **Decisión de Shadow:** añadir al lore un **papel de protector contra el Cielo**. **De momento solo se deja sembrado** (no desarrollar todavía).
+- **Dónde:** última línea de la **esc 5 del Cap III** (P34). Texto que añade Shadow (pulido):
+  > «Entonces lo oye. Una voz que no es sonido, dicha en mitad del pecho: *«No temas al Infinito, mi señora. Yo estoy aquí, ahora.»* Es **Alem**. Lira quiere contestarle —decirle algo, lo que sea—, pero solo le sale un «gracias». Porque **Alem le da más miedo que curiosidad**.»
+- **Lectura:** **Alem = el protector**. El alma caída del talismán se ofrece a protegerla del **Infinito** = **el Cielo** (Shadow confirmó 23 sep: *«el Cielo y el Infinito son lo mismo»*). Llama a Lira **«mi señora»** → siembra de jerarquía/vinculación (¿por qué tanta deferencia? ¿la conoce de antes?). A la vez, **da más miedo que curiosidad** → su protector también la inquieta.
+- **Canon fijado:** **Cielo = Infinito** (mismo concepto, dos nombres: «Cielo» es el uso común/deificado; «el Infinito» es el nombre que usa Alem).
+- **Enlaces posibles (a revisar con Shadow):**
+  - **Alem** = «su protección» para algo que ocurrirá con el Cielo al final (ver nota 23). El último párrafo ya sostiene el **talismán de Alem contra el pecho** → encaja como semilla del protector.
+  - **Profecía de Damart** (nota 21): «buscadora ciega que **protegerá al Cielo**». Es un hilo **distinto** (alguien que protegería **al** Cielo), no el protector «contra» él; dejar abierto si son dos caras del mismo motivo.
+  - Facultades (sección 3 de `LORE-tocados-por-el-cielo.md`): la idea de Lira aprendiendo las 7 facultades «para **frenar** al Cielo».
+- **No desarrollar aún.** No nombrarlo ni explicarlo en escena hasta que Shadow lo pida.

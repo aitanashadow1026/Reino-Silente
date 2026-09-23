@@ -10,6 +10,7 @@
 - **Portador/a** — contiene la **esencia de un dios** (el Cielo) *dentro*. Rarísimo (Lira). No se le puede robar; a su muerte, el Cielo espera un nuevo receptáculo ligado a su alma. Acceso al Cielo **completo**.
 - **Tocado/a por el Cielo** — lleva un **pequeño residuo** de Cielo en el cuerpo; **no lo contiene**. Le concede **una sola** facultad del Cielo (no todas). Categoría nueva, se irá desvelando en la novela. Ej.: **Edulin**, **Veyra**.
   - *(Nota: no se elige; sucede. Origen del toque por desarrollar.)*
+- **«Cielo» = «el Infinito».** Mismo concepto con dos nombres (confirmado por Shadow, 23 sep 2026): «Cielo» es el uso común/deificado; **«el Infinito»** es el nombre que emplea **Alem**. (Enlaza con «lasca del Infinito».)
 
 ## 2. Las 7 facultades
 
@@ -37,7 +38,7 @@
 
 - **Veyra:** ~50 años, soltera, **mujer** (género oculto hasta la esc 3). **Tocada por el Cielo desde joven**; médica; lee dolencias de Cielo. Amiga de Edulin.
 - **Edulin:** tocada; herrera del Llano; forja la Llama.
-- Entre Edulin y Veyra hay **amistad vieja** (no relación romántica): ambas solteras y muy atractivas. Su historia se desarrolla **durante el viaje** que ahora empiezan. Las dos **se unen a la búsqueda** → el grupo pasa a **4** (Lira, Yara, Edulin, Veyra).
+- Entre Edulin y Veyra hay una **historia vieja**: *(actualizado 22 sep, esc 5)* **fueron como Lira y Yara** — hubo entre ellas una intimidad de pareja. Hoy son viejas amigas. Su historia se cuenta **durante el viaje** que ahora empiezan y, de momento, **solo se insinúa** (con humor nostálgico), sin explicitar nada. En esc 5 embroman a Lira y Yara al verlas dormir juntas y cuentan una pequeña historia de un *novio celoso*. Las dos **se unen a la búsqueda** → el grupo pasa a **4** (Lira, Yara, Edulin, Veyra).
 
 ## 6. Preguntas abiertas
 
