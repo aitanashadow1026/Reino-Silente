@@ -202,3 +202,40 @@ Estas reglas se añaden al prompt de escritura de las próximas escenas:
   - **Profecía de Damart** (nota 21): «buscadora ciega que **protegerá al Cielo**». Es un hilo **distinto** (alguien que protegería **al** Cielo), no el protector «contra» él; dejar abierto si son dos caras del mismo motivo.
   - Facultades (sección 3 de `LORE-tocados-por-el-cielo.md`): la idea de Lira aprendiendo las 7 facultades «para **frenar** al Cielo».
 - **No desarrollar aún.** No nombrarlo ni explicarlo en escena hasta que Shadow lo pida.
+
+---
+
+### 25. 🆕 Cap III esc 6 «La casa del bosque» — magia de Veyra, artilugios y armas (23 sep 2026)
+
+**La casa de Veyra (canon).**
+- **Muy oculta**; se llega por una **zona de difícil acceso** (barranco). **Puerta sin cerradura normal**: se abre trazando **varias runas de 3 capas en varios puntos** — una **habilidad de Ceniza que no está al alcance de cualquiera** (NADA que ver con el Cielo). **Lira descifra las runas con verlas una vez.**
+- Por fuera parece una **casucha vieja**; por dentro es **más grande** (varias habitaciones) e incluye un **medio taller medio cocina** donde Veyra crea sus artilugios.
+
+**Veyra = «alquimista de engranajes»** (además de médica). Crea **artefactos / artilugios** mágicos **ajenos al Cielo y a la Llama**. Frase semilla: *«Hay más cosas mágicas en este mundo si te preocupas por buscarlas.»*
+- **«Estrellas»** = **cristales de Ceniza especiales caídos del cielo** (como meteoritos), que **cristalizan en el momento del impacto**; traen una **transferencia de Ceniza perfecta** para crear artilugios con la **receta adecuada**. ⚠️ **Son de Ceniza, NO de Cielo** (no confundir con el Cristal de Cielo; de momento, sin relación).
+- **Comunicadores:** artilugios con **cristales vinculados** — **cada uno transmite a los demás la misma energía que capta**. Veyra entrega uno a cada miembro del grupo (4).
+
+**Bastones de Llama imbuidos** (regalo de Veyra a **Edulin** y a **Lira**). Un **arma de Llama imbuida se vincula al portador para siempre**.
+- El bastón de **Lira** se llama **«Cara»**; **voz afeminada**. ⚠️ **Solo Lira lo oye** (mental), y **Alem también**, por la **vinculación** entre ambos (Cara y Alem son **viejos amigos**). Nadie más del grupo lo escucha.
+
+**Cuchillos de Yara.**
+- Veyra **mejora el vínculo del cuchillo que más habla** → nueva facultad: **rastreo** (runa de Llama de **6 capas**, muy rara). **Yara lo bautiza «Veril»** antes de la mejora («elijo a Veril»). Ayuda **Edulin**.
+- El **otro cuchillo** queda igual: **Llama de 4 capas**, facultad de **oler a las personas**.
+
+**Canon de pareja (insinuado).** Esa noche: **Lira y Yara** juntas, y **Edulin y Veyra** también. Se **insinúa**, nunca se explicita.
+
+**Cierre.** Partida y **la Montaña Apagada** por primera vez en el horizonte. **Fin del Capítulo III.**
+
+---
+
+### 26. 🆕 Cap III esc 6 — feedback de Shadow (7 oct 2026) → v2
+
+**La casa de Veyra = un PORTAL (lore, aún NO revelado).** Con energía (de momento **Ceniza**) se han metido por un **portal a otra zona** distinta del bosque; la entrada era la casucha, pero **la casa puede estar en medio de una ciudad**. Al mirar por la **ventana** se ven cosas extrañas (de noche apenas se distinguen). En la novela, por ahora, **solo se insinúa**: el **olor** de dentro no tiene «nada que ver con el bosque» (P12) y han cruzado una puerta que se cerró **sin cerradura** (P9). Se desarrollará más adelante.
+
+**Comunicadores — futuro (lore).** Más adelante **Lira sabrá transmitir imagen** a través de los comunicadores, lo que **dejará a Veyra sorprendida**. No aparece ahora.
+
+**Bastón de Edulin — canon corregido.** El arma que Veyra le entrega **aún no está imbuida** («aún sin imbuir»); se retira la frase «la forjas tú, la imbuyo yo».
+
+**Alem «sabe algo».** Cierre P52: «Ahí **empezará** todo» (antes «empieza»). Shadow pregunta si el talismán sabe algo que el redactor no contó → **sí, es una puerta abierta deliberada**: Alem = el **protector** (nota 24), la llama «mi señora». Dejar como **enigma**, sin explicar.
+
+**Otros ajustes de esta ronda.** «Estrellas» = **cristales de estrella** (Ceniza especial formada al golpear contra el suelo). El grupo son **cuatro mujeres**: todo plural va en **femenino** («las demás / las tres / las cuatro»). Veyra al pedir los cuchillos: **educada** («Los dos, por favor, Yara»).
